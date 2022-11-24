@@ -1,0 +1,63 @@
+.profile {
+  max-width: 1081px;
+  margin: 24px auto 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.profile-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.profile-grid__half-block {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile__block-header {
+  display: flex;
+  align-items: center;
+}
+
+.profile__block-title{
+  margin-left: 10px;
+  font-size: 24px;
+  margin-bottom: 3px;
+}
+
+.profile__traektolog{
+   display: flex;
+  align-items: center;
+}
+
+.profile__traektolog-img{
+   width: 78px;
+  height: 78px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-right: 8px;
+  border-radius: 12px;
+  margin-right: 8px;
+  @include image;
+}
+
+.profile__traektolog-title{
+   color: $gray;
+  text-transform: uppercase;
+  font-family: "raleway-bold";
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+.profile__traektolog-descr{
+   color: $gray-dark;
+  font-size: 14px;
+  line-height: 143%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
