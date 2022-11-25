@@ -225,14 +225,13 @@
 .stepsSection .stepsText {
   margin: 0 auto;
   text-align: center;
+  margin-bottom: 165px;
   font-family: raleway-medium;
   font-size: 16px;
 }
 .stepsSection .stepsList {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-end;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -240,9 +239,9 @@
 .stepsSection .stepsItem {
   display: flex;
   align-items: flex-start;
-  padding: 16px;
+  padding: 10px;
   border-radius: 16px;
-  max-width: 645px;
+  z-index: 2;
   background-color: #F5F5F6;
   margin-bottom: 150px;
 }
@@ -261,6 +260,7 @@
 }
 .stepsSection .stepsItem .stepsItem__item {
   font-size: 14px;
+  max-width: 650px;
   font-family: raleway-medium;
 }
 .stepsSection .stepsItem .stepsItem__block {
@@ -279,23 +279,99 @@
   font-size: 16px;
   font-family: raleway-semibold;
 }
+.stepsSection .stepsItem:first-child {
+  margin-right: 60px;
+}
 .stepsSection .treeSteps1 {
   position: absolute;
-  top: 0;
+  top: -20%;
   right: 40%;
   left: 47%;
+  z-index: -1;
 }
 .stepsSection .treeSteps2 {
   position: absolute;
-  top: 50%;
+  top: 30%;
   right: 40%;
   left: 47%;
+  z-index: -1;
 }
 .stepsSection .rel {
   position: relative;
 }
 .stepsSection .stepsItem:nth-child(even) {
-  margin-top: 40px;
+  margin-top: 20px;
+  max-width: 650px;
+  padding: 10px;
+}
+.stepsSection .stepsItem:nth-child(even) .stepsItem__number:nth-child(even) {
+  background-color: black;
+}
+.stepsSection .stepsItem__block:nth-child(even) {
+  margin-left: 12px;
+}
+.stepsSection .buildTrajectory {
+  display: flex;
+  align-items: center;
+  background-color: #F8F8F8;
+  border-radius: 16px;
+  padding-left: 48px;
+}
+.stepsSection .descriptionTrajectory__title {
+  font-size: 24px;
+  color: #319CFF;
+  font-family: raleway;
+}
+.stepsSection .descriptionTrajectory__text {
+  font-family: raleway;
+  font-size: 14px;
+}
+.stepsSection .descriptionTrajectory {
+  height: 230px;
+}
+.stepsSection .descriptionTrajectory__button {
+  background-color: #319CFF;
+  font-family: Raleway-Medium;
+  border-radius: 100px;
+  color: #fff;
+  border: none;
+  padding: 20px 32px;
+  margin-right: 16px;
+}
+.stepsSection .trajectoryWay {
+  position: relative;
+}
+.stepsSection .trajectoryWay .yearsList {
+  list-style-type: none;
+}
+.stepsSection .trajectoryWay .yearsList .block1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.stepsSection .trajectoryWay .yearsList .arrow1 {
+  position: absolute;
+  top: 0px;
+  left: 80px;
+}
+.stepsSection .trajectoryWay .yearsList .block2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.stepsSection .trajectoryWay .yearsList .block3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.stepsSection .trajectoryWay .yearsList .yearsItem__round {
+  position: absolute;
+  top: 32%;
+  left: 80%;
+}
+.stepsSection .trajectoryWay .yearsList .yearsItem__block {
+  background-color: #fff;
+  border-radius: 16px;
 }
 
 @font-face {

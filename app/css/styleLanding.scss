@@ -250,15 +250,14 @@
   .stepsText {
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 165px;
     font-family: raleway-medium;
     font-size: 16px;
   }
 
   .stepsList {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-end;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -267,64 +266,72 @@
   .stepsItem {
     display: flex;
     align-items: flex-start;
-    padding: 16px;
+    padding: 10px;
     border-radius: 16px;
-    max-width: 645px;
+    z-index: 2;
+
     background-color: #F5F5F6;
     margin-bottom: 150px;
 
-  .stepsItem__title {
-    font-family: raleway-medium;
-    color: #319CFF;
-    font-size: 24px;
-    margin-top: 0;
-    margin-bottom: 8px;
+    .stepsItem__title {
+      font-family: raleway-medium;
+      color: #319CFF;
+      font-size: 24px;
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    .stepsItem__list {
+      padding: 0;
+      margin: 0;
+      list-style-type: disc;
+      margin-left: 30px;
+    }
+
+    .stepsItem__item {
+      font-size: 14px;
+      max-width: 650px;
+      font-family: raleway-medium;
+    }
+
+    .stepsItem__block {
+      justify-content: flex-start;
+    }
+
+    .stepsItem__number {
+      background-color: #ACD7FF;
+      border-radius: 30px;
+      text-align: center;
+      vertical-align: bottom;
+      margin: 0;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      color: #fff;
+      font-size: 16px;
+      font-family: raleway-semibold;
+
+    }
   }
 
-  .stepsItem__list {
-    padding: 0;
-    margin: 0;
-    list-style-type: disc;
-    margin-left: 30px;
+  .stepsItem:first-child {
+    margin-right: 60px;
   }
-
-  .stepsItem__item {
-    font-size: 14px;
-    font-family: raleway-medium;
-  }
-
-  .stepsItem__block {
-    justify-content: flex-start;
-  }
-
-  .stepsItem__number {
-    background-color: #ACD7FF;
-    border-radius: 30px;
-    text-align: center;
-    vertical-align: bottom;
-    margin: 0;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    color: #fff;
-    font-size: 16px;
-    font-family: raleway-semibold;
-  }
-
-}
 
   .treeSteps1 {
     position: absolute;
-    top: 0;
+    top: -20%;
     right: 40%;
     left: 47%;
+    z-index: -1;
   }
 
   .treeSteps2 {
     position: absolute;
-    top: 50%;
+    top: 30%;
     right: 40%;
     left: 47%;
+    z-index: -1;
   }
 
   .rel {
@@ -332,8 +339,106 @@
   }
 
   .stepsItem:nth-child(even) {
-    margin-top: 40px;
+    margin-top: 20px;
+    max-width: 650px;
+    padding: 10px;
+
+    .stepsItem__number:nth-child(even) {
+      background-color: black;
+    }
   }
+
+  .stepsItem__block:nth-child(even) {
+    margin-left: 12px;
+  }
+
+  .buildTrajectory {
+    display: flex;
+    align-items: center;
+    background-color: #F8F8F8;
+    border-radius: 16px;
+    padding-left: 48px;
+  }
+
+  .descriptionTrajectory__title {
+    font-size: 24px;
+    color: #319CFF;
+    font-family: raleway;
+  }
+
+  .descriptionTrajectory__text {
+    font-family: raleway;
+    font-size: 14px;
+  }
+
+  .descriptionTrajectory {
+    height: 230px;
+  }
+
+  .descriptionTrajectory__button {
+    background-color: #319CFF;
+    font-family: Raleway-Medium;
+    border-radius: 100px;
+    color: #fff;
+    border: none;
+    padding: 20px 32px;
+    margin-right: 16px;
+  }
+
+  .trajectoryWay {
+    position: relative;
+
+    .yearsList {
+      list-style-type: none;
+
+      .yearsItem__block1 {
+
+      }
+
+      .block1 {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+      }
+
+      .arrow1 {
+        position: absolute;
+        top: 0px;
+        left: 80px;
+      }
+
+      .block2 {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+      }
+
+      .block3 {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+      }
+
+      .yearsItem__round {
+        position: absolute;
+        top: 32%;
+        left: 80%;
+      }
+
+
+      .yearsItem__multiBlock {
+
+      }
+
+      .yearsItem__block {
+        background-color: #fff;
+        border-radius: 16px;
+      }
+    }
+
+
+  }
+
 
 }
 
