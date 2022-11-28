@@ -238,6 +238,7 @@
 }
 
 .stepsSection {
+  margin-bottom: 120px;
 
   .stepsTitle {
     text-align: center;
@@ -438,8 +439,384 @@
 
 
   }
+}
+
+.historyTrajectory {
+  .historyTitle {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: raleway-bold;
+    font-size: 56px;
+    max-width: 920px;
+  }
+
+  .founderBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  .founderImage {
+    border-radius: 30px;
+    object-fit: cover;
+    width: 100%;
+    z-index: -1;
+    height: 90%;
+  }
+
+  .founderCard {
+    background-color: #fff;
+    border-radius: 20px;
+    opacity: 0.95;
+    padding: 16px;
+    max-width: 340px;
+    height: 90%;
+    margin-left: -200px;
+    z-index: 1;
+    box-shadow: 0px 40px 100px rgba(0, 0, 0, 0.08);
+
+    .founderName {
+      color: #319CFF;
+      font-size: 28px;
+      font-family: raleway-semibold;
+      margin: 0;
+    }
+
+    .founderDesc {
+      margin-bottom: 13px;
+    }
+
+    .founderDesc__title {
+      margin: 0;
+      color: #9A9AA0;
+      font-size: 14px;
+    }
+
+    .approachMotivation__text {
+      margin-top: 5px;
+      margin-bottom: 0;
+      font-family: raleway;
+      font-size: 14px;
+    }
+
+    .approachMotivation__item__text {
+      color: #9A9AA0;
+      margin: 0;
+    }
+
+    .authorBook {
+      color: #319CFF;
+      text-decoration: none;
+    }
+
+    .founderDesc__info {
+      margin: 0;
+      color: #319CFF;
+      font-family: raleway-medium;
+      font-size: 20px;
+    }
+
+    .founderDesc__patent {
+      font-family: raleway;
+      font-size: 16px;
+      margin: 0;
+    }
+  }
 
 
+  .statBlock {
+
+    .statisticSecond {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+      justify-content: space-between;
+      list-style-type: none;
+      box-shadow: 0 32px 70px rgba(0, 0, 0, 0.08);
+      border-radius: 32px;
+    }
+
+    .statisticItem {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-right: 1px solid #E0E0E5;
+      padding: 2px;
+    }
+
+    .statisticItem:last-child {
+      border-right: none;
+    }
+
+    .statisticInfo {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      max-width: 450px;
+      padding: 46px 32px;
+      align-items: center;
+      align-content: flex-end;
+      flex-wrap: wrap;
+    }
+
+    .statisticInfo__title {
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .statisticInfo__num {
+      font-family: raleway-bold;
+      margin: 0;
+      font-size: 60px;
+      background: linear-gradient(95.43deg, #FF4B4B 1.71%, #FFDDDD 156.67%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .statisticInfo__subtext {
+      font-family: raleway-bold;
+      margin: 0;
+      font-size: 32px;
+      background: linear-gradient(95.43deg, #FF4B4B 1.71%, #FFDDDD 156.67%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 0;
+    }
+
+    .statisticInfo__text {
+      text-align: center;
+      //max-width: 230px;
+    }
+  }
+}
+
+
+.competence {
+  border-radius: 40px;
+  background-color: #E0E0E5;
+  padding: 0 50px;
+}
+
+.competenceTitle {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-size: 56px;
+  font-family: raleway-semibold;
+}
+
+.competenceSpecialist {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  font-size: 14px;
+  font-family: raleway-medium;
+}
+
+.cardCompetenceBlock {
+  display: flex;
+  margin-bottom: 64px;
+
+
+  .competenceCard {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 32px;
+    padding: 24px;
+    background-color: #fff;
+    margin-right: 15px;
+    max-width: 440px;
+
+    .competenceItem__block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      border-bottom: 1px solid #E0E0E5;
+
+      .competenceItem__desc {
+        color: #319CFF;
+        margin: 0;
+        padding: 8px 16px;
+        border-radius: 8px;
+        border: 1px solid #C1E1FF;
+        font-family: raleway-bold;
+        font-size: 14px;
+
+      }
+      .competenceItem__desc-author {
+        color: #fff;
+        margin: 0;
+        padding: 8px 16px;
+        border-radius: 8px;
+        border: 1px solid #fff;
+        font-family: raleway-bold;
+        font-size: 14px;
+      }
+
+
+      .competenceItem__price {
+        font-size: 56px;
+        font-family: raleway-bold;
+        margin: 0;
+        margin-bottom: 20px;
+      }
+
+      .price-main {
+
+      }
+    }
+
+    .jobsList {
+      margin-top: 20px;
+      padding: 0;
+      margin-bottom: 46px;
+    }
+
+    .jobsItem {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 16px;
+    }
+
+    .jobsItem:last-child {
+      margin-bottom: 0;
+    }
+
+    .jobsItem__image {
+      margin-right: 6px;
+    }
+
+    .jobsItem__description {
+      margin: 0;
+      font-size: 14px;
+      font-family: raleway;
+    }
+    .card-main {
+
+    }
+
+
+    .choiceTrajectolog {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      width: 100%;
+      background-color: #F2F9FF;
+      border: none;
+      border-radius: 16px;
+      font-size: 16px;
+      font-family: raleway-semibold;
+      color: #319CFF;
+    }
+
+    .card-mentor {
+      background-color: #E4F2FF;
+    }
+
+    .card-author {
+      background-color: #319CFF;
+    }
+
+    .textConsultation:nth-child(3) {
+      color: #fff;
+    }
+    .textConsultation:first-child {
+      color: #9A9AA0;
+      font-size: 10px;
+      font-family: raleway-semibold;
+    }
+
+
+
+  }
+  .card-mentor {
+    background-color: #E4F2FF;
+  }
+
+  .card-author {
+    background-color: #319CFF;
+    color: #fff;
+  }
+
+  .price-mentor {
+   color: #319CFF;
+  }
+
+  .price-author {
+    color: #fff;
+  }
+
+
+}
+.trajectolorsTitle {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 56px;
+  font-family: raleway-semibold;
+  margin-bottom: 56px;
+}
+.authorTitle {
+     margin: 0;
+     font-size: 20px;
+     font-family: raleway-semibold;
+}
+
+.cardsBlock {
+  display: flex;
+}
+
+.cardTrajectolog {
+  position: relative;
+  max-width: 320px;
+    border-radius: 32px;
+
+  .cardTrajectolog__item {
+    padding: 8px 16px;
+  }
+
+  .cardTrajectolog__block {
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    background-color: #F5F5F6;
+    margin-bottom: -15px;
+    flex-direction: column;
+    padding: 8px 16px;
+    padding-bottom: 20px;
+    z-index: 2;
+  }
+
+  .cardTrajectolog__block-title {
+    margin: 0;
+  }
+
+  .cardTrajectolog__block-author {
+    margin: 0;
+  }
+  .cardTrajectolog__description {
+    background-color: #fff;
+    padding: 8px 16px;
+    border-radius: 16px;
+  }
+
+  .cardTrajectolog__item {
+
+  }
+
+  .cardAuthor__image {
+    width: 100%;
+    height: 250px;
+    margin-bottom: -25px;
+    border-radius: 16px;
+    background: url("../images/imgLanding/image-main/cards/image-author.png");
+  }
+
+  .cardTrajectolog__achievements-title {
+
+  }
 }
 
 @font-face {
