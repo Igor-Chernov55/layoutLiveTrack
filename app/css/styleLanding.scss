@@ -249,9 +249,8 @@
   }
 
   .stepsText {
-    margin: 0 auto;
     text-align: center;
-    margin-bottom: 165px;
+    margin: 0 auto 165px;
     font-family: raleway-medium;
     font-size: 16px;
   }
@@ -284,9 +283,8 @@
 
     .stepsItem__list {
       padding: 0;
-      margin: 0;
       list-style-type: disc;
-      margin-left: 30px;
+      margin: 0 0 0 30px;
     }
 
     .stepsItem__item {
@@ -404,7 +402,7 @@
 
       .arrow1 {
         position: absolute;
-        top: 0px;
+        top: 0;
         left: 80px;
       }
 
@@ -442,9 +440,10 @@
 }
 
 .historyTrajectory {
+
+
   .historyTitle {
-    margin: 0 auto;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
     text-align: center;
     font-family: raleway-bold;
     font-size: 56px;
@@ -477,6 +476,7 @@
     z-index: 1;
     box-shadow: 0px 40px 100px rgba(0, 0, 0, 0.08);
 
+
     .founderName {
       color: #319CFF;
       font-size: 28px;
@@ -489,7 +489,8 @@
     }
 
     .founderDesc__title {
-      margin: 0;
+      font-family: raleway-medium;
+      margin: 0 0 5px;
       color: #9A9AA0;
       font-size: 14px;
     }
@@ -497,11 +498,14 @@
     .approachMotivation__text {
       margin-top: 5px;
       margin-bottom: 0;
-      font-family: raleway;
+      font-family: raleway-medium;
       font-size: 14px;
+
     }
 
     .approachMotivation__item__text {
+      font-size: 14px;
+      font-family: raleway-medium;
       color: #9A9AA0;
       margin: 0;
     }
@@ -519,7 +523,7 @@
     }
 
     .founderDesc__patent {
-      font-family: raleway;
+      font-family: raleway-medium;
       font-size: 16px;
       margin: 0;
     }
@@ -588,30 +592,32 @@
 
     .statisticInfo__text {
       text-align: center;
-      //max-width: 230px;
     }
   }
 }
 
-
 .competence {
+  position: relative;
   border-radius: 40px;
   background-color: #E0E0E5;
   padding: 0 50px;
+
+  background-image:  url("../images/imgLanding/image-background/back-tree.svg");
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .competenceTitle {
   text-align: center;
-  margin: 0 auto;
-  margin-bottom: 10px;
+
+  margin: 64px 0 10px;
   font-size: 56px;
   font-family: raleway-semibold;
 }
 
 .competenceSpecialist {
   text-align: center;
-  margin: 0 auto;
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
   font-size: 14px;
   font-family: raleway-medium;
 }
@@ -648,6 +654,7 @@
         font-size: 14px;
 
       }
+
       .competenceItem__desc-author {
         color: #fff;
         margin: 0;
@@ -666,9 +673,6 @@
         margin-bottom: 20px;
       }
 
-      .price-main {
-
-      }
     }
 
     .jobsList {
@@ -696,9 +700,6 @@
       font-size: 14px;
       font-family: raleway;
     }
-    .card-main {
-
-    }
 
 
     .choiceTrajectolog {
@@ -724,6 +725,7 @@
     .textConsultation:nth-child(3) {
       color: #fff;
     }
+
     .textConsultation:first-child {
       color: #9A9AA0;
       font-size: 10px;
@@ -731,8 +733,8 @@
     }
 
 
-
   }
+
   .card-mentor {
     background-color: #E4F2FF;
   }
@@ -743,7 +745,7 @@
   }
 
   .price-mentor {
-   color: #319CFF;
+    color: #319CFF;
   }
 
   .price-author {
@@ -752,17 +754,18 @@
 
 
 }
+
 .trajectolorsTitle {
   text-align: center;
-  margin: 0 auto;
   font-size: 56px;
   font-family: raleway-semibold;
-  margin-bottom: 56px;
+  margin: 0 auto 56px;
 }
+
 .authorTitle {
-     margin: 0;
-     font-size: 20px;
-     font-family: raleway-semibold;
+  margin: 0 0 16px;
+  font-size: 20px;
+  font-family: raleway-semibold;
 }
 
 .cardsBlock {
@@ -772,50 +775,193 @@
 .cardTrajectolog {
   position: relative;
   max-width: 320px;
-    border-radius: 32px;
+  border-radius: 32px;
+  margin-right: 16px;
 
   .cardTrajectolog__item {
     padding: 8px 16px;
   }
 
   .cardTrajectolog__block {
+    display: flex;
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
     background-color: #F5F5F6;
     margin-bottom: -15px;
     flex-direction: column;
-    padding: 8px 16px;
-    padding-bottom: 20px;
+    padding: 8px 16px 20px;
     z-index: 2;
+    align-items: flex-start;
   }
+}
 
-  .cardTrajectolog__block-title {
+.cardTrajectolog__block-title {
+  font-size: 16px;
+  font-family: raleway-semibold;
+  margin: 0 0 5px;
+}
+
+.cardTrajectolog__block-author {
+  font-family: raleway-semibold;
+  color: #fff;
+  margin-bottom: 5px;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50px;
+  background-color: #319CFF;
+  margin: 0;
+}
+
+.cardTrajectolog__description {
+  background-color: #fff;
+  padding: 8px 16px;
+  border-radius: 16px;
+}
+
+.cardTrajectolog__item {
+
+}
+
+.cardAuthor__image {
+  width: 100%;
+  height: 250px;
+  margin-bottom: -25px;
+  border-radius: 16px;
+  background: url("../images/imgLanding/image-main/cards/image-author.png");
+}
+
+.cardTrajectolog__achievements-title {
+  font-size: 12px;
+  color: #9A9AA0;
+  margin: 0;
+}
+
+.cardTrajectolog__achievements-num {
+  margin: 0;
+  font-family: raleway-bold;
+  font-size: 20px;
+  color: #319CFF;
+}
+
+.cardTrajectolog__achievements-desc {
+  margin: 0;
+  font-size: 14px;
+  font-family: raleway-medium;
+}
+
+.cardTrajectolog__description-next {
+  padding: 0;
+  font-family: raleway-semibold;
+  font-size: 14px;
+  border: none;
+  background-color: #fff;
+  color: #319CFF;
+}
+
+.cardTrajectolog__description__block {
+  margin-bottom: 10px;
+}
+
+
+.authorAchievements {
+  p {
     margin: 0;
   }
 
-  .cardTrajectolog__block-author {
+  padding: 24px;
+  border-radius: 24px;
+  background-color: #fff;
+
+  .titleAuthor {
+    font-size: 24px;
     margin: 0;
-  }
-  .cardTrajectolog__description {
-    background-color: #fff;
-    padding: 8px 16px;
-    border-radius: 16px;
+    font-family: raleway-semibold;
   }
 
-  .cardTrajectolog__item {
-
+  .blockAuthor {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
-  .cardAuthor__image {
-    width: 100%;
-    height: 250px;
-    margin-bottom: -25px;
-    border-radius: 16px;
-    background: url("../images/imgLanding/image-main/cards/image-author.png");
+  .achievementsItem {
+    display: flex;
   }
 
-  .cardTrajectolog__achievements-title {
+  .mainAuthorBlock__item__text {
+    color: #53535E;
+    font-family: raleway-medium;
+  }
 
+  .achievementsBlock__sumTrajectory-num {
+    color: #319CFF;
+    font-size: 32px;
+    font-family: raleway-bold;
+  }
+
+  .achievementsBlock {
+    margin-right: 16px;
+  }
+
+  .achievementsBlock__sumTrajectory-title {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .mainAuthorBlock__title {
+    font-family: raleway-medium;
+    margin: 0;
+    color: #9A9AA0;
+    font-size: 14px;
+  }
+
+  .mainAuthorBlock__text {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-family: raleway-medium;
+    font-size: 14px;
+  }
+
+  .founderDesc__title {
+    font-family: raleway-medium;
+    margin: 0;
+    margin-bottom: 5px;
+    color: #9A9AA0;
+    font-size: 14px;
+  }
+
+  .patentInfo__title {
+    font-family: raleway-medium;
+    margin: 0;
+    margin-bottom: 5px;
+    color: #9A9AA0;
+    font-size: 14px;
+  }
+
+  .patentInfo__patent {
+
+    font-family: raleway-medium;
+    font-size: 16px;
+  }
+
+  .createTrajectory {
+    font-family: raleway-medium;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 16px;
+    background-color: #319CFF;
+    color: #fff;
+  }
+
+  .patentInfo {
+    margin-bottom: 24px;
+  }
+
+  .treeBack {
+    position: absolute;
+    top: 0;
   }
 }
 
