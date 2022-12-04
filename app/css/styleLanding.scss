@@ -67,7 +67,119 @@
   .trajectoryAbsolute {
     display: block;
     position: relative;
-    padding-bottom: 140px;
+
+
+    .trajectoryYear-rebirth {
+      position: relative;
+    }
+
+    .trajectoryYear-rebirth__textBlock {
+      position: absolute;
+      top: -23px;
+      right: 88px;
+      text-align: end;
+    }
+
+    .trajectoryYear-rebirth__textRebirth {
+      font-style: italic;
+      font-size: 10px;
+      font-family: raleway-semibold;
+      margin: 0 0 6px;
+    }
+
+    .classVectorRight {
+      position: absolute;
+      right: 0;
+      top: -57px;
+      z-index: -1;
+      opacity: 0.3;
+    }
+
+    .classVectorLeft {
+      position: absolute;
+      top: 272px;
+      left: 141px;
+      z-index: -1;
+      opacity: 0.5;
+    }
+
+    .trajectoryYear-rebirth__textCycle {
+      font-family: raleway;
+      font-style: italic;
+      font-size: 10px;
+      color: #9A9AA0;
+      margin: 0;
+    }
+
+    .trajectoryYear {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .trajectoryYear-rebirth__years {
+      position: absolute;
+      top: -90px;
+      right: 76px;
+    }
+
+    .trajectoryYear-rebirth__dot {
+      position: absolute;
+      top: -54px;
+      right: 82px;
+    }
+
+    .trajectoryYear-rebirth__arrow {
+      position: absolute;
+      right: 103px;
+      top: -44px;
+    }
+
+    .trajectoryYear-peak {
+      position: relative;
+    }
+
+    .trajectoryYear-peak__years {
+      position: absolute;
+      left: 237px;
+      top: 166px;
+    }
+
+    .trajectoryYear-peak__dot {
+      position: absolute;
+      top: 206px;
+      left: 262px;
+    }
+
+    .trajectoryYear-peak__arrow {
+      position: absolute;
+      top: 217px;
+      left: 243px;
+      opacity: 0.6;
+    }
+
+    .trajectoryYear-peak__textBlock {
+      position: absolute;
+      top: 206px;
+      left: 41px;
+      text-align: end;
+    }
+
+    .trajectoryYear-peak__textRebirth {
+      font-style: italic;
+      font-size: 10px;
+      font-family: raleway-semibold;
+      margin: 0 0 6px;
+    }
+
+    .trajectoryYear-peak__textCycle {
+      font-family: raleway;
+      font-style: italic;
+      font-size: 10px;
+      color: #9A9AA0;
+      margin: 0;
+      max-width: 190px;
+    }
 
     .mainTrajectory {
       display: flex;
@@ -88,6 +200,7 @@
         align-items: center;
         margin-right: 8px;
       }
+
 
       .mainTrajectory__start {
         background-color: #319CFF;
@@ -131,10 +244,16 @@
 
     .backImg2 {
       position: absolute;
-      top: 35%;
+      top: 202%;
       z-index: -2;
     }
 
+  }
+
+  .trajectoryBlock__imgMain {
+    position: absolute;
+    top: 127px;
+    left: 356px;
   }
 
   .trajectoryBlock {
@@ -149,7 +268,7 @@
   text-align: center;
   font-size: 56px;
   font-family: Raleway-Medium;
-  margin-top: 0;
+  margin-top: 600px;
   mask-border: none;
 }
 
@@ -160,6 +279,10 @@
   font-family: raleway;
   font-size: 16px;
   padding-bottom: 65px;
+}
+
+.roadMap-Block__image {
+  width: 100%;
 }
 
 .statisticList {
@@ -409,12 +532,14 @@
       .block2 {
         position: absolute;
         top: 0;
+        right: 50%;
         bottom: 0;
       }
 
       .block3 {
         position: absolute;
         top: 0;
+        right: 20%;
         bottom: 0;
       }
 
@@ -429,7 +554,13 @@
 
       }
 
+      .yearsItem {
+        //position: relative;
+      }
+
       .yearsItem__block {
+        //position: absolute;
+        //top: 0;
         background-color: #fff;
         border-radius: 16px;
       }
@@ -531,6 +662,7 @@
 
 
   .statBlock {
+    margin-bottom: 120px;
 
     .statisticSecond {
       display: flex;
@@ -599,18 +731,17 @@
 .competence {
   position: relative;
   border-radius: 40px;
+  margin-bottom: 80px;
   background-color: #E0E0E5;
-  padding: 0 50px;
-
-  background-image:  url("../images/imgLanding/image-background/back-tree.svg");
+  padding: 64px 50px 40px;
+  background-image: url("../images/imgLanding/image-background/back-tree.svg");
   background-repeat: no-repeat;
   background-position: top;
 }
 
 .competenceTitle {
   text-align: center;
-
-  margin: 64px 0 10px;
+  margin: 0 0 10px;
   font-size: 56px;
   font-family: raleway-semibold;
 }
@@ -770,13 +901,14 @@
 
 .cardsBlock {
   display: flex;
+  margin-bottom: 40px;
 }
 
 .cardTrajectolog {
   position: relative;
-  max-width: 320px;
   border-radius: 32px;
   margin-right: 16px;
+  max-width: 320px;
 
   .cardTrajectolog__item {
     padding: 8px 16px;
@@ -793,6 +925,10 @@
     z-index: 2;
     align-items: flex-start;
   }
+}
+
+.cardTrajectolog-author {
+
 }
 
 .cardTrajectolog__block-title {
@@ -822,12 +958,35 @@
 
 }
 
-.cardAuthor__image {
+.cardHead__image {
   width: 100%;
   height: 250px;
   margin-bottom: -25px;
   border-radius: 16px;
+}
+
+.image-author {
   background: url("../images/imgLanding/image-main/cards/image-author.png");
+}
+
+.image-pavel {
+  background: url("../images/imgLanding/image-trajectologs/pavel.png") no-repeat;
+  background-size: cover;
+}
+
+.image-katerina {
+  background: url("../images/imgLanding/image-trajectologs/katerina.png") no-repeat;
+  background-size: cover;
+}
+
+.image-julia {
+  background: url("../images/imgLanding/image-trajectologs/julia.png") no-repeat;
+  background-size: cover;
+}
+
+.image-katerinaYoung {
+  background: url("../images/imgLanding/image-trajectologs/katerina(yong).png") no-repeat;
+  background-size: cover;
 }
 
 .cardTrajectolog__achievements-title {
@@ -962,6 +1121,153 @@
   .treeBack {
     position: absolute;
     top: 0;
+  }
+}
+
+.trajectologShtat__title {
+  font-size: 20px;
+  font-family: raleway-bold;
+  margin: 0 0 16px;
+}
+
+.trajectologsMentors {
+  margin-bottom: 40px;
+}
+
+.comment {
+  .commentTitle {
+    font-family: raleway-medium;
+    font-size: 56px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .commentBlock__image {
+    border-radius: 70px;
+  }
+
+  .commentBlock__nameAuthor {
+    margin: 0 0 8px;
+    font-family: raleway-semibold;
+    font-size: 20px;
+  }
+
+  .commentBlock__jobPosition {
+    margin: 0 0 8px;
+    color: #9A9AA0;
+    font-size: 14px;
+  }
+
+  .commentBlock__comment {
+    max-width: 305px;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 24px;
+    font-family: raleway-medium;
+  }
+
+  .commentBlock__readMore {
+    background-color: #fff;
+    border: none;
+    color: #319CFF;
+    font-size: 14px;
+    font-family: raleway-semibold;
+  }
+
+  .commentBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 55px;
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.04);
+    border-radius: 500px;
+    border: 2px solid;
+    border-image-source: conic-gradient(from 10.65deg at 50% 50%, #FF7171 0deg, rgba(255, 113, 113, 0) 116.25deg, rgba(255, 113, 113, 0) 360deg);
+
+
+  }
+
+  .starBlock {
+    display: flex;
+    margin-bottom: 8px;
+  }
+}
+
+.roadMap {
+  .roadTitle {
+    font-size: 56px;
+    font-family: raleway-semibold;
+    margin: 0 auto;
+    text-align: center;
+
+  }
+
+  .trajectoryDown__blockImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .trajectoryDown__item {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 228px;
+
+  }
+
+  .trajectoryDown__item:first-child {
+    margin-left: 37px;
+  }
+  .trajectoryDown__item:nth-child(2) {
+    margin-right: 232px;
+  }
+
+  .trajectoryDown__item:last-child {
+    .trajectoryDown__num {
+      color: #319CFF;
+    }
+
+    .trajectoryDown__textBlock {
+      border-top: 3px solid #319CFF;
+    }
+  }
+
+  .trajectoryDown__num {
+    font-family: raleway-semibold;
+    font-size: 16px;
+    color: #FF9A9A;
+  }
+
+
+  .trajectoryDown__textBlock {
+    box-shadow: 0 16px 70px rgba(0, 0, 0, 0.08);
+    border-radius: 8px 8px 24px 24px;
+    border-top: 3px solid #FF9A9A;
+    padding: 16px;
+    min-height: 90px;
+  }
+
+  .trajectoryDown__text {
+    max-width: 195px;
+    font-family: raleway-semibold;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .trajectoryDown__num {
+    margin: 0 0 11px;
+  }
+
+  .trajectoryDown__list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: -50px;
   }
 }
 
