@@ -53,7 +53,7 @@
     font-family: raleway-medium;
     margin: 0;
     position: relative;
-    padding-bottom: 120px;
+
   }
 
   .mainText {
@@ -1145,6 +1145,8 @@
 }
 
 .comment {
+  margin-bottom: 120px;
+
   .commentTitle {
     font-family: raleway-medium;
     font-size: 56px;
@@ -1404,19 +1406,20 @@
 
 .questionSection {
   padding-bottom: 120px;
+
 .questionBlock {
   display: flex;
   background-color: #F2F9FF;
   border-radius: 32px;
   justify-content: space-between;
-  padding: 34px;
+  padding: 34px 104px 34px 72px;
   background-image: url("../images/imgLanding/image-background/tree-question.svg");
   background-position: left;
   background-repeat: no-repeat;
 }
 
 .questionTitle {
-  margin-bottom: 8px;
+  margin: 0 0 8px;
   font-family: raleway-semibold;
   font-size: 40px;
 }
@@ -1462,6 +1465,113 @@
   color: #9A9AA0;
 }
 
+}
+
+
+
+.footer {
+  background-color: #F5F5F6;
+
+  padding: 24px 48px;
+
+  .footer__list {
+    display: flex;
+    font-family: raleway-medium;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .footer__item__navList {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer__item__socialBlock {
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    padding: 14px 17px;
+    background-color: #E4F2FF;
+    border-radius: 16px;
+  }
+
+  .chareLink {
+    font-size: 16px;
+    margin: 0 10px 0 0;
+  }
+
+  .linkSocial {
+    margin-right: 20px;
+  }
+
+  .linkSocial:last-child {
+    margin-right: 0;
+  }
+
+  .privacy {
+    margin: 0;
+    color: #9A9AA0;
+    font-size: 12px;
+  }
+
+  .footer__item:last-child {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+
+  .footer__item-logo {
+    margin-bottom: 15px;
+  }
+
+  .footer__item__socialBlock {
+    margin-bottom: 24px;
+  }
+
+  .footer__item__navItem {
+    margin-right: 16px;
+  }
+
+  .footer__item__navItem:last-child {
+    margin-right: 0;
+  }
+
+  .footer__item__link {
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .footer__item-number {
+    font-size: 16px;
+    margin: 0 0 18px;
+  }
+
+  .footer__item-mail {
+    margin: 0 0 20px;
+  }
+
+  .footer__item-link {
+    text-decoration: none;
+    color: #319CFF;
+    font-size: 16px;
+  }
+  .footer__item-nalog {
+    font-size: 12px;
+    margin: 0;
+    color: #9A9AA0;
+  }
+
+  .footer__item-share {
+    margin-bottom: 18px;
+  }
+
+  .footer__item-image {
+    margin-right: 20px;
+  }
 }
 @font-face {
   font-family: 'raleway';
