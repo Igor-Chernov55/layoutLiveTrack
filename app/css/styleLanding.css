@@ -46,7 +46,6 @@
   font-size: 166px;
   font-family: raleway-medium;
   margin: 0;
-  position: relative;
 }
 .buildTrajectory .mainText {
   margin: 0 auto;
@@ -238,7 +237,7 @@
   padding-bottom: 65px;
 }
 
-.roadMap-Block__image {
+.roadMap__Block-image {
   width: 100%;
 }
 
@@ -426,7 +425,7 @@
   font-family: raleway;
 }
 .stepsSection .descriptionTrajectory__text {
-  font-family: raleway;
+  font-family: raleway-medium;
   font-size: 14px;
 }
 .stepsSection .descriptionTrajectory {
@@ -447,36 +446,77 @@
 .stepsSection .trajectoryWay .yearsList {
   list-style-type: none;
 }
-.stepsSection .trajectoryWay .yearsList .block1 {
+.stepsSection .trajectoryWay .back1 {
+  position: absolute;
+  top: -18px;
+  left: -15px;
+  z-index: 2;
+}
+.stepsSection .trajectoryWay .back2 {
+  position: absolute;
+  top: 158px;
+  left: -167px;
+}
+.stepsSection .trajectoryWay .back3 {
+  position: absolute;
+  top: -20px;
+  right: -36px;
+  z-index: 2;
+}
+.stepsSection .trajectoryWay .block1 {
   position: absolute;
   top: 0;
-  bottom: 0;
 }
-.stepsSection .trajectoryWay .yearsList .arrow1 {
+.stepsSection .trajectoryWay .block2 {
+  position: absolute;
+  top: 41px;
+  left: 225px;
+}
+.stepsSection .trajectoryWay .block3 {
   position: absolute;
   top: 0;
-  left: 80px;
+  right: 165px;
 }
-.stepsSection .trajectoryWay .yearsList .block2 {
+.stepsSection .trajectoryWay .round1 {
+  position: absolute;
+  top: 90px;
+  left: 160px;
+}
+.stepsSection .trajectoryWay .round2 {
+  position: absolute;
+  top: 49px;
+  left: 93px;
+}
+.stepsSection .trajectoryWay .round3 {
+  position: absolute;
+  top: 91px;
+  right: -27px;
+}
+.stepsSection .trajectoryWay .arrow1 {
+  position: absolute;
+  top: 15px;
+  left: 127px;
+}
+.stepsSection .trajectoryWay .arrow2 {
+  position: absolute;
+  top: 89px;
+  left: 42px;
+}
+.stepsSection .trajectoryWay .arrow3 {
+  position: absolute;
+  top: 27px;
+  right: 19px;
+}
+.stepsSection .trajectoryWay .yearsItem__round {
   position: absolute;
   top: 0;
-  right: 50%;
-  bottom: 0;
 }
-.stepsSection .trajectoryWay .yearsList .block3 {
-  position: absolute;
-  top: 0;
-  right: 20%;
-  bottom: 0;
-}
-.stepsSection .trajectoryWay .yearsList .yearsItem__round {
-  position: absolute;
-  top: 32%;
-  left: 80%;
-}
-.stepsSection .trajectoryWay .yearsList .yearsItem__block {
+.stepsSection .trajectoryWay .yearsItem__block {
   background-color: #fff;
   border-radius: 16px;
+}
+.stepsSection .yearsItem {
+  position: relative;
 }
 
 .historyTrajectory .historyTitle {
@@ -699,7 +739,7 @@
 .cardCompetenceBlock .competenceCard .jobsItem__description {
   margin: 0;
   font-size: 14px;
-  font-family: raleway;
+  font-family: raleway-medium;
 }
 .cardCompetenceBlock .competenceCard .choiceTrajectolog {
   padding-top: 16px;
@@ -1022,7 +1062,13 @@
   margin-bottom: 8px;
 }
 
+.itemCompany {
+  position: absolute;
+  height: 135px;
+}
+
 .roadMap {
+  position: relative;
   margin-bottom: 120px;
 }
 .roadMap .roadTitle {
@@ -1112,6 +1158,9 @@
   padding: 16px;
   min-height: 90px;
 }
+.roadMap .trajectoryUp__item:last-child {
+  margin-left: 450px;
+}
 .roadMap .trajectoryUp__item:last-child .trajectoryUp__textBlock {
   border-top: 3px solid #319CFF;
 }
@@ -1142,14 +1191,20 @@
   flex-direction: column;
   align-items: center;
 }
+.roadMap .trajectoryMiddle__item:nth-child(2) {
+  position: absolute;
+  top: 27px;
+}
+.roadMap .trajectoryMiddle__item:nth-child(2) .trajectoryMiddle__textBlock {
+  height: 170px;
+}
 .roadMap .trajectoryMiddle__block {
   margin-top: 20px;
   display: flex;
   align-items: center;
 }
 .roadMap .bigRound {
-  width: 23px;
-  height: 23px;
+  background-color: #319CFF;
 }
 .roadMap .trajectoryMiddle__title {
   margin: 0;

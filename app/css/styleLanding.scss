@@ -47,12 +47,12 @@
 }
 
 .buildTrajectory {
+
   .mainTitle {
     text-align: center;
     font-size: 166px;
     font-family: raleway-medium;
     margin: 0;
-    position: relative;
 
   }
 
@@ -281,7 +281,9 @@
   padding-bottom: 65px;
 }
 
-.roadMap-Block__image {
+
+
+.roadMap__Block-image {
   width: 100%;
 }
 
@@ -489,7 +491,7 @@
   }
 
   .descriptionTrajectory__text {
-    font-family: raleway;
+    font-family: raleway-medium;
     font-size: 14px;
   }
 
@@ -513,60 +515,103 @@
     .yearsList {
       list-style-type: none;
 
-      .yearsItem__block1 {
+    }
 
-      }
+    .back1 {
+      position: absolute;
+      top: -18px;
+      left: -15px;
+      z-index: 2;
+    }
 
-      .block1 {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-      }
+    .back2 {
+      position: absolute;
+      top: 158px;
+      left: -167px;
+    }
 
-      .arrow1 {
-        position: absolute;
-        top: 0;
-        left: 80px;
-      }
+    .back3 {
+      position: absolute;
+      top: -20px;
+      right: -36px;
+      z-index: 2;
+    }
+    .block1 {
+      position: absolute;
+      top: 0;
 
-      .block2 {
-        position: absolute;
-        top: 0;
-        right: 50%;
-        bottom: 0;
-      }
+    }
 
-      .block3 {
-        position: absolute;
-        top: 0;
-        right: 20%;
-        bottom: 0;
-      }
+    .block2 {
+      position: absolute;
+      top: 41px;
+      left: 225px;
+    }
 
-      .yearsItem__round {
-        position: absolute;
-        top: 32%;
-        left: 80%;
-      }
-
-
-      .yearsItem__multiBlock {
-
-      }
-
-      .yearsItem {
-        //position: relative;
-      }
-
-      .yearsItem__block {
-        //position: absolute;
-        //top: 0;
-        background-color: #fff;
-        border-radius: 16px;
-      }
+    .block3 {
+      position: absolute;
+      top: 0;
+      right: 165px;
     }
 
 
+    .round1 {
+      position: absolute;
+      top: 90px;
+      left: 160px;
+    }
+
+    .round2 {
+      position: absolute;
+      top: 49px;
+      left: 93px;
+    }
+
+    .round3 {
+      position: absolute;
+      top: 91px;
+      right: -27px;
+    }
+    .arrow1 {
+      position: absolute;
+      top: 15px;
+      left: 127px;
+    }
+
+    .arrow2 {
+      position: absolute;
+      top: 89px;
+      left: 42px;
+    }
+
+    .arrow3 {
+      position: absolute;
+      top: 27px;
+      right: 19px;
+    }
+    .yearsItem__round {
+      position: absolute;
+      top: 0;
+    }
+
+
+    .yearsItem__multiBlock {
+
+    }
+
+
+    .yearsItem__block {
+      //position: absolute;
+      //top: 0;
+      background-color: #fff;
+      border-radius: 16px;
+    }
+
+
+  }
+
+  .yearsItem {
+    position: relative;
   }
 }
 
@@ -829,7 +874,7 @@
     .jobsItem__description {
       margin: 0;
       font-size: 14px;
-      font-family: raleway;
+      font-family: raleway-medium;
     }
 
 
@@ -1205,8 +1250,13 @@
     margin-bottom: 8px;
   }
 }
+.itemCompany {
+  position: absolute;
+  height: 135px;
+}
 
 .roadMap {
+  position: relative;
   margin-bottom: 120px;
 
   .roadTitle {
@@ -1214,8 +1264,8 @@
     font-family: raleway-semibold;
     text-align: center;
     margin: 0 auto 48px;
-
   }
+
 
   .trajectoryDown__blockImage {
     display: flex;
@@ -1318,8 +1368,10 @@
   }
 
   .trajectoryUp__item:last-child {
+    margin-left: 450px;
     .trajectoryUp__textBlock {
       border-top: 3px solid #319CFF;
+
     }
 
     .trajectoryUp__num {
@@ -1327,7 +1379,6 @@
     }
 
   }
-
 
 
   .trajectoryMiddle__textBlock {
@@ -1359,6 +1410,16 @@
     align-items: center;
   }
 
+  .trajectoryMiddle__item:nth-child(2) {
+    position: absolute;
+    top: 27px;
+
+    .trajectoryMiddle__textBlock {
+      height: 170px;
+    }
+  }
+
+
   .trajectoryMiddle__block {
     margin-top: 20px;
     display: flex;
@@ -1366,9 +1427,7 @@
   }
 
   .bigRound {
-
-  width: 23px;
-    height: 23px;
+    background-color: #319CFF;
   }
 
   .trajectoryMiddle__title {
@@ -1403,70 +1462,68 @@
 
 
 }
-
 .questionSection {
   padding-bottom: 120px;
 
-.questionBlock {
-  display: flex;
-  background-color: #F2F9FF;
-  border-radius: 32px;
-  justify-content: space-between;
-  padding: 34px 104px 34px 72px;
-  background-image: url("../images/imgLanding/image-background/tree-question.svg");
-  background-position: left;
-  background-repeat: no-repeat;
-}
+  .questionBlock {
+    display: flex;
+    background-color: #F2F9FF;
+    border-radius: 32px;
+    justify-content: space-between;
+    padding: 34px 104px 34px 72px;
+    background-image: url("../images/imgLanding/image-background/tree-question.svg");
+    background-position: left;
+    background-repeat: no-repeat;
+  }
 
-.questionTitle {
-  margin: 0 0 8px;
-  font-family: raleway-semibold;
-  font-size: 40px;
-}
+  .questionTitle {
+    margin: 0 0 8px;
+    font-family: raleway-semibold;
+    font-size: 40px;
+  }
 
-.questionText {
-  font-family: raleway-medium;
-  font-size: 16px;
-  margin: 0;
-}
+  .questionText {
+    font-family: raleway-medium;
+    font-size: 16px;
+    margin: 0;
+  }
 
-.questionForm {
-  display: flex;
-  flex-direction: column;
-  width: 513px;
-}
+  .questionForm {
+    display: flex;
+    flex-direction: column;
+    width: 513px;
+  }
 
-.questionForm__input {
-  outline: none;
-  border: none;
-  padding: 16px;
-  margin-bottom: 24px;
-  border-radius: 12px;
-}
+  .questionForm__input {
+    outline: none;
+    border: none;
+    padding: 16px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+  }
 
-.questionForm__button {
-  font-family: raleway-semibold;
-  font-size: 16px;
-  padding: 16px;
-  border: none;
-  text-align: center;
-  border-radius: 100px;
-  color: #fff;
-  background-color: #319CFF;
-}
+  .questionForm__button {
+    font-family: raleway-semibold;
+    font-size: 16px;
+    padding: 16px;
+    border: none;
+    text-align: center;
+    border-radius: 100px;
+    color: #fff;
+    background-color: #319CFF;
+  }
 
-.questionForm__input::placeholder {
-  font-family: raleway-medium;
-  color: #9A9AA0;
-}
+  .questionForm__input::placeholder {
+    font-family: raleway-medium;
+    color: #9A9AA0;
+  }
 
-.questionForm__input {
-  font-family: raleway-medium;
-  color: #9A9AA0;
-}
+  .questionForm__input {
+    font-family: raleway-medium;
+    color: #9A9AA0;
+  }
 
 }
-
 
 
 .footer {
@@ -1482,6 +1539,7 @@
     margin: 0;
     padding: 0;
   }
+
   .footer__item__navList {
     display: flex;
     list-style-type: none;
@@ -1559,6 +1617,7 @@
     color: #319CFF;
     font-size: 16px;
   }
+
   .footer__item-nalog {
     font-size: 12px;
     margin: 0;
@@ -1573,6 +1632,7 @@
     margin-right: 20px;
   }
 }
+
 @font-face {
   font-family: 'raleway';
   src: url('../fonts/Raleway-Regular.woff2') format('woff2'),
