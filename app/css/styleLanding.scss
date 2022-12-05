@@ -948,6 +948,7 @@
   margin: 0;
 }
 
+
 .cardTrajectolog__description {
   background-color: #fff;
   padding: 8px 16px;
@@ -1021,6 +1022,15 @@
   margin-bottom: 10px;
 }
 
+.raitingText {
+  font-family: raleway-bold;
+  font-size: 12px;
+}
+
+.raitingText-span {
+  color: #9A9AA0;
+  font-family: raleway-medium;
+}
 
 .authorAchievements {
   p {
@@ -1039,7 +1049,7 @@
 
   .blockAuthor {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 5px;
     margin-bottom: 5px;
   }
@@ -1195,11 +1205,13 @@
 }
 
 .roadMap {
+  margin-bottom: 120px;
+
   .roadTitle {
     font-size: 56px;
     font-family: raleway-semibold;
-    margin: 0 auto;
     text-align: center;
+    margin: 0 auto 48px;
 
   }
 
@@ -1208,6 +1220,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    z-index: 1;
   }
 
   .trajectoryDown__item {
@@ -1222,6 +1235,7 @@
   .trajectoryDown__item:first-child {
     margin-left: 37px;
   }
+
   .trajectoryDown__item:nth-child(2) {
     margin-right: 232px;
   }
@@ -1269,8 +1283,186 @@
     padding: 0;
     margin-top: -50px;
   }
+
+  .trajectoryUp__list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 -64px;
+    justify-content: space-around;
+  }
+
+  .trajectoryUp__blockImage {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 1;
+  }
+
+  .trajectoryUp__item {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trajectoryUp__textBlock {
+    box-shadow: 0 16px 70px rgb(0 0 0 / 8%);
+    border-radius: 8px 8px 24px 24px;
+    border-top: 3px solid #FF9A9A;
+    padding: 16px;
+    min-height: 90px;
+  }
+
+  .trajectoryUp__item:last-child {
+    .trajectoryUp__textBlock {
+      border-top: 3px solid #319CFF;
+    }
+
+    .trajectoryUp__num {
+      color: #319CFF;
+    }
+
+  }
+
+
+
+  .trajectoryMiddle__textBlock {
+    padding: 16px;
+    background-color: #319CFF;
+    border-radius: 32px;
+    color: #fff;
+
+  }
+
+  .trajectoryMiddle__num {
+    font-family: raleway-semibold;
+    font-size: 16px;
+    margin: 0;
+    color: #319CFF;
+  }
+
+  .trajectoryUp__text {
+    max-width: 195px;
+    font-family: raleway-semibold;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .trajectoryMiddle__item {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trajectoryMiddle__block {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .bigRound {
+
+  width: 23px;
+    height: 23px;
+  }
+
+  .trajectoryMiddle__title {
+    margin: 0;
+    font-size: 16px;
+    padding-bottom: 8px;
+    font-family: raleway-bold;
+    border-bottom: 1px solid #57AEFF;
+  }
+
+  .trajectoryMiddle__company {
+    margin: 0;
+    font-family: raleway-bold;
+    font-size: 30px;
+  }
+
+  .trajectoryUp__num {
+    font-family: raleway-semibold;
+    font-size: 16px;
+    color: #FF9A9A;
+  }
+
+  .blockArrow {
+    position: relative;
+  }
+
+  .arrowEnd {
+    position: absolute;
+    top: -15px;
+    right: -29px;
+  }
+
+
 }
 
+.questionSection {
+  padding-bottom: 120px;
+.questionBlock {
+  display: flex;
+  background-color: #F2F9FF;
+  border-radius: 32px;
+  justify-content: space-between;
+  padding: 34px;
+  background-image: url("../images/imgLanding/image-background/tree-question.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.questionTitle {
+  margin-bottom: 8px;
+  font-family: raleway-semibold;
+  font-size: 40px;
+}
+
+.questionText {
+  font-family: raleway-medium;
+  font-size: 16px;
+  margin: 0;
+}
+
+.questionForm {
+  display: flex;
+  flex-direction: column;
+  width: 513px;
+}
+
+.questionForm__input {
+  outline: none;
+  border: none;
+  padding: 16px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+}
+
+.questionForm__button {
+  font-family: raleway-semibold;
+  font-size: 16px;
+  padding: 16px;
+  border: none;
+  text-align: center;
+  border-radius: 100px;
+  color: #fff;
+  background-color: #319CFF;
+}
+
+.questionForm__input::placeholder {
+  font-family: raleway-medium;
+  color: #9A9AA0;
+}
+
+.questionForm__input {
+  font-family: raleway-medium;
+  color: #9A9AA0;
+}
+
+}
 @font-face {
   font-family: 'raleway';
   src: url('../fonts/Raleway-Regular.woff2') format('woff2'),

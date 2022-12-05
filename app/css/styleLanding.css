@@ -866,6 +866,16 @@
   margin-bottom: 10px;
 }
 
+.raitingText {
+  font-family: raleway-bold;
+  font-size: 12px;
+}
+
+.raitingText-span {
+  color: #9A9AA0;
+  font-family: raleway-medium;
+}
+
 .authorAchievements {
   padding: 24px;
   border-radius: 24px;
@@ -881,7 +891,7 @@
 }
 .authorAchievements .blockAuthor {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -1010,17 +1020,21 @@
   margin-bottom: 8px;
 }
 
+.roadMap {
+  margin-bottom: 120px;
+}
 .roadMap .roadTitle {
   font-size: 56px;
   font-family: raleway-semibold;
-  margin: 0 auto;
   text-align: center;
+  margin: 0 auto 48px;
 }
 .roadMap .trajectoryDown__blockImage {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  z-index: 1;
 }
 .roadMap .trajectoryDown__item {
   display: flex;
@@ -1068,6 +1082,151 @@
   margin: 0;
   padding: 0;
   margin-top: -50px;
+}
+.roadMap .trajectoryUp__list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 -64px;
+  justify-content: space-around;
+}
+.roadMap .trajectoryUp__blockImage {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 1;
+}
+.roadMap .trajectoryUp__item {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+.roadMap .trajectoryUp__textBlock {
+  box-shadow: 0 16px 70px rgba(0, 0, 0, 0.08);
+  border-radius: 8px 8px 24px 24px;
+  border-top: 3px solid #FF9A9A;
+  padding: 16px;
+  min-height: 90px;
+}
+.roadMap .trajectoryUp__item:last-child .trajectoryUp__textBlock {
+  border-top: 3px solid #319CFF;
+}
+.roadMap .trajectoryUp__item:last-child .trajectoryUp__num {
+  color: #319CFF;
+}
+.roadMap .trajectoryMiddle__textBlock {
+  padding: 16px;
+  background-color: #319CFF;
+  border-radius: 32px;
+  color: #fff;
+}
+.roadMap .trajectoryMiddle__num {
+  font-family: raleway-semibold;
+  font-size: 16px;
+  margin: 0;
+  color: #319CFF;
+}
+.roadMap .trajectoryUp__text {
+  max-width: 195px;
+  font-family: raleway-semibold;
+  font-size: 14px;
+  margin: 0;
+}
+.roadMap .trajectoryMiddle__item {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+.roadMap .trajectoryMiddle__block {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.roadMap .bigRound {
+  width: 23px;
+  height: 23px;
+}
+.roadMap .trajectoryMiddle__title {
+  margin: 0;
+  font-size: 16px;
+  padding-bottom: 8px;
+  font-family: raleway-bold;
+  border-bottom: 1px solid #57AEFF;
+}
+.roadMap .trajectoryMiddle__company {
+  margin: 0;
+  font-family: raleway-bold;
+  font-size: 30px;
+}
+.roadMap .trajectoryUp__num {
+  font-family: raleway-semibold;
+  font-size: 16px;
+  color: #FF9A9A;
+}
+.roadMap .blockArrow {
+  position: relative;
+}
+.roadMap .arrowEnd {
+  position: absolute;
+  top: -15px;
+  right: -29px;
+}
+
+.questionSection {
+  padding-bottom: 120px;
+}
+.questionSection .questionBlock {
+  display: flex;
+  background-color: #F2F9FF;
+  border-radius: 32px;
+  justify-content: space-between;
+  padding: 34px;
+  background-image: url("../images/imgLanding/image-background/tree-question.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.questionSection .questionTitle {
+  margin-bottom: 8px;
+  font-family: raleway-semibold;
+  font-size: 40px;
+}
+.questionSection .questionText {
+  font-family: raleway-medium;
+  font-size: 16px;
+  margin: 0;
+}
+.questionSection .questionForm {
+  display: flex;
+  flex-direction: column;
+  width: 513px;
+}
+.questionSection .questionForm__input {
+  outline: none;
+  border: none;
+  padding: 16px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+}
+.questionSection .questionForm__button {
+  font-family: raleway-semibold;
+  font-size: 16px;
+  padding: 16px;
+  border: none;
+  text-align: center;
+  border-radius: 100px;
+  color: #fff;
+  background-color: #319CFF;
+}
+.questionSection .questionForm__input::placeholder {
+  font-family: raleway-medium;
+  color: #9A9AA0;
+}
+.questionSection .questionForm__input {
+  font-family: raleway-medium;
+  color: #9A9AA0;
 }
 
 @font-face {
