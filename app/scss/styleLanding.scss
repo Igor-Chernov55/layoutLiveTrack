@@ -20,6 +20,9 @@
     margin: 0;
   }
 
+  .hamburger-menu {
+    display: none;
+  }
   .menu__item {
     margin-right: 24px;
   }
@@ -50,18 +53,18 @@
 
   .mainTitle {
     text-align: center;
-    font-size: 166px;
+    font-size: calc(56px + 110 * (100vw / 1440));
     font-family: raleway-medium;
     margin: 0;
-
+    padding: 15px;
   }
 
   .mainText {
-    margin: 0 auto;
     font-family: raleway-medium;
     font-size: 15px;
     max-width: 900px;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
+    padding: 0 16px 0 16px;
   }
 
   .trajectoryAbsolute {
@@ -184,7 +187,7 @@
     .mainTrajectory {
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: stretch;
       margin-bottom: 70px;
 
       .mainTrajectory__review {
@@ -243,17 +246,18 @@
     }
 
     .backImg2 {
+      width: 100%;
       position: absolute;
-      top: 202%;
+      top: 42%;
       z-index: -2;
     }
 
   }
 
   .trajectoryBlock__imgMain {
-    position: absolute;
-    top: 127px;
-    left: 356px;
+    //position: absolute;
+    //top: 127px;
+    //left: 356px;
   }
 
   .trajectoryBlock {
@@ -266,19 +270,18 @@
 
 .statisticTitle {
   text-align: center;
-  font-size: 56px;
-  font-family: Raleway-Medium;
-  margin-top: 600px;
+  font-size: calc(32px + 24 * (100vw / 1440));
+  font-family: raleway-medium;
   mask-border: none;
 }
 
 .statisticText {
-  margin: 0 auto;
   max-width: 895px;
   text-align: center;
-  font-family: raleway;
+  font-family: raleway-medium;
   font-size: 16px;
-  padding-bottom: 65px;
+  margin: 0 auto 65px;
+  padding: 0 16px 0 16px;
 }
 
 
@@ -340,12 +343,14 @@
 .businessTitle {
   text-align: center;
   font-family: raleway-semibold;
-  font-size: 56px;
+  font-size: calc(32px + 24 * (100vw / 1440))
 }
 
 .businessText {
   margin: 0 auto;
   max-width: 850px;
+  text-align: center;
+  padding: 0 16px 0 16px;
   font-family: raleway-medium;
   font-size: 16px;
 }
@@ -1263,7 +1268,7 @@
     font-size: 56px;
     font-family: raleway-semibold;
     text-align: center;
-    margin: 0 auto 48px;
+    margin: 0 auto 98px;
   }
 
 
@@ -1412,7 +1417,7 @@
 
   .trajectoryMiddle__item:nth-child(2) {
     position: absolute;
-    top: 27px;
+    top: 77px;
 
     .trajectoryMiddle__textBlock {
       height: 170px;
@@ -1631,40 +1636,10 @@
   .footer__item-image {
     margin-right: 20px;
   }
+
+
 }
 
-@font-face {
-  font-family: 'raleway';
-  src: url('../fonts/Raleway-Regular.woff2') format('woff2'),
-  url('../fonts/Raleway-Regular.woff') format('woff');
-  font-display: swap;
-  font-weight: 400;
-  font-style: normal;
-}
+@import '_fonts';
 
-@font-face {
-  font-family: 'raleway-medium';
-  src: url('../fonts/Raleway-Medium.woff2') format('woff2'),
-  url('../fonts/Raleway-Medium.woff') format('woff');
-  font-display: swap;
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'raleway-semibold';
-  src: url('../fonts/Raleway-SemiBold.woff2') format('woff2'),
-  url('../fonts/Raleway-SemiBold.woff') format('woff');
-  font-display: swap;
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'raleway-bold';
-  src: url('../fonts/Raleway-Bold.woff2') format('woff2'),
-  url('../fonts/Raleway-Bold.woff') format('woff');
-  font-display: swap;
-  font-weight: 700;
-  font-style: normal;
-}
+@import '_media';

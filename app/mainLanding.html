@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LiveTrack</title>
     <link rel="stylesheet" href="css/normalizeLanding.css">
-    <link rel="stylesheet" href="css/styleLanding.css">
+    <link rel="stylesheet" href="scss/styleLanding.css">
+    <link rel="stylesheet" href="css/hamburger-menu.css">
     <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
@@ -14,13 +16,27 @@
 <body>
 <div class="classBorder">
     <header class="header container">
-        <a class="logo" href="#">
-            <img
-                    src="./images/imgLanding/logo/logo-main.svg"
-                    alt="logo"
-                    class="logo__img"
-            >
-        </a>
+        <div class="blockLogo">
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox"/>
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+
+                <ul class="menu__box">
+                    <li><a class="menu__itemLink" href="#">О траектории</a></li>
+                    <li><a class="menu__itemLink" href="#">Тарифы</a></li>
+                    <li><a class="menu__itemLink" href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <a class="logo" href="#">
+                <img
+                        src="./images/imgLanding/logo/logo-main.svg"
+                        alt="logo"
+                        class="logo__img"
+                >
+            </a>
+        </div>
         <nav class="menu">
             <ul class="menu__list">
                 <li class="menu__item">
@@ -207,7 +223,6 @@
     <p class="stepsText">Каждая траектория строится вместе с опытным траектологом</p>
 
     <div class="rel">
-
         <div style="margin-bottom: 60px">
             <ul class="stepsList">
                 <li class="stepsItem">
@@ -229,10 +244,12 @@
                         </ul>
 
                     </div>
-                    <div><p class="stepsItem__number">1</p></div>
+                    <div class="stepsItem__numberBlock">
+                        <p class="stepsItem__number">1</p>
+                    </div>
                 </li>
                 <li class="stepsItem">
-                    <div>
+                    <div class="stepsItem__numberBlock">
                         <p class="stepsItem__number">2</p>
                     </div>
                     <div class="stepsItem__block">
@@ -257,9 +274,8 @@
                 </li>
             </ul>
 
-            <ul style="display: flex">
+            <ul class="stepsList">
                 <li class="stepsItem">
-
                     <div class="stepsItem__block">
                         <h3 class="stepsItem__title">Интерпретация</h3>
                         <ul class="stepsItem__list">
@@ -279,12 +295,12 @@
                         </ul>
 
                     </div>
-                    <div>
+                    <div class="stepsItem__numberBlock">
                         <p class="stepsItem__number">3</p>
                     </div>
                 </li>
                 <li class="stepsItem">
-                    <div>
+                    <div class="stepsItem__numberBlock">
                         <p class="stepsItem__number">4</p>
                     </div>
                     <div class="stepsItem__block">
@@ -359,7 +375,6 @@
                 </div>
                 <img src="./images/imgLanding/icons/round.svg" alt="round" class="round3">
             </div>
-
 
 
             <img

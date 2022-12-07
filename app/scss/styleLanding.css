@@ -19,6 +19,9 @@
   padding: 0;
   margin: 0;
 }
+.header .hamburger-menu {
+  display: none;
+}
 .header .menu__item {
   margin-right: 24px;
 }
@@ -43,16 +46,17 @@
 
 .buildTrajectory .mainTitle {
   text-align: center;
-  font-size: 166px;
+  font-size: calc(56px + 7.6388888889vw);
   font-family: raleway-medium;
   margin: 0;
+  padding: 15px;
 }
 .buildTrajectory .mainText {
-  margin: 0 auto;
   font-family: raleway-medium;
   font-size: 15px;
   max-width: 900px;
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
+  padding: 0 16px 0 16px;
 }
 .buildTrajectory .trajectoryAbsolute {
   display: block;
@@ -156,7 +160,7 @@
 .buildTrajectory .trajectoryAbsolute .mainTrajectory {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   margin-bottom: 70px;
 }
 .buildTrajectory .trajectoryAbsolute .mainTrajectory .mainTrajectory__review {
@@ -204,14 +208,10 @@
   z-index: -1;
 }
 .buildTrajectory .trajectoryAbsolute .backImg2 {
+  width: 100%;
   position: absolute;
-  top: 202%;
+  top: 42%;
   z-index: -2;
-}
-.buildTrajectory .trajectoryBlock__imgMain {
-  position: absolute;
-  top: 127px;
-  left: 356px;
 }
 .buildTrajectory .trajectoryBlock {
   display: flex;
@@ -222,19 +222,18 @@
 
 .statisticTitle {
   text-align: center;
-  font-size: 56px;
-  font-family: Raleway-Medium;
-  margin-top: 600px;
+  font-size: calc(32px + 1.6666666667vw);
+  font-family: raleway-medium;
   mask-border: none;
 }
 
 .statisticText {
-  margin: 0 auto;
   max-width: 895px;
   text-align: center;
-  font-family: raleway;
+  font-family: raleway-medium;
   font-size: 16px;
-  padding-bottom: 65px;
+  margin: 0 auto 65px;
+  padding: 0 16px 0 16px;
 }
 
 .roadMap__Block-image {
@@ -294,12 +293,14 @@
 .businessTitle {
   text-align: center;
   font-family: raleway-semibold;
-  font-size: 56px;
+  font-size: calc(32px + 1.6666666667vw);
 }
 
 .businessText {
   margin: 0 auto;
   max-width: 850px;
+  text-align: center;
+  padding: 0 16px 0 16px;
   font-family: raleway-medium;
   font-size: 16px;
 }
@@ -1075,7 +1076,7 @@
   font-size: 56px;
   font-family: raleway-semibold;
   text-align: center;
-  margin: 0 auto 48px;
+  margin: 0 auto 98px;
 }
 .roadMap .trajectoryDown__blockImage {
   display: flex;
@@ -1193,7 +1194,7 @@
 }
 .roadMap .trajectoryMiddle__item:nth-child(2) {
   position: absolute;
-  top: 27px;
+  top: 77px;
 }
 .roadMap .trajectoryMiddle__item:nth-child(2) .trajectoryMiddle__textBlock {
   height: 170px;
@@ -1400,6 +1401,254 @@
   font-display: swap;
   font-weight: 700;
   font-style: normal;
+}
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "roboto-medium";
+  src: url("../fonts/Raleway-Medium.woff2") format("woff2"), url("../fonts/Raleway-Medium.woff") format("woff");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "roboto-bold";
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "roboto-black";
+  src: url("../fonts/Roboto-Black.woff2") format("woff2"), url("../fonts/Roboto-Black.woff") format("woff");
+  font-display: swap;
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?thnq0o");
+  src: url("../fonts/icomoon.eot?thnq0o#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?thnq0o") format("truetype"), url("../fonts/icomoon.woff?thnq0o") format("woff"), url("../fonts/icomoon.svg?thnq0o#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-back:before {
+  content: "\e900";
+  color: #5656ff;
+}
+
+.icon-arrow-down:before {
+  content: "\e901";
+  color: #9a9aa0;
+}
+
+.icon-arrow-right:before {
+  content: "\e902";
+  color: #9a9aa0;
+}
+
+.icon-arrow-up:before {
+  content: "\e903";
+  color: #9a9aa0;
+}
+
+.icon-calendar:before {
+  content: "\e904";
+  color: #9a9aa0;
+}
+
+.icon-clock:before {
+  content: "\e905";
+  color: #9a9aa0;
+}
+
+.icon-close:before {
+  content: "\e906";
+  color: #9a9aa0;
+}
+
+.icon-edit:before {
+  content: "\e907";
+  color: #5656ff;
+}
+
+.icon-eye:before {
+  content: "\e908";
+  color: #9a9aa0;
+}
+
+.icon-info:before {
+  content: "\e909";
+  color: #9a9aa0;
+}
+
+.icon-out:before {
+  content: "\e90a";
+  color: #f00;
+}
+
+.icon-passHide:before {
+  content: "\e90b";
+  color: #9a9aa0;
+}
+
+.icon-phone:before {
+  content: "\e90c";
+  color: #5656ff;
+  font-size: 17px;
+}
+
+.icon-success:before {
+  content: "\e90d";
+  color: #bfbfff;
+}
+
+.icon-telegram:before {
+  content: "\e90e";
+  color: #5656ff;
+  font-size: 16px;
+}
+
+.icon-user:before {
+  content: "\e90f";
+  color: #9a9aa0;
+  font-size: 18px;
+}
+
+.icon-whatsapp:before {
+  content: "\e910";
+  color: #5656ff;
+  font-size: 16px;
+}
+
+@media (max-width: 675px) {
+  .menu {
+    display: none;
+  }
+
+  .mainTitle {
+    margin: 55px;
+  }
+
+  .header {
+    margin: 0 auto;
+    position: fixed;
+    width: 95%;
+    top: 0;
+    left: 0;
+    padding: 12px 16px;
+    background-color: #ffffff;
+    z-index: 10;
+  }
+  .header .hamburger-menu {
+    display: flex;
+  }
+  .header .blockLogo {
+    display: flex;
+    align-items: center;
+  }
+  .header .logo {
+    margin-left: 25px;
+  }
+
+  .mainTrajectory {
+    flex-direction: column;
+    padding: 8px;
+  }
+
+  .mainTrajectory__start {
+    margin-bottom: 15px;
+  }
+
+  .mainTrajectory__review {
+    display: flex;
+    background-color: #fff;
+    border-radius: 100px;
+    border: 1px solid #E4F2FF;
+    padding: 8px 10px;
+    justify-content: space-between;
+  }
+
+  .trajectoryBlock__imgMain {
+    width: 100%;
+  }
+
+  .trajectoryYear-rebirth {
+    display: none;
+  }
+
+  .trajectoryYear-peak {
+    display: none;
+  }
+
+  .statisticList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .statisticItem__block {
+    margin-right: 0;
+    margin-top: -30px;
+  }
+
+  .backImg2 {
+    position: absolute;
+    top: 100% !important;
+  }
+
+  .stepsList {
+    flex-direction: column;
+    padding: 0 16px 0 16px !important;
+  }
+
+  .stepsItem {
+    position: relative;
+    margin-right: 0;
+    margin-bottom: 20px !important;
+  }
+
+  .stepsItem:first-child {
+    margin-right: 0 !important;
+  }
+
+  .stepsItem:nth-child(even) {
+    margin-top: 0px !important;
+  }
+
+  .treeSteps1 {
+    display: none;
+  }
+
+  .treeSteps2 {
+    display: none;
+  }
+
+  .stepsItem__number {
+    position: absolute;
+    top: -14px;
+    left: 0;
+    background-color: #FF9A9A !important;
+  }
 }
 
 /*# sourceMappingURL=styleLanding.css.map */
