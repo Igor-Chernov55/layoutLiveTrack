@@ -3,7 +3,7 @@
     display: none;
   }
   .mainTitle {
-    margin: 55px;
+    margin-top: 55px !important;
   }
   .header {
     margin: 0 auto;
@@ -68,6 +68,15 @@
     margin-top: -30px;
   }
 
+  .statisticItem {
+    border-right: 0 !important;
+    border-bottom: 1px solid #E0E0E5;
+    padding: 2px;
+  }
+
+  .statisticItem:last-child {
+    border-bottom: 0 !important;
+  }
 
   .backImg2 {
       position: absolute;
@@ -80,10 +89,21 @@
     padding: 0 16px 0 16px !important;
   }
 
+  .stepsText {
+    margin-bottom: 48px !important;
+    padding: 18px;
+  }
+
+  .stepsItem__numberBlock {
+    background-image: url("../images/imgLanding/image-main/tree-left.png");
+    background-position: left;
+    background-size: cover;
+  }
+
   .stepsItem {
     position: relative;
     margin-right: 0;
-    margin-bottom: 20px !important;
+    margin-bottom: 40px !important;
   }
 
   .stepsItem:first-child {
@@ -102,6 +122,14 @@
     display: none;
   }
 
+  .stepsItem__imageTree {
+    display: block !important;
+    position: absolute;
+    left: -19px;
+    bottom: 151px;
+    z-index: -1;
+  }
+
   .stepsItem__number {
     position: absolute;
     top: -14px;
@@ -109,4 +137,124 @@
     background-color: #FF9A9A !important;
   }
 
+  .image-pavel {
+    display: none;
+  }
+
+  .image-katerina {
+    display: none;
+  }
+
+  .image-julia {
+    display: none;
+  }
+
+  .image-katerinaYoung {
+    display: none;
+  }
+
+  .cardTrajectolog {
+    margin-right: 0 !important;
+    max-width: 70% !important;
+  }
+
+  .buildTrajectory {
+    flex-direction: column-reverse;
+    padding: 0 !important;
+    margin: 16px;
+  }
+
+  .competence {
+    padding: 16px;
+  }
+
+  .competenceSpecialist {
+    font-size: 16px !important;
+  }
+
+  .cardTrajectolog__block-imageMobile {
+    display: block !important;
+    border-radius: 100px;
+    margin-right: 5px;
+    width: 55px;
+    height: 55px;
+  }
+
+  .cardTrajectolog__block {
+    flex-direction: row !important;
+  }
+  .descriptionTrajectory {
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+  }
+
+  .trajectoryWay {
+    display: none !important;
+  }
+
+  .trajectoryImage__mobile {
+    display: block !important;
+    width: 100%;
+  }
+
+  .descriptionTrajectory__button {
+    padding: 12px 32px !important ;
+  }
+
+  .stepsSection {
+    margin-bottom: 64px !important;
+  }
+
+  .founderBlock {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .statBlock {
+    padding: 16px;
+  }
+
+  .founderImage {
+    margin-bottom: 15px;
+  }
+
+  .statisticSecond {
+    flex-direction: column;
+    padding: 7px !important;
+  }
+
+  .founderCard {
+    background-color: #F5F5F6 !important;
+    margin-left: 0 !important;
+  }
+
+  .desktopTitle {
+    display: none;
+  }
+
+  .authorAchievements {
+    display: none;
+  }
+
+  .questionBlock {
+    flex-direction: column;
+    padding: 18px 14px !important;
+  }
+
+  .questionText-block {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .questionForm {
+    width: 100% !important;
+  }
+
+  .disabled {
+    display: none !important;
+  }
 }
