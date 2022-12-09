@@ -5,6 +5,15 @@
   .mainTitle {
     margin-top: 55px !important;
   }
+
+  .classVectorLeft {
+    display: none;
+  }
+
+  .classVectorRight {
+    display: none;
+  }
+
   .header {
     margin: 0 auto;
     position: fixed;
@@ -18,10 +27,12 @@
     .hamburger-menu {
       display: flex;
     }
+
     .blockLogo {
       display: flex;
       align-items: center;
     }
+
     .logo {
       margin-left: 25px;
     }
@@ -66,21 +77,24 @@
   .statisticItem__block {
     margin-right: 0;
     margin-top: -30px;
+    width: 0 !important;
+    height: 0 !important;
+    max-width: 400px !important;
+    min-width: 270px !important;
+    max-height: 400px !important;
+    min-height: 270px !important;
   }
 
   .statisticItem {
     border-right: 0 !important;
-    border-bottom: 1px solid #E0E0E5;
+    //border-bottom: 1px solid #E0E0E5;
     padding: 2px;
   }
 
-  .statisticItem:last-child {
-    border-bottom: 0 !important;
-  }
 
   .backImg2 {
-      position: absolute;
-      top: 100%!important;
+    position: absolute;
+    top: 100% !important;
 
   }
 
@@ -111,7 +125,7 @@
   }
 
   .stepsItem:nth-child(even) {
-    margin-top: 0px  !important;
+    margin-top: 0px !important;
   }
 
   .treeSteps1 {
@@ -168,6 +182,14 @@
     padding: 16px;
   }
 
+  .statisticInfo {
+    border-bottom: 1px solid #E0E0E5 ;
+  }
+
+  //.statisticInfo:last-child {
+  //  border-bottom: none ;
+  //}
+
   .competenceSpecialist {
     font-size: 16px !important;
   }
@@ -202,7 +224,7 @@
   }
 
   .descriptionTrajectory__button {
-    padding: 12px 32px !important ;
+    padding: 12px 32px !important;
   }
 
   .stepsSection {
@@ -212,6 +234,10 @@
   .founderBlock {
     flex-direction: column;
     padding: 16px;
+  }
+
+  .cardTrajectolog-author {
+    max-width: 100% !important;
   }
 
   .statBlock {
@@ -230,6 +256,7 @@
   .founderCard {
     background-color: #F5F5F6 !important;
     margin-left: 0 !important;
+    box-shadow: none !important;
   }
 
   .desktopTitle {
@@ -243,11 +270,16 @@
   .questionBlock {
     flex-direction: column;
     padding: 18px 14px !important;
+    margin: 15px;
   }
 
   .questionText-block {
     text-align: center;
     margin-bottom: 10px;
+  }
+
+  .cardsBlock {
+    justify-content: center;
   }
 
   .questionForm {
@@ -256,5 +288,149 @@
 
   .disabled {
     display: none !important;
+  }
+
+  .cardTrajectolog__author {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .footer__list {
+    flex-direction: column;
+    //align-items: center;
+    //align-items: stretch;
+  }
+
+  .order1 {
+    order: 2;
+  }
+
+  .desktopItem {
+    display: none;
+  }
+
+  .mobileItem {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .roadMap {
+    display: block;
+  }
+
+  .roadMap__Block {
+    display: none;
+  }
+
+  .swiperMap {
+    display: block !important;
+  }
+
+  .trajectoryRed {
+    border-top: 3px solid  #FF9A9A !important
+  }
+
+  .commentBlock {
+    padding: 25px !important;
+  }
+
+  .trajectoryDown__item:first-child {
+    margin-left: 0;
+  }
+
+  .roadMap__Block-image {
+    padding: 35px;
+  }
+
+  .trajectoryDown__item {
+    margin-top: -77px;
+  }
+
+  .blockSince {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -52px;
+  }
+
+  .trajectoryMiddle__textBlock {
+    width: 272px;
+  }
+
+  .trajectoryNumRed {
+    color: #FF9A9A !important;
+  }
+
+  .mobileItem__block {
+    display: flex;
+    //flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    padding: 20px 16px;
+  }
+
+  .footer__item__navList {
+    justify-content: center !important;
+    margin-bottom: 20px !important;
+  }
+
+  .footer__item__socialBlock {
+    display: flex;
+    margin: 0;
+    padding: 14px 17px;
+    background-color: #E4F2FF;
+    border-radius: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .chareLink {
+    margin: 0 0 10px !important;
+  }
+
+  .footer__item-share {
+    margin-bottom: 0 !important;
+  }
+
+  .footer__item-logo {
+    display: none;
+  }
+
+  .nalog__mobile {
+    display: block !important;
+    margin: 0;
+    color: #9A9AA0;
+    font-size: 12px;
+    font-family: raleway-medium;
+    text-align: center;
+  }
+
+  .privacy {
+    text-align: center;
+    margin-bottom: 20px !important;
+  }
+
+  .footer__item-number {
+    font-size: 12px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .footer__item:last-child {
+      justify-content: center;
+  }
+
+  .footer__item-link {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .competenceCard {
+    margin-right: 89px !important;
   }
 }

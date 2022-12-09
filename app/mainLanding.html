@@ -204,9 +204,9 @@
             </div>
 
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <!--        <div class="swiper-pagination"></div>-->
+        <div class="swiper-button-next disabled"></div>
+        <div class="swiper-button-prev disabled"></div>
+        <div class="swiper-pagination"></div>
     </div>
 
 
@@ -245,13 +245,15 @@
 
                     </div>
                     <div class="stepsItem__numberBlock">
-                        <img src="./images/imgLanding/image-main/tree-left.png" alt="image-tree" class="stepsItem__imageTree">
+                        <img src="./images/imgLanding/image-main/tree-left.png" alt="image-tree"
+                             class="stepsItem__imageTree">
                         <p class="stepsItem__number">1</p>
                     </div>
                 </li>
                 <li class="stepsItem">
                     <div class="stepsItem__numberBlock">
-                        <img src="./images/imgLanding/image-main/tree-left.png" alt="image-tree" class="stepsItem__imageTree">
+                        <img src="./images/imgLanding/image-main/tree-left.png" alt="image-tree"
+                             class="stepsItem__imageTree">
                         <p class="stepsItem__number">2</p>
                     </div>
                     <div class="stepsItem__block">
@@ -298,13 +300,15 @@
 
                     </div>
                     <div class="stepsItem__numberBlock">
-                        <img src="./images/imgLanding/image-main/tree-left.png" alt="image-tree" class="stepsItem__imageTree">
+                        <img src="./images/imgLanding/image-main/tree-left.png" alt="image-tree"
+                             class="stepsItem__imageTree">
                         <p class="stepsItem__number">3</p>
                     </div>
                 </li>
                 <li class="stepsItem">
                     <div class="stepsItem__numberBlock">
-                        <img src="./images/imgLanding/image-main/tree-left.png" alt="image-tree" class="stepsItem__imageTree">
+                        <img src="./images/imgLanding/image-main/tree-left.png" alt="image-tree"
+                             class="stepsItem__imageTree">
                         <p class="stepsItem__number">4</p>
                     </div>
                     <div class="stepsItem__block">
@@ -517,7 +521,7 @@
 <section class="comment container">
     <h2 class="commentTitle">Отзывы</h2>
 
-    <div class="swiper mySwiper">
+    <div class="swiper swiperComment">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="commentBlock">
@@ -601,8 +605,8 @@
             </div>
 
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next disabled"></div>
+        <div class="swiper-button-prev disabled"></div>
         <div class="swiper-pagination"></div>
     </div>
 
@@ -619,152 +623,168 @@
     <p class="competenceSpecialist">Вы можете выбрать глубину проработки и уровень траектолога</p>
 
     <div class="cardCompetenceBlock">
-        <div class="swiper mySwiper">
+        <div class="swiper swiperPrice">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    Slide 1
+                    <ul class="competenceCard card-main">
+                        <li class="competenceItem">
+                            <div class="competenceItem__block">
+                                <p class="competenceItem__desc">Траектолог</p>
+                                <p class="competenceItem__price price-main">25 000₽</p>
+                            </div>
+                            <ul class="jobsList">
+                                <li class="jobsItem">
+                                    <img src="./images/imgLanding/icons/blue-check.svg" alt="check"
+                                         class="jobsItem__image">
+                                    <p class="jobsItem__description">
+                                        2 часа работы с траектологом
+                                        (построение траектории: восстановлении истории, сборка понимания собственной
+                                        траектории)
+                                    </p>
+                                </li>
+                                <li class="jobsItem">
+                                    <img src="./images/imgLanding/icons/blue-check.svg" alt="check"
+                                         class="jobsItem__image">
+                                    <p class="jobsItem__description">
+                                        Выбор траектолога
+                                    </p>
+                                </li>
+                                <li class="jobsItem">
+                                    <img src="./images/imgLanding/icons/blue-check.svg" alt="check"
+                                         class="jobsItem__image">
+                                    <p class="jobsItem__description">
+                                        Траектория сохраняется в личном кабинете
+                                    </p>
+                                </li>
+                                <li class="jobsItem">
+                                    <img src="./images/imgLanding/icons/blue-check.svg" alt="check"
+                                         class="jobsItem__image">
+                                    <p class="jobsItem__description">
+                                        Консультации сохраняются в личном кабинете
+                                    </p>
+                                </li>
+                            </ul>
+
+                            <button class="choiceTrajectolog">Выбрать</button>
+                            <p class="textConsultation">
+                                На основании построенной траектории возможна организация консультаций как по отдельным
+                                аспектам, так
+                                и
+                                по понимании траектории в целом.
+                            </p>
+                        </li>
+                    </ul>
                 </div>
                 <div class="swiper-slide">
-                    Slide 2
+                    <ul class="competenceCard card-mentor">
+                        <li class="competenceItem">
+                            <div class="competenceItem__block">
+                                <p class="competenceItem__desc">Траектолог-наставник</p>
+                                <p class="competenceItem__price price-mentor">50 000₽</p>
+                            </div>
+
+                            <ul class="jobsList">
+                                <li class="jobsItem">
+                                    <img src="./images/imgLanding/icons/blue-check.svg" alt="check"
+                                         class="jobsItem__image">
+                                    <p class="jobsItem__description">
+                                        2 часа работы с траектологом
+                                        (построение траектории: восстановлении истории, сборка понимания собственной
+                                        траектории)
+                                    </p>
+                                </li>
+                                <li class="jobsItem">
+                                    <img src="./images/imgLanding/icons/blue-check.svg" alt="check"
+                                         class="jobsItem__image">
+                                    <p class="jobsItem__description">
+                                        Выбор траектолога
+                                    </p>
+                                </li>
+                                <li class="jobsItem">
+                                    <img src="./images/imgLanding/icons/blue-check.svg" alt="check"
+                                         class="jobsItem__image">
+                                    <p class="jobsItem__description">
+                                        Траектория сохраняется в личном кабинете
+                                    </p>
+                                </li>
+                                <li class="jobsItem">
+                                    <img src="./images/imgLanding/icons/blue-check.svg" alt="check"
+                                         class="jobsItem__image">
+                                    <p class="jobsItem__description">
+                                        Консультации сохраняются в личном кабинете
+                                    </p>
+                                </li>
+                            </ul>
+
+                            <button class="choiceTrajectolog">Выбрать</button>
+                            <p class="textConsultation">
+                                На основании построенной траектории возможна организация консультаций как по отдельным
+                                аспектам, так
+                                и
+                                по понимании траектории в целом.
+                            </p>
+                        </li>
+                    </ul>
                 </div>
                 <div class="swiper-slide">
-                    Slide 3
+                    <ul class="competenceCard card-author">
+                        <li class="competenceItem">
+                            <div class="competenceItem__blockcompetenceItem__block">
+                                <div class="competenceItem__block">
+                                    <p class="competenceItem__desc-author">Основатель метода</p>
+                                    <p class="competenceItem__price price-author">75 000₽</p>
+                                </div>
+                            </div>
+
+                            <ul class="jobsList">
+                                <li class="jobsItem">
+                                    <img src="./images/imgLanding/icons/white-check.svg" alt="check"
+                                         class="jobsItem__image">
+                                    <p class="jobsItem__description">
+                                        2 часа работы с траектологом
+                                        (построение траектории: восстановлении истории, сборка понимания собственной
+                                        траектории)
+                                    </p>
+                                </li>
+                                <li class="jobsItem">
+                                    <img src="./images/imgLanding/icons/white-check.svg" alt="check"
+                                         class="jobsItem__image">
+                                    <p class="jobsItem__description">
+                                        Выбор траектолога
+                                    </p>
+                                </li>
+                                <li class="jobsItem">
+                                    <img src="./images/imgLanding/icons/white-check.svg" alt="check"
+                                         class="jobsItem__image">
+                                    <p class="jobsItem__description">
+                                        Траектория сохраняется в личном кабинете
+                                    </p>
+                                </li>
+                                <li class="jobsItem">
+                                    <img src="./images/imgLanding/icons/white-check.svg" alt="check"
+                                         class="jobsItem__image">
+                                    <p class="jobsItem__description">
+                                        Консультации сохраняются в личном кабинете
+                                    </p>
+                                </li>
+                            </ul>
+
+                            <button class="choiceTrajectolog">Выбрать</button>
+                            <p class="textConsultation">
+                                На основании построенной траектории возможна организация консультаций как по отдельным
+                                аспектам, так
+                                и
+                                по понимании траектории в целом.
+                            </p>
+                        </li>
+                    </ul>
                 </div>
 
             </div>
             <div class="swiper-pagination"></div>
         </div>
-        <ul class="competenceCard card-main">
-            <li class="competenceItem">
-                <div class="competenceItem__block">
-                    <p class="competenceItem__desc">Траектолог</p>
-                    <p class="competenceItem__price price-main">25 000₽</p>
-                </div>
-                <ul class="jobsList">
-                    <li class="jobsItem">
-                        <img src="./images/imgLanding/icons/blue-check.svg" alt="check" class="jobsItem__image">
-                        <p class="jobsItem__description">
-                            2 часа работы с траектологом
-                            (построение траектории: восстановлении истории, сборка понимания собственной траектории)
-                        </p>
-                    </li>
-                    <li class="jobsItem">
-                        <img src="./images/imgLanding/icons/blue-check.svg" alt="check" class="jobsItem__image">
-                        <p class="jobsItem__description">
-                            Выбор траектолога
-                        </p>
-                    </li>
-                    <li class="jobsItem">
-                        <img src="./images/imgLanding/icons/blue-check.svg" alt="check" class="jobsItem__image">
-                        <p class="jobsItem__description">
-                            Траектория сохраняется в личном кабинете
-                        </p>
-                    </li>
-                    <li class="jobsItem">
-                        <img src="./images/imgLanding/icons/blue-check.svg" alt="check" class="jobsItem__image">
-                        <p class="jobsItem__description">
-                            Консультации сохраняются в личном кабинете
-                        </p>
-                    </li>
-                </ul>
 
-                <button class="choiceTrajectolog">Выбрать</button>
-                <p class="textConsultation">
-                    На основании построенной траектории возможна организация консультаций как по отдельным аспектам, так
-                    и
-                    по понимании траектории в целом.
-                </p>
-            </li>
-        </ul>
 
-        <ul class="competenceCard card-mentor">
-            <li class="competenceItem">
-                <div class="competenceItem__block">
-                    <p class="competenceItem__desc">Траектолог-наставник</p>
-                    <p class="competenceItem__price price-mentor">50 000₽</p>
-                </div>
-
-                <ul class="jobsList">
-                    <li class="jobsItem">
-                        <img src="./images/imgLanding/icons/blue-check.svg" alt="check" class="jobsItem__image">
-                        <p class="jobsItem__description">
-                            2 часа работы с траектологом
-                            (построение траектории: восстановлении истории, сборка понимания собственной траектории)
-                        </p>
-                    </li>
-                    <li class="jobsItem">
-                        <img src="./images/imgLanding/icons/blue-check.svg" alt="check" class="jobsItem__image">
-                        <p class="jobsItem__description">
-                            Выбор траектолога
-                        </p>
-                    </li>
-                    <li class="jobsItem">
-                        <img src="./images/imgLanding/icons/blue-check.svg" alt="check" class="jobsItem__image">
-                        <p class="jobsItem__description">
-                            Траектория сохраняется в личном кабинете
-                        </p>
-                    </li>
-                    <li class="jobsItem">
-                        <img src="./images/imgLanding/icons/blue-check.svg" alt="check" class="jobsItem__image">
-                        <p class="jobsItem__description">
-                            Консультации сохраняются в личном кабинете
-                        </p>
-                    </li>
-                </ul>
-
-                <button class="choiceTrajectolog">Выбрать</button>
-                <p class="textConsultation">
-                    На основании построенной траектории возможна организация консультаций как по отдельным аспектам, так
-                    и
-                    по понимании траектории в целом.
-                </p>
-            </li>
-        </ul>
-        <ul class="competenceCard card-author">
-            <li class="competenceItem">
-                <div class="competenceItem__blockcompetenceItem__block">
-                    <div class="competenceItem__block">
-                        <p class="competenceItem__desc-author">Основатель метода</p>
-                        <p class="competenceItem__price price-author">75 000₽</p>
-                    </div>
-                </div>
-
-                <ul class="jobsList">
-                    <li class="jobsItem">
-                        <img src="./images/imgLanding/icons/white-check.svg" alt="check" class="jobsItem__image">
-                        <p class="jobsItem__description">
-                            2 часа работы с траектологом
-                            (построение траектории: восстановлении истории, сборка понимания собственной траектории)
-                        </p>
-                    </li>
-                    <li class="jobsItem">
-                        <img src="./images/imgLanding/icons/white-check.svg" alt="check" class="jobsItem__image">
-                        <p class="jobsItem__description">
-                            Выбор траектолога
-                        </p>
-                    </li>
-                    <li class="jobsItem">
-                        <img src="./images/imgLanding/icons/white-check.svg" alt="check" class="jobsItem__image">
-                        <p class="jobsItem__description">
-                            Траектория сохраняется в личном кабинете
-                        </p>
-                    </li>
-                    <li class="jobsItem">
-                        <img src="./images/imgLanding/icons/white-check.svg" alt="check" class="jobsItem__image">
-                        <p class="jobsItem__description">
-                            Консультации сохраняются в личном кабинете
-                        </p>
-                    </li>
-                </ul>
-
-                <button class="choiceTrajectolog">Выбрать</button>
-                <p class="textConsultation">
-                    На основании построенной траектории возможна организация консультаций как по отдельным аспектам, так
-                    и
-                    по понимании траектории в целом.
-                </p>
-            </li>
-        </ul>
     </div>
 
     <h2 class="trajectolorsTitle">
@@ -779,13 +799,7 @@
                 <div class="cardHead__image image-author">
 
                 </div>
-                <!--                <img-->
-                <!--                        src="./images/imgLanding/image-main/cards/image-author.png"-->
-                <!--                        alt=""-->
-                <!--                        class="cardAuthor__image"-->
-                <!--                >-->
-                <div class="cardTrajectolog__block">
-
+                <div class="cardTrajectolog__block cardTrajectolog__author">
                     <p class="cardTrajectolog__block-title">Алексей Комаров</p>
                     <p class="cardTrajectolog__block-author">Основатель</p>
                 </div>
@@ -899,7 +913,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="cardTrajectolog">
-                        <div class="cardHead__image image-katerina">
+                        <div class="cardHead__image image-pavel">
 
                         </div>
                         <div class="cardTrajectolog__block">
@@ -909,7 +923,7 @@
                             >
                             <div>
                                 <p class="cardTrajectolog__block-title">Павел Петровский</p>
-                                <p class="cardTrajectolog__block-author">Траектолог-наставник</p>
+                                <p class="cardTrajectolog__block-mentor">Траектолог-наставник</p>
                             </div>
                         </div>
                         <div class="cardTrajectolog__description">
@@ -926,7 +940,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="cardTrajectolog">
-                        <div class="cardHead__image image-julia">
+                        <div class="cardHead__image image-katerina">
 
                         </div>
                         <div class="cardTrajectolog__block">
@@ -936,7 +950,7 @@
                             >
                             <div>
                                 <p class="cardTrajectolog__block-title">Катерина Гувакова</p>
-                                <p class="cardTrajectolog__block-author">Траектолог-наставник</p>
+                                <p class="cardTrajectolog__block-mentor">Траектолог-наставник</p>
                             </div>
                         </div>
                         <div class="cardTrajectolog__description">
@@ -953,7 +967,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="cardTrajectolog">
-                        <div class="cardHead__image image-pavel">
+                        <div class="cardHead__image image-julia">
 
                         </div>
                         <div class="cardTrajectolog__block">
@@ -963,7 +977,7 @@
                             >
                             <div>
                                 <p class="cardTrajectolog__block-title">Юлия Мельникова</p>
-                                <p class="cardTrajectolog__block-author">Траектолог-наставник</p>
+                                <p class="cardTrajectolog__block-mentor">Траектолог-наставник</p>
                             </div>
                         </div>
                         <div class="cardTrajectolog__description">
@@ -980,7 +994,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="cardTrajectolog">
-                        <div class="cardHead__image image-katerina">
+                        <div class="cardHead__image image-pavel">
 
                         </div>
                         <div class="cardTrajectolog__block">
@@ -990,7 +1004,7 @@
                             >
                             <div>
                                 <p class="cardTrajectolog__block-title">Павел Петровский</p>
-                                <p class="cardTrajectolog__block-author">Траектолог-наставник</p>
+                                <p class="cardTrajectolog__block-mentor">Траектолог-наставник</p>
                             </div>
                         </div>
                         <div class="cardTrajectolog__description">
@@ -1016,7 +1030,7 @@
                                     class="cardTrajectolog__block-imageMobile"
                             >
                             <div><p class="cardTrajectolog__block-title">Катерина Гувакова</p>
-                                <p class="cardTrajectolog__block-author">Траектолог</p></div>
+                                <p class="cardTrajectolog__block-mentor">Траектолог-наставник</p></div>
                         </div>
                         <div class="cardTrajectolog__description">
                             <p class="cardTrajectolog__achievements-title">Построенных траекторий</p>
@@ -1050,14 +1064,14 @@
                         <div class="cardHead__image image-katerina">
 
                         </div>
-                            <div class="cardTrajectolog__block">
+                        <div class="cardTrajectolog__block">
                             <img
                                     src="./images/imgLanding/image-trajectologs/katerina.png"
-                                class="cardTrajectolog__block-imageMobile"
+                                    class="cardTrajectolog__block-imageMobile"
                             >
-                            <div>
+                            <div class="trajectologDesc">
                                 <p class="cardTrajectolog__block-title">Катерина Гувакова</p>
-                                <p class="cardTrajectolog__block-author">Траектолог</p>
+                                <p class="cardTrajectolog__block-normal">Траектолог</p>
                             </div>
                         </div>
                         <div class="cardTrajectolog__description">
@@ -1082,9 +1096,9 @@
                                     src="./images/imgLanding/image-trajectologs/julia.png"
                                     class="cardTrajectolog__block-imageMobile"
                             >
-                            <div>
+                            <div class="trajectologDesc">
                                 <p class="cardTrajectolog__block-title">Юлия Мельникова</p>
-                                <p class="cardTrajectolog__block-author">Траектолог</p>
+                                <p class="cardTrajectolog__block-normal">Траектолог</p>
                             </div>
                         </div>
                         <div class="cardTrajectolog__description">
@@ -1109,9 +1123,9 @@
                                     src="./images/imgLanding/image-trajectologs/pavel.png"
                                     class="cardTrajectolog__block-imageMobile"
                             >
-                            <div>
-                                <p class="cardTrajectolog__block-title">Павел Петровский</p>
-                                <p class="cardTrajectolog__block-author">Траектолог-наставник</p>
+                            <div class="trajectologDesc">
+                                <p class="cardTrajectolog__block-title">Катерина Гувакова</p>
+                                <p class="cardTrajectolog__block-normal">Траектолог</p>
                             </div>
                         </div>
                         <div class="cardTrajectolog__description">
@@ -1136,8 +1150,9 @@
                                     src="./images/imgLanding/image-trajectologs/katerina(yong).png"
                                     class="cardTrajectolog__block-imageMobile"
                             >
-                            <div><p class="cardTrajectolog__block-title">Катерина Гувакова</p>
-                                <p class="cardTrajectolog__block-author">Траектолог</p></div>
+                            <div class="trajectologDesc">
+                                <p class="cardTrajectolog__block-title">Катерина Гувакова</p>
+                                <p class="cardTrajectolog__block-normal">Траектолог</p></div>
                         </div>
                         <div class="cardTrajectolog__description">
                             <p class="cardTrajectolog__achievements-title">Построенных траекторий</p>
@@ -1146,6 +1161,33 @@
                             <p class="cardTrajectolog__achievements-num">3 года</p>
                             <p class="cardTrajectolog__achievements-desc">
                                 Малый и средний бизнес, постановка предпринимательского мышления...
+                            </p>
+                            <button class="cardTrajectolog__description-next">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cardTrajectolog">
+                        <div class="cardHead__image image-julia">
+
+                        </div>
+                        <div class="cardTrajectolog__block">
+                            <img
+                                    src="./images/imgLanding/image-trajectologs/julia.png"
+                                    class="cardTrajectolog__block-imageMobile"
+                            >
+                            <div class="trajectologDesc">
+                                <p class="cardTrajectolog__block-title">Юлия Мельникова</p>
+                                <p class="cardTrajectolog__block-normal">Траектолог</p>
+                            </div>
+                        </div>
+                        <div class="cardTrajectolog__description">
+                            <p class="cardTrajectolog__achievements-title">Построенных траекторий</p>
+                            <p class="cardTrajectolog__achievements-num">109</p>
+                            <p class="cardTrajectolog__achievements-title">Опыт в методе:</p>
+                            <p class="cardTrajectolog__achievements-num">4 года</p>
+                            <p class="cardTrajectolog__achievements-desc">
+                                ---
                             </p>
                             <button class="cardTrajectolog__description-next">Подробнее</button>
                         </div>
@@ -1163,6 +1205,104 @@
 
 <section class="roadMap container">
     <h2 class="roadTitle">Road Map EntPath</h2>
+
+    <div class="swiper swiperMap">
+        <img
+                src="./images/imgLanding/image-main/road-main.svg"
+                alt=""
+                class="roadMap__Block-image"
+        >
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="trajectoryDown__item ">
+                    <p class="trajectoryDown__num trajectoryNumRed">2016</p>
+                    <div class="trajectoryDown__blockImage">
+                        <img src="./images/imgLanding/image-main/round.png" alt="round">
+                        <img src="./images/imgLanding/image-main/route.png" alt="route">
+                    </div>
+                    <div class="trajectoryDown__textBlock trajectoryRed">
+                        <p class="trajectoryDown__text">Построены первые траектории в рамках образовательных программ для
+                            предпринимателей</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="trajectoryDown__item">
+                    <p class="trajectoryDown__num trajectoryNumRed">2018</p>
+                    <div class="trajectoryDown__blockImage">
+                        <img src="./images/imgLanding/image-main/round.png" alt="round">
+                        <img src="./images/imgLanding/image-main/route.png" alt="route">
+                    </div>
+                    <div class="trajectoryDown__textBlock trajectoryRed">
+                        <p class="trajectoryDown__text">Сформирована команда <траектологов></траектологов></p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="trajectoryDown__item">
+                    <p class="trajectoryDown__num trajectoryNumRed">2021</p>
+                    <div class="trajectoryDown__blockImage">
+                        <img src="./images/imgLanding/image-main/round.png" alt="round">
+                        <img src="./images/imgLanding/image-main/route.png" alt="route">
+                    </div>
+                    <div class="trajectoryDown__textBlock trajectoryRed">
+                        <p class="trajectoryDown__text">Построена тысячная траектория</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="blockSince">
+                    <div class="trajectoryUp__blockImage">
+                        <img src="./images/imgLanding/image-main/route-blue.png" alt="route">
+                        <img src="./images/imgLanding/image-main/big-round.png" alt="round" class="bigRound">
+                    </div>
+                    <div class="trajectoryMiddle__textBlock">
+
+                        <p class="trajectoryMiddle__title">
+                            Основана компания EntPath
+                        </p>
+                        <div class="trajectoryMiddle__block">
+                            <p class="trajectoryMiddle__company">
+                                EntPath
+                            </p>
+                            <img
+                                    src="./images/imgLanding/icons/enthPath.svg"
+                                    alt=""
+                                    class="trajectoryMiddle__img"
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="trajectoryDown__item">
+                    <p class="trajectoryDown__num">2024</p>
+                    <div class="trajectoryDown__blockImage">
+                        <img src="./images/imgLanding/image-main/round-blue.png" alt="round">
+                        <img src="./images/imgLanding/image-main/route-blue.png" alt="route">
+                    </div>
+                    <div class="trajectoryDown__textBlock">
+                        <p class="trajectoryDown__text">Появился помощник для траектолога на базе искусственного интеллекта</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="trajectoryDown__item">
+                    <p class="trajectoryDown__num">2028</p>
+                    <div class="trajectoryDown__blockImage">
+                        <img src="./images/imgLanding/image-main/round-blue.png" alt="round">
+                        <img src="./images/imgLanding/image-main/route-blue.png" alt="route">
+                    </div>
+                    <div class="trajectoryDown__textBlock">
+                        <p class="trajectoryDown__text">Впервые построена траектория с помощью консультанта на базе искусственного интеллекта</p>
+                    </div>
+                </div>
+            </div>
+<!--            <div class="swiper-slide">Slide 8</div>-->
+<!--            <div class="swiper-slide">Slide 9</div>-->
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
 
     <div class="roadMap__Block">
         <ul class="trajectoryUp__list">
@@ -1287,22 +1427,25 @@
 <footer class="footer">
     <div class="container">
         <ul class="footer__list">
-            <li class="footer__item">
+            <li class="footer__item order1">
                 <img class="footer__item-logo" src="./images/imgLanding/logo/logo-footer.svg" alt="logo-footer">
                 <div class="footer__item__socialBlock">
                     <p class="chareLink">Поделиться:</p>
-                    <a href="#" class="linkSocial"><img src="./images/imgLanding/icons/icons-footer/vk.svg"
-                                                        alt="vk"></a>
-                    <a href="#" class="linkSocial"><img src="./images/imgLanding/icons/icons-footer/insta.svg"
-                                                        alt="instagram"></a>
-                    <a href="#" class="linkSocial"><img src="./images/imgLanding/icons/icons-footer/telegramm.svg"
-                                                        alt="telegramm"></a>
-                    <a href="#" class="linkSocial"><img src="./images/imgLanding/icons/icons-footer/what's-up.svg"
-                                                        alt="what's up"></a>
+                    <div>
+                        <a href="#" class="linkSocial"><img src="./images/imgLanding/icons/icons-footer/vk.svg"
+                                                           alt="vk"></a>
+                        <a href="#" class="linkSocial"><img src="./images/imgLanding/icons/icons-footer/insta.svg"
+                                                            alt="instagram"></a>
+                        <a href="#" class="linkSocial"><img src="./images/imgLanding/icons/icons-footer/telegramm.svg"
+                                                            alt="telegramm"></a>
+                        <a href="#" class="linkSocial"><img src="./images/imgLanding/icons/icons-footer/what's-up.svg"
+                                                            alt="what's up"></a>
+                    </div>
                 </div>
                 <p class="privacy">Политика конфиденциальности</p>
+                <p class="nalog__mobile">© ИП Комаров А. А. 2022</p>
             </li>
-            <li class="footer__item">
+            <li class="footer__item order2">
                 <nav>
                     <ul class="footer__item__navList">
                         <li class="footer__item__navItem">
@@ -1317,20 +1460,42 @@
                     </ul>
                 </nav>
             </li>
-            <li class="footer__item">
-                <div class="footer__item-share">
-                    <a href="#">
-                        <img class="footer__item-image" src="./images/imgLanding/icons/icons-footer/telegramm.svg"
-                             alt="telegramm"></a>
-                    <a href="#">
-                        <img src="./images/imgLanding/icons/icons-footer/what's-up.svg" alt="what's up"></a>
-                </div>
+            <li class="footer__item order3">
+                <div class="desktopItem">
+                    <div class="footer__item-share">
+                        <a href="#">
+                            <img class="footer__item-image" src="./images/imgLanding/icons/icons-footer/telegramm.svg"
+                                 alt="telegramm"></a>
+                        <a href="#">
+                            <img src="./images/imgLanding/icons/icons-footer/what's-up.svg" alt="what's up"></a>
+                    </div>
 
-                <p class="footer__item-number">+7 926 602 85 11</p>
-                <p class="footer__item-mail">
-                    <a href="" class="footer__item-link">pp@entspace.com</a>
-                </p>
-                <p class="footer__item-nalog">© ИП Комаров А. А. 2022</p>
+                    <p class="footer__item-number">+7 926 602 85 11</p>
+                    <p class="footer__item-mail">
+                        <a href="" class="footer__item-link">pp@entspace.com</a>
+                    </p>
+                    <p class="footer__item-nalog">© ИП Комаров А. А. 2022</p>
+                </div>
+                <div class="mobileItem">
+                    <div class="mobileItem__block">
+                        <img class="logoMobile" src="./images/imgLanding/logo/logo-footer.svg" alt="logo-footer">
+                        <div class="footer__item-share">
+                            <a href="#">
+                                <img class="footer__item-image"
+                                     src="./images/imgLanding/icons/icons-footer/telegramm.svg"
+                                     alt="telegramm"></a>
+                            <a href="#">
+                                <img src="./images/imgLanding/icons/icons-footer/what's-up.svg" alt="what's up"></a>
+                        </div>
+                    </div>
+                        <div>
+                            <p class="footer__item-number">+7 926 602 85 11</p>
+                            <p class="footer__item-mail">
+                                <a href="" class="footer__item-link">pp@entspace.com</a>
+                            </p>
+                        </div>
+
+                </div>
             </li>
         </ul>
     </div>
@@ -1342,7 +1507,24 @@
         slidesPerView: 3,
         spaceBetween: 20,
         speed: 200,
-        width: 1350,
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+                // spaceBetween: 30,
+            },
+            // when window width is >= 480px
+            580: {
+                slidesPerView: 2,
+                // spaceBetween: 30,
+
+            },
+            // when window width is >= 640px
+            840: {
+                slidesPerView: 4,
+                spaceBetween: 40
+            }
+        },
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -1352,6 +1534,38 @@
             prevEl: ".swiper-button-prev",
         },
     });
+
+    const swiperComment = new Swiper(".swiperComment", {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        speed: 200,
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+            },
+            // when window width is >= 480px
+            580: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+
+            },
+            // when window width is >= 640px
+            840: {
+                slidesPerView: 4,
+                spaceBetween: 40
+            }
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    })
 
     const swiperTrajectologs = new Swiper(".swiperNew", {
         slidesPerView: 4,
@@ -1386,8 +1600,65 @@
         },
     })
 
-    const swiperPrice = new Swiper("", {
+    const swiperPrice = new Swiper(".swiperPrice", {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        touchAction: true,
 
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+                spaceBetween: -80,
+            },
+            // when window width is >= 480px
+            580: {
+                slidesPerView: 1,
+                spaceBetween: -80,
+            },
+            780: {
+                slidesPerView: 2,
+
+            },
+            // when window width is >= 640px
+            840: {
+                slidesPerView: 3,
+            }
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    })
+
+    const swiperMap = new Swiper(".swiperMap", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        touchAction: true,
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+                spaceBetween: -80,
+            },
+            // when window width is >= 480px
+            580: {
+                slidesPerView: 1,
+                spaceBetween: -120,
+            },
+            780: {
+                slidesPerView: 2,
+
+            },
+            // when window width is >= 640px
+            840: {
+                slidesPerView: 3,
+            }
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
     })
 </script>
 </body>
