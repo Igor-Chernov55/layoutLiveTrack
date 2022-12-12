@@ -1847,8 +1847,8 @@
     display: none;
   }
 
-  .swiperMap {
-    display: block !important;
+  .imgContent {
+    overflow-x: scroll;
   }
 
   .treeSteps1 {

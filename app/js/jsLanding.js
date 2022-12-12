@@ -154,6 +154,11 @@ const swiperMap = new Swiper(".swiperMap", {
         el: ".swiper-pagination",
         clickable: true,
     },
+    scrollbar: {
+        el: ".roadMap__Block-image",
+        hide: false,
+        clickable: true
+    }
 
 })
 
@@ -166,13 +171,9 @@ swiperMap.on('snapIndexChange', () => {
 })
 
 swiperMap.on('slideNextTransitionStart', () => {
-
-        sliderImage.className+=' imageWay-changeNext1';
-
+    sliderImage.className += ' imageWay-changeNext1';
 })
 
 swiperMap.on('slidePrevTransitionStart', () => {
-
-        sliderImage.classList.remove('imageWay-changeNext1')
-
+    sliderImage.classList.remove('imageWay-changeNext1')
 })
