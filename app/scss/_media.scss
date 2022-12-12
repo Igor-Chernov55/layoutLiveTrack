@@ -1,8 +1,37 @@
-@media (max-width: 675px) {
+@media screen and (max-width: 1100px) {
+  .roadMap__Block {
+    display: none;
+  }
+
+  .swiperMap {
+    display: block !important;
+  }
+
+  .treeSteps1 {
+    display: none;
+  }
+
+  .treeSteps2 {
+    display: none;
+  }
+
+  .statisticList {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .buildTrajectory {
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 675px) {
   .menu {
     display: none;
   }
-  .mainTitle {
+  .mainTitle-mobile {
     margin-top: 55px !important;
   }
 
@@ -20,7 +49,7 @@
     width: 95%;
     top: 0;
     left: 0;
-    padding: 12px 16px;
+    padding: 12px 13px;
     background-color: #ffffff;
     z-index: 10;
 
@@ -43,20 +72,20 @@
   .mainTrajectory {
     flex-direction: column;
     padding: 8px;
-  }
 
-  .mainTrajectory__start {
-    margin-bottom: 15px;
-  }
-  .mainTrajectory__review {
-    display: flex;
-    background-color: #fff;
-    border-radius: 100px;
-    border: 1px solid #E4F2FF;
-    padding: 8px 10px;
-    justify-content: space-between;
-  }
+    .mainTrajectory__start {
+      margin-bottom: 15px;
+    }
 
+    .mainTrajectory__review {
+      display: flex;
+      background-color: #fff;
+      border-radius: 100px;
+      border: 1px solid #E4F2FF;
+      padding: 8px 10px;
+      justify-content: space-between;
+    }
+  }
   .trajectoryBlock__imgMain {
     width: 100%;
   }
@@ -91,6 +120,11 @@
     padding: 2px;
   }
 
+  .statisticItem:last-child {
+    .statisticInfo {
+      border-bottom: 0;
+    }
+  }
 
   .backImg2 {
     position: absolute;
@@ -151,6 +185,15 @@
     background-color: #FF9A9A !important;
   }
 
+  .readWay-mobile {
+    display: block !important;
+    color: #319CFF;
+    font-size: 14px;
+    font-family: raleway-semibold;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
   .image-pavel {
     display: none;
   }
@@ -183,12 +226,8 @@
   }
 
   .statisticInfo {
-    border-bottom: 1px solid #E0E0E5 ;
+    border-bottom: 1px solid #E0E0E5;
   }
-
-  //.statisticInfo:last-child {
-  //  border-bottom: none ;
-  //}
 
   .competenceSpecialist {
     font-size: 16px !important;
@@ -248,6 +287,10 @@
     margin-bottom: 15px;
   }
 
+
+  .imageYear {
+    width: 100%;
+  }
   .statisticSecond {
     flex-direction: column;
     padding: 7px !important;
@@ -273,6 +316,7 @@
     margin: 15px;
   }
 
+
   .questionText-block {
     text-align: center;
     margin-bottom: 10px;
@@ -288,6 +332,10 @@
 
   .disabled {
     display: none !important;
+  }
+
+  .desktop-disabled {
+    display: block !important;
   }
 
   .cardTrajectolog__author {
@@ -306,7 +354,7 @@
   }
 
   .desktopItem {
-    display: none;
+    display: none !important;
   }
 
   .mobileItem {
@@ -317,16 +365,8 @@
     display: block;
   }
 
-  .roadMap__Block {
-    display: none;
-  }
-
-  .swiperMap {
-    display: block !important;
-  }
-
   .trajectoryRed {
-    border-top: 3px solid  #FF9A9A !important
+    border-top: 3px solid #FF9A9A !important
   }
 
   .commentBlock {
@@ -350,15 +390,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -52px;
+    margin-top: -84px;
   }
 
   .trajectoryMiddle__textBlock {
     width: 272px;
+    margin-right: 78px !important;
   }
 
   .trajectoryNumRed {
     color: #FF9A9A !important;
+  }
+
+  .trajectoryNumBlue {
+    color: #319CFF !important;
+    margin-bottom: 10px;
   }
 
   .mobileItem__block {
@@ -371,34 +417,80 @@
 
   .footer {
     padding: 20px 16px;
+
+
+    .footer__item__navList {
+      justify-content: center !important;
+      margin-bottom: 20px !important;
+    }
+
+    .footer__item__socialBlock {
+      display: flex;
+      margin: 0;
+      padding: 14px 17px;
+      background-color: #E4F2FF;
+      border-radius: 16px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .chareLink {
+      margin: 0 0 10px !important;
+    }
+
+    .footer__item-share {
+      margin-bottom: 0 !important;
+    }
+
+    .footer__item-logo {
+      display: none;
+    }
   }
 
-  .footer__item__navList {
-    justify-content: center !important;
-    margin-bottom: 20px !important;
-  }
-
-  .footer__item__socialBlock {
-    display: flex;
-    margin: 0;
-    padding: 14px 17px;
-    background-color: #E4F2FF;
-    border-radius: 16px;
+  .head-modal {
     flex-direction: column;
-    justify-content: center;
+  }
+
+  .imageHead-modal {
+    margin: auto;
+    width: 90%;
+    border-radius: 180px;
+  }
+
+  .achievementsBlock-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #C1E1FF;
+  }
+
+  .achievementsBlock-modal:last-child {
+    border-right: 0;
+  }
+
+  .createTrajectory-modal {
+    width: 100%;
+  }
+
+  .achievementsBlock__sumTrajectory-titleModal {
+    text-align: center;
+  }
+
+  .blockHead-modal {
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
 
-  .chareLink {
-    margin: 0 0 10px !important;
+  .achievementsItem-modal {
+    border-radius: 16px;
+    background-color: #F2F9FF;
   }
 
-  .footer__item-share {
-    margin-bottom: 0 !important;
-  }
-
-  .footer__item-logo {
-    display: none;
+  .trajectologTitle-modal {
+    margin: 0 auto !important;
+    margin-bottom: 20px !important;
   }
 
   .nalog__mobile {
@@ -421,13 +513,15 @@
   }
 
   .footer__item:last-child {
-      justify-content: center;
+    justify-content: center;
   }
 
   .footer__item-link {
     font-size: 12px !important;
   }
 }
+
+
 
 @media (max-width: 600px) {
   .competenceCard {

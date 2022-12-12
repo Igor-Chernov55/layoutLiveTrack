@@ -1,6 +1,7 @@
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  //min-height: 100vh;
 }
 
 .classBorder {
@@ -23,6 +24,7 @@
   .hamburger-menu {
     display: none;
   }
+
   .menu__item {
     margin-right: 24px;
   }
@@ -52,10 +54,10 @@
 .buildTrajectory {
 
   .mainTitle {
+    margin: 0;
     text-align: center;
     font-size: calc(56px + 110 * (100vw / 1440));
     font-family: raleway-medium;
-    margin: 0;
     padding: 15px;
   }
 
@@ -70,7 +72,6 @@
   .trajectoryAbsolute {
     display: block;
     position: relative;
-
 
     .trajectoryYear-rebirth {
       position: relative;
@@ -285,7 +286,6 @@
 }
 
 
-
 .roadMap__Block-image {
   width: 100%;
 }
@@ -340,6 +340,7 @@
   -webkit-text-fill-color: transparent;
 }
 
+
 .businessTitle {
   text-align: center;
   font-family: raleway-semibold;
@@ -385,6 +386,35 @@
     font-size: 16px;
   }
 
+  .trajectoryWayBock-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+  }
+
+  .trajectoryWau__image-modal {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .trajectoryWay__item-module {
+    font-family: raleway-medium;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .trajectoryWay__title-module {
+    font-family: raleway-medium;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .trajectoryWay__list-module {
+
+  }
+
+
   .stepsList {
     display: flex;
     justify-content: space-between;
@@ -419,6 +449,10 @@
       font-size: 14px;
       max-width: 650px;
       font-family: raleway-medium;
+    }
+
+    .readWay-mobile {
+      display: none;
     }
 
     .stepsItem__block {
@@ -515,7 +549,6 @@
   }
 
 
-
   .trajectoryWay {
     position: relative;
 
@@ -543,6 +576,7 @@
       right: -36px;
       z-index: 2;
     }
+
     .block1 {
       position: absolute;
       top: 0;
@@ -579,6 +613,7 @@
       top: 91px;
       right: -27px;
     }
+
     .arrow1 {
       position: absolute;
       top: 15px;
@@ -596,6 +631,7 @@
       top: 27px;
       right: 19px;
     }
+
     .yearsItem__round {
       position: absolute;
       top: 0;
@@ -625,6 +661,7 @@
 .trajectoryImage__mobile {
   display: none;
 }
+
 
 .historyTrajectory {
 
@@ -799,7 +836,7 @@
 .competenceTitle {
   text-align: center;
   margin: 0 0 10px;
-  font-size: calc(32px + 24 * (100vw /1440));
+  font-size: calc(32px + 24 * (100vw / 1440));
   font-family: raleway-semibold;
 }
 
@@ -854,7 +891,7 @@
 
 
       .competenceItem__price {
-        font-size: calc(40px + 16 * (100vw /1440));
+        font-size: calc(40px + 16 * (100vw / 1440));
         font-family: raleway-bold;
         margin: 0 0 20px;
       }
@@ -873,6 +910,12 @@
       margin-bottom: 16px;
     }
 
+
+    .textConsultation {
+      font-size: 10px;
+      font-family: raleway-semibold;
+    }
+
     .jobsItem:last-child {
       margin-bottom: 0;
     }
@@ -884,6 +927,7 @@
     .jobsItem__description {
       margin: 0;
       font-size: 14px;
+      line-height: 20px;
       font-family: raleway-medium;
     }
 
@@ -891,6 +935,7 @@
     .choiceTrajectolog {
       padding-top: 16px;
       padding-bottom: 16px;
+      margin-bottom: 16px;
       width: 100%;
       background-color: #F2F9FF;
       border: none;
@@ -908,9 +953,6 @@
       background-color: #319CFF;
     }
 
-    .textConsultation:nth-child(3) {
-      color: #fff;
-    }
 
     .textConsultation:first-child {
       color: #9A9AA0;
@@ -944,7 +986,7 @@
 
 .trajectolorsTitle {
   text-align: center;
-  font-size: calc(32px + 24 * (100vw /1440));
+  font-size: calc(32px + 24 * (100vw / 1440));
   font-family: raleway-semibold;
   margin: 0 auto 56px;
 }
@@ -1086,7 +1128,7 @@
 }
 
 .cardTrajectolog__achievements-num {
-  margin: 0;
+
   font-family: raleway-bold;
   font-size: 20px;
   color: #319CFF;
@@ -1099,7 +1141,7 @@
 }
 
 .cardTrajectolog__description-next {
-  padding: 0;
+  margin: 0;
   font-family: raleway-semibold;
   font-size: 14px;
   border: none;
@@ -1119,6 +1161,236 @@
 .raitingText-span {
   color: #9A9AA0;
   font-family: raleway-medium;
+}
+
+.achievements-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  border-radius: 24px;
+  background-color: #fff;
+
+  .trajectologTitle-modal {
+    margin: 0;
+    font-size: calc(24px + 8 * (100vw / 1440));
+    line-height: 30px;
+    font-family: raleway-medium;
+    margin-bottom: 32px;
+  }
+
+  .head-modal {
+    display: flex;
+    padding-bottom: 24px;
+  }
+
+  .blockHead-modal {
+    padding: 16px;
+  }
+
+  .titleTrajectolog-modal {
+    font-size: calc(20px + 4 * (100vw / 1440));
+    font-family: raleway-semibold;
+    margin: 0;
+  }
+
+  .achievementsBlock__sumTrajectory-titleModal {
+    font-family: raleway-medium;
+    font-size: 12px;
+    color: #53535E;
+  }
+
+  .achievementsBlock__sumTrajectory-numModal {
+    font-family: raleway-semibold;
+    color: #57AEFF;
+    font-size: calc(24px + 8 * (100vw /1440));
+    margin: 0;
+  }
+
+  .blockTrajectolog-modal {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .achievementsItem-modal {
+    display: flex;
+
+  }
+
+  .achievementsBlock-modal {
+    margin-right: 16px;
+  }
+
+  .workExperience {
+    border-top: 1px solid #E0E0E5;
+    padding-top: 24px;
+  }
+
+  .workExperience__title {
+    font-size: 16px;
+    font-family: raleway-bold;
+  }
+
+  .workExperience__text {
+    font-size: 14px;
+    font-family: raleway-medium;
+  }
+
+  .workExperience__list {
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .workExperience__item {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .workExperience__image {
+    margin-right: 8px;
+  }
+
+  .price-modal {
+    font-family: raleway-semibold;
+    font-size: 14px;
+    color: #9A9AA0;
+  }
+
+  .createTrajectory-modal {
+    font-family: raleway-medium;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 16px;
+    background-color: #319CFF;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .comment-modal {
+    font-family: raleway-semibold;
+    font-size: 16px;
+    color: #0F0F1A;
+  }
+
+  .formComment-modal {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .inputComment-modal {
+    width: 95%;
+    padding: 16px;
+    border: 1px solid #9A9AA0;
+    border-radius: 16px;
+    outline: none;
+    color: #9A9AA0;
+    font-size: 16px;
+    font-family: raleway-medium;
+  }
+
+  .commentModule__name {
+    font-size: 14px;
+    line-height: 22px;
+    font-family: raleway-semibold;
+  }
+
+  .commentModule__textComment {
+    font-family: raleway-medium;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .commentModule__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .commentModule__item {
+    padding: 12px 16px;
+    background-color: #F5F5F6;
+    border-radius: 16px;
+    margin-bottom: 20px;
+  }
+
+  .commentModule__block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .loadMore {
+    margin: 0 auto;
+    padding: 10px 16px;
+    border-radius: 100px;
+    background-color: #F2F9FF;
+    color: #319CFF;
+    font-size: 16px;
+    font-family: raleway-semibold;
+    border: none;
+  }
+
+  .mentorTrajectolog {
+    font-family: raleway-semibold;
+    color: #319CFF;
+    margin-bottom: 5px;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50px;
+    background-color: #E4F2FF;
+    margin: 0;
+  }
+}
+
+.blockComment-modal {
+  display: flex;
+  padding: 24px 16px;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding: 24px 16px;
+
+    .titleComment-modal {
+      margin-bottom: 20px !important;
+      font-size: 24px;
+      font-family: raleway-medium;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+  .commentImage-modal {
+    border-radius: 100px;
+  }
+
+  .headComment-modal {
+    text-align: center;
+    font-size: 24px;
+    font-family: raleway-medium;
+  }
+
+  .commentRaitingText-modal {
+    margin: 0;
+  }
+
+  .competitionComment-modal {
+    font-size: 12px;
+    color: #9A9AA0;
+  }
+
+  .commentRaitingBlock-modal {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .textComment-modal {
+    padding-top: 16px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: raleway-medium;
+    border-top: 1px solid #E0E0E6;
+  }
 }
 
 .authorAchievements {
@@ -1238,9 +1510,10 @@
   margin-bottom: 120px;
 
   .commentTitle {
+
     font-family: raleway-medium;
     font-size: 56px;
-    margin: 0 auto;
+    margin: 0 auto 30px;
     text-align: center;
   }
 
@@ -1281,7 +1554,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 55px;
+    padding: 72px;
     box-shadow: 0 40px 100px rgba(0, 0, 0, 0.04);
     border-radius: 500px;
     border: 2px solid;
@@ -1295,6 +1568,7 @@
     margin-bottom: 8px;
   }
 }
+
 .itemCompany {
   position: absolute;
   height: 135px;
@@ -1388,7 +1662,7 @@
     display: flex;
     list-style-type: none;
     padding: 0;
-    margin: 0 0 -64px;
+    margin: 0 0 -53px;
     justify-content: space-around;
   }
 
@@ -1417,6 +1691,7 @@
 
   .trajectoryUp__item:last-child {
     margin-left: 450px;
+
     .trajectoryUp__textBlock {
       border-top: 3px solid #319CFF;
 
@@ -1433,7 +1708,6 @@
     padding: 16px;
     background-color: #319CFF;
     border-radius: 32px;
-    margin-right: 78px;
     color: #fff;
 
   }
@@ -1512,6 +1786,7 @@
 
 
 }
+
 .questionSection {
   margin-bottom: 120px;
 
@@ -1643,6 +1918,12 @@
     margin-right: 16px;
   }
 
+  .desktopItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
   .footer__item__navItem:last-child {
     margin-right: 0;
   }
@@ -1690,8 +1971,31 @@
     display: none;
   }
 
+
+} .bottom-wrapper {
+    padding-bottom: 100px;
+  }
+
+.desktop-disabled {
+  display: none;
 }
 
+.imageWay-changeNext1 {
+  position: relative;
+  right: 55px;
+}
+.imageWay-changeNext2 {
+  position: relative;
+  right: 105px;
+}
+.imageWay-changeNext3{
+  position: relative;
+  right: 55px;
+}
+.imageWay-changePrev {
+  position: relative;
+  left: 105px;
+}
 @import '_fonts';
 
 @import '_media';

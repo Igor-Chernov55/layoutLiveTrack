@@ -45,10 +45,10 @@
 }
 
 .buildTrajectory .mainTitle {
+  margin: 0;
   text-align: center;
   font-size: calc(56px + 7.6388888889vw);
   font-family: raleway-medium;
-  margin: 0;
   padding: 15px;
 }
 .buildTrajectory .mainText {
@@ -333,6 +333,26 @@
   font-family: raleway-medium;
   font-size: 16px;
 }
+.stepsSection .trajectoryWayBock-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+}
+.stepsSection .trajectoryWau__image-modal {
+  width: 100%;
+  object-fit: cover;
+}
+.stepsSection .trajectoryWay__item-module {
+  font-family: raleway-medium;
+  font-size: 14px;
+  line-height: 20px;
+}
+.stepsSection .trajectoryWay__title-module {
+  font-family: raleway-medium;
+  font-size: 24px;
+  line-height: 32px;
+}
 .stepsSection .stepsList {
   display: flex;
   justify-content: space-between;
@@ -364,6 +384,9 @@
   font-size: 14px;
   max-width: 650px;
   font-family: raleway-medium;
+}
+.stepsSection .stepsItem .readWay-mobile {
+  display: none;
 }
 .stepsSection .stepsItem .stepsItem__block {
   justify-content: flex-start;
@@ -733,6 +756,10 @@
   align-items: flex-start;
   margin-bottom: 16px;
 }
+.cardCompetenceBlock .competenceCard .textConsultation {
+  font-size: 10px;
+  font-family: raleway-semibold;
+}
 .cardCompetenceBlock .competenceCard .jobsItem:last-child {
   margin-bottom: 0;
 }
@@ -742,11 +769,13 @@
 .cardCompetenceBlock .competenceCard .jobsItem__description {
   margin: 0;
   font-size: 14px;
+  line-height: 20px;
   font-family: raleway-medium;
 }
 .cardCompetenceBlock .competenceCard .choiceTrajectolog {
   padding-top: 16px;
   padding-bottom: 16px;
+  margin-bottom: 16px;
   width: 100%;
   background-color: #F2F9FF;
   border: none;
@@ -760,9 +789,6 @@
 }
 .cardCompetenceBlock .competenceCard .card-author {
   background-color: #319CFF;
-}
-.cardCompetenceBlock .competenceCard .textConsultation:nth-child(3) {
-  color: #fff;
 }
 .cardCompetenceBlock .competenceCard .textConsultation:first-child {
   color: #9A9AA0;
@@ -916,7 +942,6 @@
 }
 
 .cardTrajectolog__achievements-num {
-  margin: 0;
   font-family: raleway-bold;
   font-size: 20px;
   color: #319CFF;
@@ -929,7 +954,7 @@
 }
 
 .cardTrajectolog__description-next {
-  padding: 0;
+  margin: 0;
   font-family: raleway-semibold;
   font-size: 14px;
   border: none;
@@ -949,6 +974,203 @@
 .raitingText-span {
   color: #9A9AA0;
   font-family: raleway-medium;
+}
+
+.achievements-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  border-radius: 24px;
+  background-color: #fff;
+}
+.achievements-modal .trajectologTitle-modal {
+  margin: 0;
+  font-size: calc(24px + 0.5555555556vw);
+  line-height: 30px;
+  font-family: raleway-medium;
+  margin-bottom: 32px;
+}
+.achievements-modal .head-modal {
+  display: flex;
+  padding-bottom: 24px;
+}
+.achievements-modal .blockHead-modal {
+  padding: 16px;
+}
+.achievements-modal .titleTrajectolog-modal {
+  font-size: calc(20px + 0.2777777778vw);
+  font-family: raleway-semibold;
+  margin: 0;
+}
+.achievements-modal .achievementsBlock__sumTrajectory-titleModal {
+  font-family: raleway-medium;
+  font-size: 12px;
+  color: #53535E;
+}
+.achievements-modal .achievementsBlock__sumTrajectory-numModal {
+  font-family: raleway-semibold;
+  color: #57AEFF;
+  font-size: calc(24px + 0.5555555556vw);
+  margin: 0;
+}
+.achievements-modal .blockTrajectolog-modal {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.achievements-modal .achievementsItem-modal {
+  display: flex;
+}
+.achievements-modal .achievementsBlock-modal {
+  margin-right: 16px;
+}
+.achievements-modal .workExperience {
+  border-top: 1px solid #E0E0E5;
+  padding-top: 24px;
+}
+.achievements-modal .workExperience__title {
+  font-size: 16px;
+  font-family: raleway-bold;
+}
+.achievements-modal .workExperience__text {
+  font-size: 14px;
+  font-family: raleway-medium;
+}
+.achievements-modal .workExperience__list {
+  padding: 0;
+  list-style-type: none;
+}
+.achievements-modal .workExperience__item {
+  display: flex;
+  align-items: flex-start;
+}
+.achievements-modal .workExperience__image {
+  margin-right: 8px;
+}
+.achievements-modal .price-modal {
+  font-family: raleway-semibold;
+  font-size: 14px;
+  color: #9A9AA0;
+}
+.achievements-modal .createTrajectory-modal {
+  font-family: raleway-medium;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  padding: 10px 16px;
+  background-color: #319CFF;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.achievements-modal .comment-modal {
+  font-family: raleway-semibold;
+  font-size: 16px;
+  color: #0F0F1A;
+}
+.achievements-modal .formComment-modal {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.achievements-modal .inputComment-modal {
+  width: 95%;
+  padding: 16px;
+  border: 1px solid #9A9AA0;
+  border-radius: 16px;
+  outline: none;
+  color: #9A9AA0;
+  font-size: 16px;
+  font-family: raleway-medium;
+}
+.achievements-modal .commentModule__name {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: raleway-semibold;
+}
+.achievements-modal .commentModule__textComment {
+  font-family: raleway-medium;
+  font-size: 14px;
+  line-height: 20px;
+}
+.achievements-modal .commentModule__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.achievements-modal .commentModule__item {
+  padding: 12px 16px;
+  background-color: #F5F5F6;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+.achievements-modal .commentModule__block {
+  display: flex;
+  justify-content: space-between;
+}
+.achievements-modal .loadMore {
+  margin: 0 auto;
+  padding: 10px 16px;
+  border-radius: 100px;
+  background-color: #F2F9FF;
+  color: #319CFF;
+  font-size: 16px;
+  font-family: raleway-semibold;
+  border: none;
+}
+.achievements-modal .mentorTrajectolog {
+  font-family: raleway-semibold;
+  color: #319CFF;
+  margin-bottom: 5px;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50px;
+  background-color: #E4F2FF;
+  margin: 0;
+}
+
+.blockComment-modal {
+  display: flex;
+  padding: 24px 16px;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding: 24px 16px;
+}
+.blockComment-modal .titleComment-modal {
+  margin-bottom: 20px !important;
+  font-size: 24px;
+  font-family: raleway-medium;
+  margin: 0 auto;
+  text-align: center;
+}
+.blockComment-modal .commentImage-modal {
+  border-radius: 100px;
+}
+.blockComment-modal .headComment-modal {
+  text-align: center;
+  font-size: 24px;
+  font-family: raleway-medium;
+}
+.blockComment-modal .commentRaitingText-modal {
+  margin: 0;
+}
+.blockComment-modal .competitionComment-modal {
+  font-size: 12px;
+  color: #9A9AA0;
+}
+.blockComment-modal .commentRaitingBlock-modal {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.blockComment-modal .textComment-modal {
+  padding-top: 16px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: raleway-medium;
+  border-top: 1px solid #E0E0E6;
 }
 
 .authorAchievements {
@@ -1053,7 +1275,7 @@
 .comment .commentTitle {
   font-family: raleway-medium;
   font-size: 56px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   text-align: center;
 }
 .comment .commentBlock__image {
@@ -1088,7 +1310,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 55px;
+  padding: 72px;
   box-shadow: 0 40px 100px rgba(0, 0, 0, 0.04);
   border-radius: 500px;
   border: 2px solid;
@@ -1176,7 +1398,7 @@
   display: flex;
   list-style-type: none;
   padding: 0;
-  margin: 0 0 -64px;
+  margin: 0 0 -53px;
   justify-content: space-around;
 }
 .roadMap .trajectoryUp__blockImage {
@@ -1212,7 +1434,6 @@
   padding: 16px;
   background-color: #319CFF;
   border-radius: 32px;
-  margin-right: 78px;
   color: #fff;
 }
 .roadMap .trajectoryMiddle__num {
@@ -1383,6 +1604,11 @@
 .footer .footer__item__navItem {
   margin-right: 16px;
 }
+.footer .desktopItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 .footer .footer__item__navItem:last-child {
   margin-right: 0;
 }
@@ -1419,6 +1645,34 @@
 }
 .footer .nalog__mobile {
   display: none;
+}
+
+.bottom-wrapper {
+  padding-bottom: 100px;
+}
+
+.desktop-disabled {
+  display: none;
+}
+
+.imageWay-changeNext1 {
+  position: relative;
+  right: 55px;
+}
+
+.imageWay-changeNext2 {
+  position: relative;
+  right: 105px;
+}
+
+.imageWay-changeNext3 {
+  position: relative;
+  right: 55px;
+}
+
+.imageWay-changePrev {
+  position: relative;
+  left: 105px;
 }
 
 @font-face {
@@ -1588,12 +1842,39 @@
   font-size: 16px;
 }
 
-@media (max-width: 675px) {
+@media screen and (max-width: 1100px) {
+  .roadMap__Block {
+    display: none;
+  }
+
+  .swiperMap {
+    display: block !important;
+  }
+
+  .treeSteps1 {
+    display: none;
+  }
+
+  .treeSteps2 {
+    display: none;
+  }
+
+  .statisticList {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 890px) {
+  .buildTrajectory {
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (max-width: 675px) {
   .menu {
     display: none;
   }
 
-  .mainTitle {
+  .mainTitle-mobile {
     margin-top: 55px !important;
   }
 
@@ -1611,7 +1892,7 @@
     width: 95%;
     top: 0;
     left: 0;
-    padding: 12px 16px;
+    padding: 12px 13px;
     background-color: #ffffff;
     z-index: 10;
   }
@@ -1630,12 +1911,10 @@
     flex-direction: column;
     padding: 8px;
   }
-
-  .mainTrajectory__start {
+  .mainTrajectory .mainTrajectory__start {
     margin-bottom: 15px;
   }
-
-  .mainTrajectory__review {
+  .mainTrajectory .mainTrajectory__review {
     display: flex;
     background-color: #fff;
     border-radius: 100px;
@@ -1675,6 +1954,10 @@
   .statisticItem {
     border-right: 0 !important;
     padding: 2px;
+  }
+
+  .statisticItem:last-child .statisticInfo {
+    border-bottom: 0;
   }
 
   .backImg2 {
@@ -1733,6 +2016,15 @@
     top: -14px;
     left: 0;
     background-color: #FF9A9A !important;
+  }
+
+  .readWay-mobile {
+    display: block !important;
+    color: #319CFF;
+    font-size: 14px;
+    font-family: raleway-semibold;
+    margin-top: 10px;
+    margin-bottom: 0;
   }
 
   .image-pavel {
@@ -1829,6 +2121,10 @@
     margin-bottom: 15px;
   }
 
+  .imageYear {
+    width: 100%;
+  }
+
   .statisticSecond {
     flex-direction: column;
     padding: 7px !important;
@@ -1871,6 +2167,10 @@
     display: none !important;
   }
 
+  .desktop-disabled {
+    display: block !important;
+  }
+
   .cardTrajectolog__author {
     display: flex;
     flex-direction: column !important;
@@ -1885,7 +2185,7 @@
   }
 
   .desktopItem {
-    display: none;
+    display: none !important;
   }
 
   .mobileItem {
@@ -1895,14 +2195,6 @@
 
   .roadMap {
     display: block;
-  }
-
-  .roadMap__Block {
-    display: none;
-  }
-
-  .swiperMap {
-    display: block !important;
   }
 
   .trajectoryRed {
@@ -1930,15 +2222,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -52px;
+    margin-top: -84px;
   }
 
   .trajectoryMiddle__textBlock {
     width: 272px;
+    margin-right: 78px !important;
   }
 
   .trajectoryNumRed {
     color: #FF9A9A !important;
+  }
+
+  .trajectoryNumBlue {
+    color: #319CFF !important;
+    margin-bottom: 10px;
   }
 
   .mobileItem__block {
@@ -1951,13 +2249,11 @@
   .footer {
     padding: 20px 16px;
   }
-
-  .footer__item__navList {
+  .footer .footer__item__navList {
     justify-content: center !important;
     margin-bottom: 20px !important;
   }
-
-  .footer__item__socialBlock {
+  .footer .footer__item__socialBlock {
     display: flex;
     margin: 0;
     padding: 14px 17px;
@@ -1967,17 +2263,59 @@
     justify-content: center;
     align-items: center;
   }
-
-  .chareLink {
+  .footer .chareLink {
     margin: 0 0 10px !important;
   }
-
-  .footer__item-share {
+  .footer .footer__item-share {
     margin-bottom: 0 !important;
   }
-
-  .footer__item-logo {
+  .footer .footer__item-logo {
     display: none;
+  }
+
+  .head-modal {
+    flex-direction: column;
+  }
+
+  .imageHead-modal {
+    margin: auto;
+    width: 90%;
+    border-radius: 180px;
+  }
+
+  .achievementsBlock-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #C1E1FF;
+  }
+
+  .achievementsBlock-modal:last-child {
+    border-right: 0;
+  }
+
+  .createTrajectory-modal {
+    width: 100%;
+  }
+
+  .achievementsBlock__sumTrajectory-titleModal {
+    text-align: center;
+  }
+
+  .blockHead-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .achievementsItem-modal {
+    border-radius: 16px;
+    background-color: #F2F9FF;
+  }
+
+  .trajectologTitle-modal {
+    margin: 0 auto !important;
+    margin-bottom: 20px !important;
   }
 
   .nalog__mobile {
