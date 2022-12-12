@@ -1339,6 +1339,9 @@
 .roadMap .swiperMap {
   display: none;
 }
+.roadMap .imgContent-way {
+  display: none;
+}
 .roadMap .trajectoryDown__blockImage {
   display: flex;
   flex-direction: column;
