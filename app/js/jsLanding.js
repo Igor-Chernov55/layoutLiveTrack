@@ -30,7 +30,7 @@ const swiper = new Swiper(".mySwiper", {
 
 const swiperComment = new Swiper(".swiperComment", {
     slidesPerView: 3,
-    spaceBetween: 10,
+    spaceBetween: 40,
     speed: 200,
     breakpoints: {
         // when window width is >= 320px
@@ -52,6 +52,11 @@ const swiperComment = new Swiper(".swiperComment", {
 
         900: {
             slidesPerView: 3,
+            spaceBetween: 10
+        },
+
+        1100: {
+            slidesPerView: 2,
             spaceBetween: 10
         }
     },

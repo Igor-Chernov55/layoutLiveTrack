@@ -260,6 +260,59 @@ body {
   margin: 0;
 }
 
+.statisticItem {
+  position: relative;
+  border-right-color: #0c4128;
+}
+
+.rounded-image1 {
+  position: absolute;
+  top: -5px;
+  width: 421px;
+  left: -16px;
+  z-index: -10;
+  transform: rotate(52deg);
+}
+
+.dot-rounded1 {
+  position: absolute;
+  top: -2px;
+  right: 101px;
+  z-index: 1;
+}
+
+.rounded-image2 {
+  position: absolute;
+  top: -5px;
+  width: 416px;
+  left: -2px;
+  z-index: 1;
+  transform: rotate(-1.83deg);
+}
+
+.dot-rounded2 {
+  position: absolute;
+  left: 17px;
+  bottom: 76px;
+  z-index: 1;
+}
+
+.rounded-image3 {
+  position: absolute;
+  top: -6px;
+  width: 413px;
+  left: -10px;
+  z-index: -10;
+  transform: rotate(87deg);
+}
+
+.dot-rounded3 {
+  position: absolute;
+  top: 67px;
+  right: 0;
+  z-index: 1;
+}
+
 .statisticItem__text {
   max-width: 250px;
   padding-top: 10px;
@@ -273,7 +326,6 @@ body {
 .statisticItem__block {
   background-color: #fff;
   border-radius: 100%;
-  opacity: 0.8;
   width: 400px;
   height: 400px;
   display: flex;
@@ -1311,13 +1363,54 @@ body {
   font-family: raleway-semibold;
   font-size: 20px;
 }
+.comment .commentCard__rounded1 {
+  position: absolute;
+  top: 5px;
+  transform: rotate(-107.76deg);
+}
+.comment .commentCard__dot1 {
+  position: absolute;
+  bottom: 29px;
+  left: 73px;
+  transform: rotate(-45deg);
+}
+.comment .commentCard__rounded2 {
+  position: absolute;
+  top: 0;
+}
+.comment .commentCard__dot2 {
+  position: absolute;
+  top: 32px;
+  left: 83px;
+}
+.comment .commentCard__rounded3 {
+  position: absolute;
+  top: 7px;
+  right: -6px;
+  transform: rotate(90deg);
+}
+.comment .commentCard__dot3 {
+  position: absolute;
+  top: 92px;
+  right: 23px;
+}
+.comment .commentCard__rounded4 {
+  position: absolute;
+  top: 8px;
+  transform: rotate(-110.76deg);
+}
+.comment .commentCard__dot4 {
+  position: absolute;
+  bottom: 22px;
+  left: 83px;
+}
 .comment .commentBlock__jobPosition {
   margin: 0 0 8px;
   color: #9A9AA0;
   font-size: 14px;
 }
 .comment .commentBlock__comment {
-  max-width: 305px;
+  width: 305px;
   text-align: center;
   font-size: 14px;
   margin-bottom: 24px;
@@ -1331,6 +1424,7 @@ body {
   font-family: raleway-semibold;
 }
 .comment .commentBlock {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1340,6 +1434,10 @@ body {
   border-radius: 500px;
   border: 2px solid;
   border-image-source: conic-gradient(from 10.65deg at 50% 50%, #FF7171 0deg, rgba(255, 113, 113, 0) 116.25deg, rgba(255, 113, 113, 0) 360deg);
+}
+.comment .commentCard {
+  width: 437px !important;
+  margin-left: 10px;
 }
 .comment .starBlock {
   display: flex;
@@ -1710,6 +1808,15 @@ body {
 
 .slideTrajectory {
   width: 410px !important;
+}
+
+.rounded-image1 {
+  position: absolute;
+  top: -5px;
+  width: 421px;
+  left: -16px;
+  z-index: -10;
+  transform: rotate(52deg);
 }
 
 .slideTrajectory:first-child {
