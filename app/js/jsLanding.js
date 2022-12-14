@@ -1,7 +1,5 @@
 const swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
-    spaceBetween: 20,
-    speed: 200,
     breakpoints: {
         // when window width is >= 320px
         320: {
@@ -42,12 +40,17 @@ const swiperComment = new Swiper(".swiperComment", {
         },
         // when window width is >= 480px
         580: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 30,
 
         },
         // when window width is >= 640px
         840: {
+            slidesPerView: 2,
+            spaceBetween: 10
+        },
+
+        900: {
             slidesPerView: 3,
             spaceBetween: 10
         }
@@ -160,20 +163,4 @@ const swiperMap = new Swiper(".swiperMap", {
         clickable: true
     }
 
-})
-
-const sliderImage = document.querySelector('.roadMap__Block-image')
-
-swiperMap.on('snapIndexChange', () => {
-
-    console.log(sliderImage)
-
-})
-
-swiperMap.on('slideNextTransitionStart', () => {
-    sliderImage.className += ' imageWay-changeNext1';
-})
-
-swiperMap.on('slidePrevTransitionStart', () => {
-    sliderImage.classList.remove('imageWay-changeNext1')
 })

@@ -3,8 +3,13 @@
     display: none;
   }
 
+  .swiperMap {
+    display: none !important;
+  }
+
   .imgContent {
-    overflow-x: scroll;
+    display: block !important;
+    overflow: scroll;
   }
 
   .treeSteps1 {
@@ -19,12 +24,30 @@
     flex-direction: column;
     align-items: center;
   }
+  .trajectoryYear-rebirth {
+    display: none !important;
+  }
+  .trajectoryYear-peak {
+    display: none;
+  }
+
+  .classVectorRight {
+    display: none;
+  }
+
+  .classVectorLeft {
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 890px) {
   .buildTrajectory {
     flex-direction: column-reverse;
   }
+
+
+
 }
 
 @media only screen and (max-width: 675px) {
@@ -82,16 +105,12 @@
       background-color: #fff;
       border-radius: 100px;
       border: 1px solid #E4F2FF;
-      padding: 8px 10px;
-      justify-content: space-between;
+      padding: 8px 16px;
+      align-items: center;
     }
   }
   .trajectoryBlock__imgMain {
     width: 100%;
-  }
-
-  .trajectoryYear-rebirth {
-    display: none;
   }
 
   .trajectoryYear-peak {
@@ -114,13 +133,13 @@
     min-height: 270px !important;
   }
 
-  .statisticItem {
+  .statisticItem-second {
     border-right: 0 !important;
     //border-bottom: 1px solid #E0E0E5;
     padding: 2px;
   }
 
-  .statisticItem:last-child {
+  .statisticItem-second:last-child {
     .statisticInfo {
       border-bottom: 0;
     }
@@ -148,6 +167,13 @@
     background-size: cover;
   }
 
+  .slideTrajectory:first-child {
+    margin-right: 0 !important;
+  }
+
+  .slideTrajectory {
+    width: 100% !important;
+  }
   .stepsItem {
     position: relative;
     margin-right: 0;
@@ -213,6 +239,7 @@
   .cardTrajectolog {
     margin-right: 0 !important;
     max-width: 70% !important;
+    padding-bottom: 33px
   }
 
   .buildTrajectory {
@@ -279,6 +306,21 @@
     max-width: 100% !important;
   }
 
+  .cardTrajectolog__achievements-desc {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .cardTrajectolog__achievements-desc:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(180deg, transparent, #fff 50%);
+  }
+
   .statBlock {
     padding: 16px;
   }
@@ -297,6 +339,7 @@
   }
 
   .founderCard {
+    max-width: 100% !important;
     background-color: #F5F5F6 !important;
     margin-left: 0 !important;
     box-shadow: none !important;
@@ -433,6 +476,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin-bottom: 20px;
     }
 
     .chareLink {
@@ -486,6 +530,10 @@
   .achievementsItem-modal {
     border-radius: 16px;
     background-color: #F2F9FF;
+  }
+
+  .roadTitle {
+    padding-bottom: 0 !important;
   }
 
   .trajectologTitle-modal {

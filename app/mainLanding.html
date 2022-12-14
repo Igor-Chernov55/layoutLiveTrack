@@ -6,10 +6,11 @@
     <title>LiveTrack</title>
 
     <link rel="stylesheet" href="css/normalizeLanding.css">
+    <link rel="stylesheet" href="css/normalizeLanding.css">
     <link rel="stylesheet" href="css/hamburger-menu.css">
     <link
             rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+            href="css/swiperStyle.css"
     />
     <link rel="stylesheet" href="scss/bootstrap.css">
     <link rel="stylesheet" href="scss/styleLanding.css">
@@ -69,14 +70,14 @@
             <button class="mainTrajectory__start">
                 Построить траекторию
             </button>
-            <div class="mainTrajectory__review">
+            <button class="mainTrajectory__review">
                 <div class="mainTrajectory__block">
-                    <button class="mainTrajectory__play">
+                    <div class="mainTrajectory__play">
                         <img src="./images/imgLanding/icons/button-play.svg"
                              alt="play"
                              class="mainTrajectory__play-logo"
                         >
-                    </button>
+                    </div>
                     <div class="mainTrajectory__description">
                         <p class="mainTrajectory__title">Видео-обзор</p>
                         <p class="mainTrajectory__text">«Траектория жизни» метод Алексея Комарова</p>
@@ -87,7 +88,7 @@
                         alt="author"
                         class="mainTrajectory__authorLogo"
                 >
-            </div>
+            </button>
         </div>
 
 
@@ -116,7 +117,7 @@
 
         <div class="trajectoryBlock">
             <img
-                    src="./images/imgLanding/image-main/mac2.svg"
+                    src="./images/imgLanding/image-main/mac2.png"
                     alt="trackWay"
                     class="trajectoryBlock__imgMain"
             >
@@ -177,7 +178,7 @@
 
     <div class="swiper mySwiper">
         <div class="swiper-wrapper ">
-            <div class="swiper-slide box">
+            <div class="swiper-slide slideTrajectory">
                 <img
                         alt="image-slide"
                         src="./images/imgLanding/image-slider/trajectory-business/image-1.svg"
@@ -505,7 +506,7 @@
 
 
             <img
-                    src="./images/imgLanding/image-main/way.svg"
+                    src="./images/imgLanding/image-main/way.png"
                     class="trajectoryImage"
                     alt="trajectory-image"
             >
@@ -600,7 +601,7 @@
 
     <div class="statBlock">
         <ul class="statisticSecond">
-            <li class="statisticItem">
+            <li class="statisticItem-second">
                 <div class="statisticInfo">
                     <div class="statisticInfo__title">
                         <p class="statisticInfo__num">120</p>
@@ -609,7 +610,7 @@
                     <p class="statisticInfo__text">необходимо на профессиональную подготовку траектолога</p>
                 </div>
             </li>
-            <li class="statisticItem">
+            <li class="statisticItem-second">
                 <div class="statisticInfo">
                     <div class="statisticInfo__title">
                         <p class="statisticInfo__num">70 </p>
@@ -618,7 +619,7 @@
                     <p class="statisticInfo__text">траекторий построил каждый траектолог-наставник</p>
                 </div>
             </li>
-            <li class="statisticItem">
+            <li class="statisticItem-second">
                 <div class="statisticInfo">
                     <div class="statisticInfo__title">
                         <p class="statisticInfo__num">36</p>
@@ -647,7 +648,7 @@
                     <p class="headComment-modal">Ирина Орландини-Авруцкая</p>
                     <p class="competitionComment-modal">Like4Like • основатель, визионер</p>
                     <div class="commentRaitingBlock-modal">
-                        <img src="./images/imgLanding/icons/star-one.png" alt="star" class="">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="commentStar-image">
                         <p class="commentRaitingText-modal">4,7 <span class="">(177)</span></p>
                     </div>
                     <p class="textComment-modal">
@@ -678,7 +679,7 @@
                     <p class="headComment-modal">Виталий Сылка</p>
                     <p class="competitionComment-modal">Iminera • Основатель, предприниматель</p>
                     <div class="commentRaitingBlock-modal">
-                        <img src="./images/imgLanding/icons/star-one.png" alt="star" class="">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="commentStar-image">
                         <p class="commentRaitingText-modal">4,7 <span class="">(177)</span></p>
                     </div>
                     <p class="textComment-modal">
@@ -712,7 +713,7 @@
                     <p class="headComment-modal">Ирина Невзорова</p>
                     <p class="competitionComment-modal">Директор подразделения Isover в России</p>
                     <div class="commentRaitingBlock-modal">
-                        <img src="./images/imgLanding/icons/star-one.png" alt="star" class="">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="commentStar-image">
                         <p class="commentRaitingText-modal">4,7 <span class="">(177)</span></p>
                     </div>
                     <p class="textComment-modal">
@@ -743,7 +744,7 @@
                     <p class="headComment-modal">Артем Газаров</p>
                     <p class="competitionComment-modal">«Белая радуга» • Управляющий обственник </p>
                     <div class="commentRaitingBlock-modal">
-                        <img src="./images/imgLanding/icons/star-one.png" alt="star" class="">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="commentStar-image">
                         <p class="commentRaitingText-modal">4,7 <span class="">(177)</span></p>
                     </div>
                     <p class="textComment-modal">
@@ -776,11 +777,11 @@
                     <p class="commentBlock__nameAuthor">Ирина Орландини-Авруцкая</p>
                     <p class="commentBlock__jobPosition">Like4Like • основатель, визионер</p>
                     <div class="starBlock">
-                        <img src="./images/imgLanding/icons/star-one.png" alt="" class="imageStar">
-                        <img src="./images/imgLanding/icons/star-one.png" alt="" class="imageStar">
-                        <img src="./images/imgLanding/icons/star-one.png" alt="" class="imageStar">
-                        <img src="./images/imgLanding/icons/star-one.png" alt="" class="imageStar">
-                        <img src="./images/imgLanding/icons/star-one.png" alt="" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="" class="imageStar">
                     </div>
                     <div class="commentBlock__rating"></div>
                     <div class="commentBlock__comment">Работа по разбору личной траектории помогла мне <strong> осознать
@@ -798,11 +799,11 @@
                     <p class="commentBlock__nameAuthor">Виталий Сылка</p>
                     <p class="commentBlock__jobPosition">Iminera • Основатель, предприниматель</p>
                     <div class="starBlock">
-                        <img src="./images/imgLanding/icons/star-one.png" alt="star" class="imageStar">
-                        <img src="./images/imgLanding/icons/star-one.png" alt="star" class="imageStar">
-                        <img src="./images/imgLanding/icons/star-one.png" alt="star" class="imageStar">
-                        <img src="./images/imgLanding/icons/star-one.png" alt="star" class="imageStar">
-                        <img src="./images/imgLanding/icons/star-one.png" alt="star" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
                     </div>
                     <div class="commentBlock__comment">Траектория для меня оказалась открытием.
                         Это <strong> возможность посмотреть на себя</strong>, свою жизнь со стороны в <strong>ретроспективе</strong>.
@@ -820,11 +821,11 @@
                     <p class="commentBlock__nameAuthor">Ирина Невзорова</p>
                     <p class="commentBlock__jobPosition">Директор подразделения Isover в России</p>
                     <div class="starBlock">
-                        <img src="./images/imgLanding/icons/star-one.png" alt="star" class="imageStar">
-                        <img src="./images/imgLanding/icons/star-one.png" alt="star" class="imageStar">
-                        <img src="./images/imgLanding/icons/star-one.png" alt="star" class="imageStar">
-                        <img src="./images/imgLanding/icons/star-one.png" alt="star" class="imageStar">
-                        <img src="./images/imgLanding/icons/star-one.png" alt="star" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
                     </div>
                     <div class="commentBlock__rating"></div>
                     <div class="commentBlock__comment">Работа по разбору личной траектории помогла мне осознать все
@@ -842,11 +843,11 @@
                     <p class="commentBlock__nameAuthor">Артем Газаров</p>
                     <p class="commentBlock__jobPosition">«Белая радуга» • Управляющий обственник </p>
                     <div class="starBlock">
-                        <img src="./images/imgLanding/icons/star-one.png" alt="star" class="imageStar">
-                        <img src="./images/imgLanding/icons/star-one.png" alt="star" class="imageStar">
-                        <img src="./images/imgLanding/icons/star-one.png" alt="star" class="imageStar">
-                        <img src="./images/imgLanding/icons/star-one.png" alt="star" class="imageStar">
-                        <img src="./images/imgLanding/icons/star-one.png" alt="star" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
                     </div>
                     <div class="commentBlock__rating"></div>
                     <div class="commentBlock__comment">Преимущества в траектории: всегда интересно наблюдать за
@@ -1073,7 +1074,7 @@
                         </p>
                     </div>
 
-                    <button class="cardTrajectolog__description-next">Подробнее</button>
+                    <button class="cardTrajectolog__description-next" data-bs-toggle="modal" data-bs-target="#exampleModal">Подробнее</button>
                 </div>
 
             </div>
@@ -1082,7 +1083,7 @@
                 <div class="blockAuthor">
                     <p class="cardTrajectolog__block-author">Основатель</p>
                     <img
-                            src="./images/imgLanding/icons/star-one.png"
+                            src="./images/imgLanding/icons/star-one.svg"
                             alt="star-img"
                             class="start-img">
                     <p class="raitingText">5,0 <span class="raitingText-span">(32 477)</span></p>
@@ -1731,6 +1732,7 @@
             <div class="swiper-button-next disabled"></div>
             <div class="swiper-button-prev disabled"></div>
             <div class="swiper-pagination desktop-disabled"></div>
+        </div>
         </div>
     </div>
 </section>

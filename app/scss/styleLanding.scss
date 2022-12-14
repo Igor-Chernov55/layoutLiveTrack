@@ -1,7 +1,12 @@
+body {
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  //min-height: 100vh;
+
 }
 
 .classBorder {
@@ -196,7 +201,8 @@
         background-color: #fff;
         border-radius: 100px;
         border: 1px solid #E4F2FF;
-        padding: 8px 10px;
+        padding: 8px 16px;
+        align-items: center;
       }
 
       .mainTrajectory__block {
@@ -256,6 +262,10 @@
   }
 
   .trajectoryBlock__imgMain {
+      -webkit-background-size: auto;
+      -moz-background-size: auto;
+      -o-background-size: auto;
+      background-size: auto;
     //position: absolute;
     //top: 127px;
     //left: 356px;
@@ -714,14 +724,15 @@
 
     .founderDesc__title {
       font-family: raleway-medium;
-      margin: 0 0 5px;
+      margin: 0;
+      margin-bottom: 3px;
       color: #9A9AA0;
       font-size: 14px;
     }
 
     .approachMotivation__text {
       margin-top: 5px;
-      margin-bottom: 0;
+      margin-bottom: 5px;
       font-family: raleway-medium;
       font-size: 14px;
 
@@ -736,7 +747,9 @@
 
     .authorBook {
       color: #319CFF;
-      text-decoration: none;
+     a {
+       text-decoration: none;
+     }
     }
 
     .founderDesc__info {
@@ -752,6 +765,7 @@
       margin: 0;
     }
   }
+
 
 
   .statBlock {
@@ -772,12 +786,25 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 2px;
+      background: conic-gradient(from 10.65deg at 50% 50%, #FF7171 0deg, rgba(255, 113, 113, 0) 116.25deg, rgba(255, 113, 113, 0) 360deg);
+      border: 2px solid;
+
+      border-image-source: conic-gradient(from 10.65deg at 50% 50%, #FF7171 0deg, rgba(255, 113, 113, 0) 116.25deg, rgba(255, 113, 113, 0) 360deg);
+
+
+    }
+    .statisticItem-second {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       border-right: 1px solid #E0E0E5;
       padding: 2px;
     }
 
-    .statisticItem:last-child {
-      border-right: none;
+
+    .statisticItem-second:last-child {
+      border-right: none !important;
     }
 
     .statisticInfo {
@@ -1042,12 +1069,16 @@
 .cardTrajectolog__block-author {
   font-family: raleway-semibold;
   color: #fff;
-  margin-bottom: 5px;
+  margin: 0;
+  margin-right: 8px !important;
   font-size: 12px;
   padding: 2px 6px;
   border-radius: 50px;
   background-color: #319CFF;
-  margin: 0;
+}
+
+.start-img {
+  margin-right: 5px;
 }
 
 .cardTrajectolog__block-mentor {
@@ -1136,6 +1167,7 @@
 
 .cardTrajectolog__achievements-desc {
   margin: 0;
+  height: 40px;
   font-size: 14px;
   font-family: raleway-medium;
 }
@@ -1383,6 +1415,10 @@
     margin-bottom: 16px;
   }
 
+  .commentStar-image {
+    margin-right: 5px;
+  }
+
   .textComment-modal {
     padding-top: 16px;
     margin-bottom: 0;
@@ -1451,14 +1487,6 @@
     margin-top: 5px;
     margin-bottom: 0;
     font-family: raleway-medium;
-    font-size: 14px;
-  }
-
-  .founderDesc__title {
-    font-family: raleway-medium;
-    margin: 0;
-    margin-bottom: 5px;
-    color: #9A9AA0;
     font-size: 14px;
   }
 
@@ -1567,6 +1595,10 @@
     display: flex;
     margin-bottom: 8px;
   }
+
+  .imageStar {
+    margin-right: 5px;
+  }
 }
 
 .itemCompany {
@@ -1583,13 +1615,14 @@
     font-family: raleway-semibold;
     text-align: center;
     margin: 0 auto 98px;
+    padding-bottom: 48px;
   }
 
   .swiperMap {
     display: none;
   }
 
-  .imgContent-way {
+  .imgContent {
     display: none;
   }
 
@@ -1739,7 +1772,7 @@
 
   .trajectoryMiddle__item:nth-child(2) {
     position: absolute;
-    top: 77px;
+    top: 121px;
 
     .trajectoryMiddle__textBlock {
       height: 170px;
@@ -1891,6 +1924,7 @@
   }
 
   .linkSocial {
+    text-decoration: none;
     margin-right: 20px;
   }
 
@@ -1999,6 +2033,17 @@
 .imageWay-changePrev {
   position: relative;
   left: 105px;
+}
+//.imageYear {
+//    width: 410px !important;
+//  }
+
+.slideTrajectory {
+  width: 410px !important;
+}
+
+.slideTrajectory:first-child {
+  margin-right: 0 !important;
 }
 @import '_fonts';
 

@@ -1,3 +1,8 @@
+body {
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -168,7 +173,8 @@
   background-color: #fff;
   border-radius: 100px;
   border: 1px solid #E4F2FF;
-  padding: 8px 10px;
+  padding: 8px 16px;
+  align-items: center;
 }
 .buildTrajectory .trajectoryAbsolute .mainTrajectory .mainTrajectory__block {
   display: flex;
@@ -212,6 +218,12 @@
   position: absolute;
   top: 42%;
   z-index: -2;
+}
+.buildTrajectory .trajectoryBlock__imgMain {
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  -o-background-size: auto;
+  background-size: auto;
 }
 .buildTrajectory .trajectoryBlock {
   display: flex;
@@ -588,13 +600,14 @@
 }
 .historyTrajectory .founderCard .founderDesc__title {
   font-family: raleway-medium;
-  margin: 0 0 5px;
+  margin: 0;
+  margin-bottom: 3px;
   color: #9A9AA0;
   font-size: 14px;
 }
 .historyTrajectory .founderCard .approachMotivation__text {
   margin-top: 5px;
-  margin-bottom: 0;
+  margin-bottom: 5px;
   font-family: raleway-medium;
   font-size: 14px;
 }
@@ -606,6 +619,8 @@
 }
 .historyTrajectory .founderCard .authorBook {
   color: #319CFF;
+}
+.historyTrajectory .founderCard .authorBook a {
   text-decoration: none;
 }
 .historyTrajectory .founderCard .founderDesc__info {
@@ -636,11 +651,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2px;
+  background: conic-gradient(from 10.65deg at 50% 50%, #FF7171 0deg, rgba(255, 113, 113, 0) 116.25deg, rgba(255, 113, 113, 0) 360deg);
+  border: 2px solid;
+  border-image-source: conic-gradient(from 10.65deg at 50% 50%, #FF7171 0deg, rgba(255, 113, 113, 0) 116.25deg, rgba(255, 113, 113, 0) 360deg);
+}
+.historyTrajectory .statBlock .statisticItem-second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-right: 1px solid #E0E0E5;
   padding: 2px;
 }
-.historyTrajectory .statBlock .statisticItem:last-child {
-  border-right: none;
+.historyTrajectory .statBlock .statisticItem-second:last-child {
+  border-right: none !important;
 }
 .historyTrajectory .statBlock .statisticInfo {
   display: flex;
@@ -860,12 +884,16 @@
 .cardTrajectolog__block-author {
   font-family: raleway-semibold;
   color: #fff;
-  margin-bottom: 5px;
+  margin: 0;
+  margin-right: 8px !important;
   font-size: 12px;
   padding: 2px 6px;
   border-radius: 50px;
   background-color: #319CFF;
-  margin: 0;
+}
+
+.start-img {
+  margin-right: 5px;
 }
 
 .cardTrajectolog__block-mentor {
@@ -949,6 +977,7 @@
 
 .cardTrajectolog__achievements-desc {
   margin: 0;
+  height: 40px;
   font-size: 14px;
   font-family: raleway-medium;
 }
@@ -1164,6 +1193,9 @@
   align-items: center;
   margin-bottom: 16px;
 }
+.blockComment-modal .commentStar-image {
+  margin-right: 5px;
+}
 .blockComment-modal .textComment-modal {
   padding-top: 16px;
   margin-bottom: 0;
@@ -1222,13 +1254,6 @@
   margin-top: 5px;
   margin-bottom: 0;
   font-family: raleway-medium;
-  font-size: 14px;
-}
-.authorAchievements .founderDesc__title {
-  font-family: raleway-medium;
-  margin: 0;
-  margin-bottom: 5px;
-  color: #9A9AA0;
   font-size: 14px;
 }
 .authorAchievements .patentInfo__title {
@@ -1320,6 +1345,9 @@
   display: flex;
   margin-bottom: 8px;
 }
+.comment .imageStar {
+  margin-right: 5px;
+}
 
 .itemCompany {
   position: absolute;
@@ -1335,11 +1363,12 @@
   font-family: raleway-semibold;
   text-align: center;
   margin: 0 auto 98px;
+  padding-bottom: 48px;
 }
 .roadMap .swiperMap {
   display: none;
 }
-.roadMap .imgContent-way {
+.roadMap .imgContent {
   display: none;
 }
 .roadMap .trajectoryDown__blockImage {
@@ -1459,7 +1488,7 @@
 }
 .roadMap .trajectoryMiddle__item:nth-child(2) {
   position: absolute;
-  top: 77px;
+  top: 121px;
 }
 .roadMap .trajectoryMiddle__item:nth-child(2) .trajectoryMiddle__textBlock {
   height: 170px;
@@ -1584,6 +1613,7 @@
   margin: 0 10px 0 0;
 }
 .footer .linkSocial {
+  text-decoration: none;
   margin-right: 20px;
 }
 .footer .linkSocial:last-child {
@@ -1676,6 +1706,14 @@
 .imageWay-changePrev {
   position: relative;
   left: 105px;
+}
+
+.slideTrajectory {
+  width: 410px !important;
+}
+
+.slideTrajectory:first-child {
+  margin-right: 0 !important;
 }
 
 @font-face {
@@ -1850,8 +1888,13 @@
     display: none;
   }
 
+  .swiperMap {
+    display: none !important;
+  }
+
   .imgContent {
-    overflow-x: scroll;
+    display: block !important;
+    overflow: scroll;
   }
 
   .treeSteps1 {
@@ -1865,6 +1908,22 @@
   .statisticList {
     flex-direction: column;
     align-items: center;
+  }
+
+  .trajectoryYear-rebirth {
+    display: none !important;
+  }
+
+  .trajectoryYear-peak {
+    display: none;
+  }
+
+  .classVectorRight {
+    display: none;
+  }
+
+  .classVectorLeft {
+    display: none;
   }
 }
 @media screen and (max-width: 890px) {
@@ -1922,16 +1981,12 @@
     background-color: #fff;
     border-radius: 100px;
     border: 1px solid #E4F2FF;
-    padding: 8px 10px;
-    justify-content: space-between;
+    padding: 8px 16px;
+    align-items: center;
   }
 
   .trajectoryBlock__imgMain {
     width: 100%;
-  }
-
-  .trajectoryYear-rebirth {
-    display: none;
   }
 
   .trajectoryYear-peak {
@@ -1954,12 +2009,12 @@
     min-height: 270px !important;
   }
 
-  .statisticItem {
+  .statisticItem-second {
     border-right: 0 !important;
     padding: 2px;
   }
 
-  .statisticItem:last-child .statisticInfo {
+  .statisticItem-second:last-child .statisticInfo {
     border-bottom: 0;
   }
 
@@ -1982,6 +2037,14 @@
     background-image: url("../images/imgLanding/image-main/tree-left.png");
     background-position: left;
     background-size: cover;
+  }
+
+  .slideTrajectory:first-child {
+    margin-right: 0 !important;
+  }
+
+  .slideTrajectory {
+    width: 100% !important;
   }
 
   .stepsItem {
@@ -2049,6 +2112,7 @@
   .cardTrajectolog {
     margin-right: 0 !important;
     max-width: 70% !important;
+    padding-bottom: 33px;
   }
 
   .buildTrajectory {
@@ -2116,6 +2180,21 @@
     max-width: 100% !important;
   }
 
+  .cardTrajectolog__achievements-desc {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .cardTrajectolog__achievements-desc:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(180deg, transparent, #fff 50%);
+  }
+
   .statBlock {
     padding: 16px;
   }
@@ -2134,6 +2213,7 @@
   }
 
   .founderCard {
+    max-width: 100% !important;
     background-color: #F5F5F6 !important;
     margin-left: 0 !important;
     box-shadow: none !important;
@@ -2265,6 +2345,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
   }
   .footer .chareLink {
     margin: 0 0 10px !important;
@@ -2314,6 +2395,10 @@
   .achievementsItem-modal {
     border-radius: 16px;
     background-color: #F2F9FF;
+  }
+
+  .roadTitle {
+    padding-bottom: 0 !important;
   }
 
   .trajectologTitle-modal {
