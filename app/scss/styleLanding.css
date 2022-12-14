@@ -1350,7 +1350,7 @@ body {
   margin-bottom: 120px;
 }
 .comment .commentTitle {
-  font-family: raleway-medium;
+  font-family: raleway-semibold;
   font-size: 56px;
   margin: 0 auto 30px;
   text-align: center;
@@ -1365,12 +1365,13 @@ body {
 }
 .comment .commentCard__rounded1 {
   position: absolute;
-  top: 5px;
+  top: -2px;
+  left: -7px;
   transform: rotate(-107.76deg);
 }
 .comment .commentCard__dot1 {
   position: absolute;
-  bottom: 29px;
+  bottom: 32px;
   left: 73px;
   transform: rotate(-45deg);
 }
@@ -1396,7 +1397,8 @@ body {
 }
 .comment .commentCard__rounded4 {
   position: absolute;
-  top: 8px;
+  top: 3px;
+  left: -8px;
   transform: rotate(-110.76deg);
 }
 .comment .commentCard__dot4 {
