@@ -36,12 +36,12 @@ const swiperComment = new Swiper(".swiperComment", {
         // when window width is >= 320px
         320: {
             slidesPerView: 1,
-            spaceBetween: 30,
+            spaceBetween: 50,
         },
         // when window width is >= 480px
         580: {
             slidesPerView: 2,
-            spaceBetween: 30,
+            spaceBetween: 20,
 
         },
         // when window width is >= 640px
@@ -56,7 +56,7 @@ const swiperComment = new Swiper(".swiperComment", {
         },
 
         1100: {
-            slidesPerView: 2,
+            slidesPerView: 3,
             spaceBetween: 10
         }
     },

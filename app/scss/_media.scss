@@ -133,6 +133,55 @@
     min-height: 270px !important;
   }
 
+  .rounded-image1 {
+    position: absolute;
+    top: -32px;
+    width: 275px;
+    left: -4px;
+    z-index: -10;
+    transform: rotate(51deg);
+  }
+
+  .dot-rounded1 {
+    position: absolute;
+    top: -34px;
+    right: 89px;
+    z-index: 1;
+  }
+
+  .rounded-image2 {
+    position: absolute;
+    top: -33px;
+    width: 276px;
+    left: -2px;
+    z-index: 1;
+    transform: rotate(-1.83deg);
+  }
+
+  .dot-rounded2 {
+    position: absolute;
+    left: 7px;
+    bottom: 51px;
+    z-index: 1;
+  }
+
+
+  .rounded-image3 {
+    position: absolute;
+    top: -33px;
+    width: 273px;
+    left: -1px;
+    z-index: -10;
+    transform: rotate(87deg);
+  }
+
+  .dot-rounded3 {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1;
+  }
+
   .statisticItem-second {
     border-right: 0 !important;
     //border-bottom: 1px solid #E0E0E5;
@@ -359,6 +408,10 @@
     margin: 15px;
   }
 
+  .commentCard {
+    max-width: 100% !important;
+    margin-right: 0 !important;
+  }
 
   .questionText-block {
     text-align: center;

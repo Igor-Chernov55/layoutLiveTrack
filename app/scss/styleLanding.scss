@@ -346,6 +346,8 @@ body {
   transform: rotate(-1.83deg);
 }
 
+
+
 .dot-rounded2 {
   position: absolute;
   left: 17px;
@@ -1599,7 +1601,6 @@ body {
   margin-bottom: 120px;
 
   .commentTitle {
-
     font-family: raleway-semibold;
     font-size: 56px;
     margin: 0 auto 30px;
@@ -1632,14 +1633,16 @@ body {
 
   .commentCard__rounded2 {
     position: absolute;
-    top: 0;
+    top: -8px;
+    left: 0px;
   }
 
   .commentCard__dot2 {
     position: absolute;
-    top: 32px;
-    left: 83px;
+    top: 25px;
+    left: 86px;
   }
+
 
   .commentCard__rounded3 {
     position: absolute;
@@ -1663,8 +1666,8 @@ body {
 
   .commentCard__dot4 {
     position: absolute;
-    bottom: 22px;
-    left: 83px;
+    bottom: 27px;
+    left: 77px;
   }
 
   .commentBlock__jobPosition {
@@ -1702,10 +1705,16 @@ body {
     border-image-source: conic-gradient(from 10.65deg at 50% 50%, #FF7171 0deg, rgba(255, 113, 113, 0) 116.25deg, rgba(255, 113, 113, 0) 360deg);
   }
 
-  .commentCard {
+  .swiper-slide {
     width: 437px !important;
     margin-left: 10px;
+    margin-right: 20px !important;
   }
+
+  //.commentCard {
+  //  width: 437px !important;
+  //  margin-left: 10px;
+  //}
 
   .starBlock {
     display: flex;
@@ -2000,13 +2009,10 @@ body {
     font-family: raleway-medium;
     color: #9A9AA0;
   }
-
 }
-
 
 .footer {
   background-color: #F5F5F6;
-
   padding: 24px 48px;
 
   .footer__list {
@@ -2127,7 +2133,9 @@ body {
 
 
 } .bottom-wrapper {
+
     padding-bottom: 100px;
+    padding-top: 20px;
   }
 
 .desktop-disabled {
