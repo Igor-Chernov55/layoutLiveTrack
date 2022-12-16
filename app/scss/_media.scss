@@ -408,9 +408,8 @@
     margin: 15px;
   }
 
-  .commentCard {
-    max-width: 100% !important;
-    margin-right: 0 !important;
+  .commentCard-mobile {
+    width: 390px !important;
   }
 
   .questionText-block {
@@ -421,6 +420,66 @@
   .cardsBlock {
     justify-content: center;
   }
+
+  #commentCard {
+    width: 390px !important;
+    margin-left: 0 !important;
+    //margin-right: 30px;
+  }
+
+  .commentCard__rounded1 {
+    position: absolute;
+    top: -2px;
+    left: -7px;
+    transform: rotate(-107.76deg);
+  }
+
+  .commentCard__dot1 {
+    position: absolute;
+    bottom: 32px;
+    left: 73px;
+    transform: rotate(-45deg);
+  }
+
+  .commentCard__rounded2 {
+    position: absolute;
+    top: -8px;
+    left: 0px;
+  }
+
+  .commentCard__dot2 {
+    position: absolute;
+    top: 25px;
+    left: 86px;
+  }
+
+
+  .commentCard__rounded3 {
+    position: absolute;
+    top: 7px;
+    right: -6px;
+    transform: rotate(90deg);
+  }
+
+  .commentCard__dot3 {
+    position: absolute;
+    top: 92px;
+    right: 23px;
+  }
+
+  .commentCard__rounded4 {
+    position: absolute;
+    top: 3px;
+    left: -8px;
+    transform: rotate(-110.76deg);
+  }
+
+  .commentCard__dot4 {
+    position: absolute;
+    bottom: 27px;
+    left: 77px;
+  }
+
 
   .questionForm {
     width: 100% !important;

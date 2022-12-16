@@ -842,12 +842,6 @@ body {
 .cardCompetenceBlock .competenceCard .jobsItem__image {
   margin-right: 6px;
 }
-.cardCompetenceBlock .competenceCard .jobsItem__description {
-  margin: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-family: raleway-medium;
-}
 .cardCompetenceBlock .competenceCard .choiceTrajectolog {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -1123,6 +1117,13 @@ body {
   padding: 0;
   list-style-type: none;
 }
+.achievements-modal .workExperience__list .jobsItem__description {
+  font-family: raleway-medium;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
 .achievements-modal .workExperience__item {
   display: flex;
   align-items: flex-start;
@@ -1146,7 +1147,7 @@ body {
   margin-bottom: 10px;
 }
 .achievements-modal .comment-modal {
-  font-family: raleway-semibold;
+  font-family: raleway-bold;
   font-size: 16px;
   color: #0F0F1A;
 }
@@ -1167,7 +1168,7 @@ body {
 .achievements-modal .commentModule__name {
   font-size: 14px;
   line-height: 22px;
-  font-family: raleway-semibold;
+  font-family: raleway-bold;
 }
 .achievements-modal .commentModule__textComment {
   font-family: raleway-medium;
@@ -1438,10 +1439,9 @@ body {
   border: 2px solid;
   border-image-source: conic-gradient(from 10.65deg at 50% 50%, #FF7171 0deg, rgba(255, 113, 113, 0) 116.25deg, rgba(255, 113, 113, 0) 360deg);
 }
-.comment .swiper-slide {
+.comment .commentCard {
   width: 437px !important;
   margin-left: 10px;
-  margin-right: 20px !important;
 }
 .comment .starBlock {
   display: flex;
@@ -2393,9 +2393,8 @@ body {
     margin: 15px;
   }
 
-  .commentCard {
-    max-width: 100% !important;
-    margin-right: 0 !important;
+  .commentCard-mobile {
+    width: 390px !important;
   }
 
   .questionText-block {
@@ -2405,6 +2404,63 @@ body {
 
   .cardsBlock {
     justify-content: center;
+  }
+
+  #commentCard {
+    width: 390px !important;
+    margin-left: 0 !important;
+  }
+
+  .commentCard__rounded1 {
+    position: absolute;
+    top: -2px;
+    left: -7px;
+    transform: rotate(-107.76deg);
+  }
+
+  .commentCard__dot1 {
+    position: absolute;
+    bottom: 32px;
+    left: 73px;
+    transform: rotate(-45deg);
+  }
+
+  .commentCard__rounded2 {
+    position: absolute;
+    top: -8px;
+    left: 0px;
+  }
+
+  .commentCard__dot2 {
+    position: absolute;
+    top: 25px;
+    left: 86px;
+  }
+
+  .commentCard__rounded3 {
+    position: absolute;
+    top: 7px;
+    right: -6px;
+    transform: rotate(90deg);
+  }
+
+  .commentCard__dot3 {
+    position: absolute;
+    top: 92px;
+    right: 23px;
+  }
+
+  .commentCard__rounded4 {
+    position: absolute;
+    top: 3px;
+    left: -8px;
+    transform: rotate(-110.76deg);
+  }
+
+  .commentCard__dot4 {
+    position: absolute;
+    bottom: 27px;
+    left: 77px;
   }
 
   .questionForm {

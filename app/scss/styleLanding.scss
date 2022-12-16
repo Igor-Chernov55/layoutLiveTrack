@@ -1014,12 +1014,6 @@ body {
       margin-right: 6px;
     }
 
-    .jobsItem__description {
-      margin: 0;
-      font-size: 14px;
-      line-height: 20px;
-      font-family: raleway-medium;
-    }
 
 
     .choiceTrajectolog {
@@ -1336,6 +1330,14 @@ body {
   .workExperience__list {
     padding: 0;
     list-style-type: none;
+    .jobsItem__description {
+      font-family: raleway-medium;
+      margin: 0;
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
   }
 
   .workExperience__item {
@@ -1364,7 +1366,7 @@ body {
     margin-bottom: 10px;
   }
   .comment-modal {
-    font-family: raleway-semibold;
+    font-family: raleway-bold;
     font-size: 16px;
     color: #0F0F1A;
   }
@@ -1388,7 +1390,7 @@ body {
   .commentModule__name {
     font-size: 14px;
     line-height: 22px;
-    font-family: raleway-semibold;
+    font-family: raleway-bold;
   }
 
   .commentModule__textComment {
@@ -1670,6 +1672,8 @@ body {
     left: 77px;
   }
 
+
+
   .commentBlock__jobPosition {
     margin: 0 0 8px;
     color: #9A9AA0;
@@ -1706,15 +1710,15 @@ body {
   }
 
   .swiper-slide {
-    width: 437px !important;
-    margin-left: 10px;
-    margin-right: 20px !important;
+    //width: 437px !important;
+    //margin-left: 10px;
+    //margin-right: 20px !important;
   }
 
-  //.commentCard {
-  //  width: 437px !important;
-  //  margin-left: 10px;
-  //}
+  .commentCard {
+    width: 437px !important;
+    margin-left: 10px;
+  }
 
   .starBlock {
     display: flex;
