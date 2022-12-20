@@ -1,5 +1,4 @@
-body {
-  background-color: #fff;
+html, body {
   overflow-x: hidden;
 }
 
@@ -257,7 +256,7 @@ body {
   list-style-type: none;
   justify-content: center;
   padding: 0;
-  margin: 0;
+  margin: 0 0 120px;
 }
 
 .statisticItem {
@@ -780,7 +779,6 @@ body {
 }
 
 .cardCompetenceBlock {
-  display: flex;
   margin-bottom: 64px;
 }
 .cardCompetenceBlock .competenceCard {
@@ -1425,6 +1423,7 @@ body {
   border: none;
   color: #319CFF;
   font-size: 14px;
+  z-index: 10;
   font-family: raleway-semibold;
 }
 .comment .commentBlock {
@@ -1627,7 +1626,7 @@ body {
 .roadMap .arrowEnd {
   position: absolute;
   top: -15px;
-  right: -29px;
+  right: -17px;
 }
 
 .questionSection {
@@ -1996,6 +1995,11 @@ body {
 }
 
 @media screen and (max-width: 1100px) {
+  body {
+    background-color: #fff;
+    overflow-x: hidden;
+  }
+
   .roadMap__Block {
     display: none;
   }
@@ -2108,6 +2112,7 @@ body {
   .statisticList {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 64px;
   }
 
   .statisticItem__block {
@@ -2197,10 +2202,6 @@ body {
     background-image: url("../images/imgLanding/image-main/tree-left.png");
     background-position: left;
     background-size: cover;
-  }
-
-  .slideTrajectory:first-child {
-    margin-right: 0 !important;
   }
 
   .slideTrajectory {

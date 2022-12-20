@@ -126,6 +126,7 @@ const swiperPrice = new Swiper(".swiperPrice", {
         // when window width is >= 640px
         840: {
             slidesPerView: 3,
+            spaceBetween: 20,
         }
     },
     pagination: {
