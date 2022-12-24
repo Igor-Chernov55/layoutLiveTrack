@@ -29,7 +29,7 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 const swiperComment = new Swiper(".swiperComment", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 40,
     speed: 200,
     breakpoints: {
@@ -51,12 +51,12 @@ const swiperComment = new Swiper(".swiperComment", {
         },
 
         900: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 10
         },
 
-        1100: {
-            slidesPerView: 3,
+        1300: {
+            slidesPerView: 2,
             spaceBetween: 10
         }
     },

@@ -1,8 +1,18 @@
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1380px) {
   body {
     background-color: #fff;
     overflow-x: hidden;
   }
+
+  .cardTrajectolog__achievements-desc {
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+
+@media screen and (max-width: 1100px) {
+
 
 
   .roadMap__Block {
@@ -16,6 +26,7 @@
   .imgContent {
     display: block !important;
     overflow: scroll;
+    touch-action: pan-x;
   }
 
   .treeSteps1 {

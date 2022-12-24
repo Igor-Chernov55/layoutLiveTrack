@@ -1,5 +1,6 @@
-html, body {
-  overflow-x: hidden;
+body {
+  background-color: white;
+  overflow-x: visible;
 }
 
 .container {
@@ -391,7 +392,8 @@ html, body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  filter: drop-shadow(0px 40px 100px rgba(0, 0, 0, 0.04));
+  box-shadow: 0px 40px 100px 0px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(12px);
 }
 
 .statisticItem__block:nth-child(2) {
@@ -491,7 +493,7 @@ html, body {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    padding: 0;
+    padding: 20px;
     margin: 0;
   }
 
@@ -593,6 +595,7 @@ html, body {
     background-color: #F8F8F8;
     border-radius: 16px;
     padding-left: 48px;
+    margin: 18px;
   }
 
   .descriptionTrajectory__title {
@@ -751,6 +754,7 @@ html, body {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 40px;
+    padding: 20px;
   }
 
   .founderImage {
@@ -832,11 +836,12 @@ html, body {
 
   .statBlock {
     margin-bottom: 120px;
+    padding: 20px;
 
     .statisticSecond {
       display: flex;
       margin: 0;
-      padding: 0;
+      padding: 20px;
       align-items: center;
       justify-content: space-between;
       list-style-type: none;
