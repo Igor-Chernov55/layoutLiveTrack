@@ -1719,7 +1719,13 @@ body {
   }
 
   .commentCard {
-    width: 437px !important;
+    //width: 437px !important;
+    width: 100% !important;
+    //max-width: 437px !important;
+    //min-width: 390px !important;
+  }
+
+  .commentCard:first-child {
     margin-left: 10px;
   }
 

@@ -429,7 +429,7 @@
   }
 
   .commentCard-mobile {
-    width: 390px !important;
+    width: 380px !important;
   }
 
   .questionText-block {
@@ -441,11 +441,11 @@
     justify-content: center;
   }
 
-  #commentCard {
-    width: 390px !important;
-    margin-left: 20px !important;
-
-  }
+  //#commentCard {
+  //  width: 390px !important;
+  //  margin-left: 20px !important;
+  //
+  //}
 
   .commentCard__rounded1 {
     position: absolute;
@@ -719,7 +719,7 @@
     }
 
   #commentCard:nth-child(3) {
-    margin-right: 72px !important;
+    //margin-right: 72px !important;
   }
 
 }

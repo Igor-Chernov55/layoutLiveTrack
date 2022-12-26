@@ -1443,7 +1443,9 @@ body {
   border-image-source: conic-gradient(from 10.65deg at 50% 50%, #FF7171 0deg, rgba(255, 113, 113, 0) 116.25deg, rgba(255, 113, 113, 0) 360deg);
 }
 .comment .commentCard {
-  width: 437px !important;
+  width: 100% !important;
+}
+.comment .commentCard:first-child {
   margin-left: 10px;
 }
 .comment .starBlock {
@@ -2406,7 +2408,7 @@ body {
   }
 
   .commentCard-mobile {
-    width: 390px !important;
+    width: 380px !important;
   }
 
   .questionText-block {
@@ -2416,11 +2418,6 @@ body {
 
   .cardsBlock {
     justify-content: center;
-  }
-
-  #commentCard {
-    width: 390px !important;
-    margin-left: 20px !important;
   }
 
   .commentCard__rounded1 {
@@ -2678,10 +2675,6 @@ body {
 @media screen and (max-width: 400px) {
   #commentCard {
     margin-right: 10px !important;
-  }
-
-  #commentCard:nth-child(3) {
-    margin-right: 72px !important;
   }
 }
 

@@ -29,14 +29,14 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 const swiperComment = new Swiper(".swiperComment", {
-    slidesPerView: 1,
+    slidesPerView: 3,
     spaceBetween: 40,
     speed: 200,
     breakpoints: {
         // when window width is >= 320px
         320: {
             slidesPerView: 1,
-            spaceBetween: 50,
+            spaceBetween: 30,
         },
         // when window width is >= 480px
         580: {
