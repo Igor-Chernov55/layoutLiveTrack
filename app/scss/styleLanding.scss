@@ -1865,7 +1865,7 @@ body {
   }
 
   .trajectoryUp__textBlock {
-    box-shadow: 0 16px 70px rgb(0 0 0 / 8%);
+    box-shadow: 0 16px 70px rgba(0, 0, 0, 8%);
     border-radius: 8px 8px 24px 24px;
     border-top: 3px solid #FF9A9A;
     padding: 16px;
@@ -2196,6 +2196,6 @@ body {
 .slideTrajectory:first-child {
   margin-right: 0 !important;
 }
-@import '_fonts';
 
+@import '_fonts';
 @import '_media';
