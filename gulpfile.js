@@ -21,7 +21,7 @@ function browsersync() {
 }
 
 function style() {
-    return src('app/scss/style.scss')
+    return src('app/scss/styleLanding.scss')
         .pipe(scss({ outputStyle: 'expanded' })) //compressed //конвертирует в css и сжимает
         .pipe(concat('style.min.css'))  //может конкатенировать и переименовывать файлы
         .pipe(group_media())
@@ -36,11 +36,7 @@ function style() {
 
 
 function stylelib() {
-    return src([
-        "node_modules/normalize.css/normalize.css",
-        "node_modules/slick-carousel/slick/slick.css",
-        "node_modules/animate.css/animate.css",
-    ])
+    return src("app/css/*.css")
         .pipe(concat("libs.min.css"))
         .pipe(cssmin())
         .pipe(dest("app/css"))
@@ -49,7 +45,7 @@ function stylelib() {
 
 function js() {
     return src([
-        'app/js/main.js'
+        'app/js/jsLanding.js'
     ])
         .pipe(concat('main.min.js'))
         .pipe(uglify())
@@ -59,6 +55,7 @@ function js() {
 
 
 function jslib() {
+    // TODO: fix libs
     return src([
         'node_modules/jquery/dist/jquery.js',
         "node_modules/slick-carousel/slick/slick.js",
