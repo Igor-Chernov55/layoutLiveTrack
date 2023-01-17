@@ -1,0 +1,31 @@
+name: github-pages
+
+on:
+  push:
+    branches:
+      - master
+
+concurrency:
+  group: ${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: '16.x'
+
+    - name: npm install and build
+      run: npm install && npm run build
+
+    - name: Deploy to Pages
+      uses: JamesIves/github-pages-deploy-action@v4.4.1
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        branch: gh-pages # The branch the action should deploy to.
+        folder: dist # The folder the action should deploy.
+        clean: true # Automatically remove deleted files from the deploy branch

@@ -67,13 +67,14 @@ function jslib() {
 
 
 function images() {
-    return src('app/images/**/*')
+    return src('app/images/**/*.webp')
         .pipe(webp({
             quality: 80
         }))
         .pipe(dest('dist/images'))
-        .pipe(src('app/images/**/*'))
+        .pipe(src('app/images/**/*.png'))
         .pipe(imagemin())
+        .pipe(src('app/images/**/*.svg'))
         .pipe(dest('dist/images'))
 }
 
@@ -85,6 +86,7 @@ function build() {
         'app/fonts/**/*',
         'app/js/lib.min.js',
         'app/js/main.min.js',
+        'app/*.html'
     ], { base: 'app' })  //чтобы в дист были такие же папки
         .pipe(dest('dist'))
 }
