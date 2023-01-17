@@ -1,5 +1,5 @@
 const { src, dest, watch, parallel, series } = require("gulp"),
-    scss = require("gulp-sass"),
+    scss = require("gulp-sass")(require("node-sass")),
     cssmin = require('gulp-cssmin'),
     concat = require("gulp-concat"),
     browserSync = require('browser-sync').create(),
