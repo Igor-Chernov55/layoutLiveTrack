@@ -67,13 +67,14 @@ function jslib() {
 
 
 function images() {
-    return src('app/images/**/*')
+    return src('app/images/**/*.webp')
         .pipe(webp({
             quality: 80
         }))
         .pipe(dest('dist/images'))
-        .pipe(src('app/images/**/*'))
+        .pipe(src('app/images/**/*.{png,jpg,gif}'))
         .pipe(imagemin())
+        .pipe(src('app/images/**/*.svg'))
         .pipe(dest('dist/images'))
 }
 
@@ -85,6 +86,7 @@ function build() {
         'app/fonts/**/*',
         'app/js/lib.min.js',
         'app/js/main.min.js',
+        'app/*.html'
     ], { base: 'app' })  //чтобы в дист были такие же папки
         .pipe(dest('dist'))
 }
@@ -111,7 +113,8 @@ exports.browsersync = browsersync;
 exports.cleanDist = cleanDist;
 
 
+exports.devBuild = parallel(stylelib, style, jslib, js);
 exports.default = series(
-  parallel(stylelib, style, jslib, js),
+  exports.devBuild,
   parallel(browsersync, watching)); //задаем дефолтную задачу для gulp
-exports.build = series(cleanDist, images, build);
+exports.build = series(exports.devBuild, cleanDist, images, build);
