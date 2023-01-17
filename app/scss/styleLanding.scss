@@ -1637,28 +1637,36 @@ body {
 
   .commentCard__rounded2 {
     position: absolute;
-    top: -8px;
-    left: 0px;
+    top: -5px;
+    left: -8px;
+  }
+
+  #commentCard {
+    width: 437px !important;
+  }
+
+  #commentCard:nth-child(4) {
+    margin-left: 10px;
   }
 
   .commentCard__dot2 {
     position: absolute;
-    top: 25px;
-    left: 86px;
+    top: 26px;
+    left: 81px;
   }
 
 
   .commentCard__rounded3 {
     position: absolute;
-    top: 7px;
-    right: -6px;
-    transform: rotate(90deg);
+    top: 10px;
+    right: -1px;
+    transform: rotate(138deg);
   }
 
   .commentCard__dot3 {
     position: absolute;
-    top: 92px;
-    right: 23px;
+    bottom: 146px;
+    right: -5px;
   }
 
   .commentCard__rounded4 {
@@ -1719,8 +1727,8 @@ body {
   }
 
   .commentCard {
-    //width: 437px !important;
-    width: 100% !important;
+    //width: 437px;
+    //width: 100% !important;
     //max-width: 437px !important;
     //min-width: 390px !important;
   }

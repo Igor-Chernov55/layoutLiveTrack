@@ -464,9 +464,9 @@
 
   .commentCard__rounded2 {
     position: absolute;
-    top: -8px;
+    top: -8px !important;
     width: 397px;
-    left: 0px;
+    left: 0px !important;
   }
 
   .commentCard__dot2 {
@@ -486,8 +486,8 @@
 
   .commentCard__dot3 {
     position: absolute;
-    top: 76px !important;
-    right: 14px !important;
+    bottom: 111px !important;
+    right: -7px !important;
   }
 
   .commentCard__rounded4 {
@@ -715,7 +715,7 @@
 
 @media screen and (max-width: 400px) {
     #commentCard {
-      margin-right: 10px !important  ;
+      max-width: 100% !important;
     }
 
   #commentCard:nth-child(3) {

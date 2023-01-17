@@ -1380,24 +1380,30 @@ body {
 }
 .comment .commentCard__rounded2 {
   position: absolute;
-  top: -8px;
-  left: 0px;
+  top: -5px;
+  left: -8px;
+}
+.comment #commentCard {
+  width: 437px !important;
+}
+.comment #commentCard:nth-child(4) {
+  margin-left: 10px;
 }
 .comment .commentCard__dot2 {
   position: absolute;
-  top: 25px;
-  left: 86px;
+  top: 26px;
+  left: 81px;
 }
 .comment .commentCard__rounded3 {
   position: absolute;
-  top: 7px;
-  right: -6px;
-  transform: rotate(90deg);
+  top: 10px;
+  right: -1px;
+  transform: rotate(138deg);
 }
 .comment .commentCard__dot3 {
   position: absolute;
-  top: 92px;
-  right: 23px;
+  bottom: 146px;
+  right: -5px;
 }
 .comment .commentCard__rounded4 {
   position: absolute;
@@ -1441,9 +1447,6 @@ body {
   border-radius: 500px;
   border: 2px solid;
   border-image-source: conic-gradient(from 10.65deg at 50% 50%, #FF7171 0deg, rgba(255, 113, 113, 0) 116.25deg, rgba(255, 113, 113, 0) 360deg);
-}
-.comment .commentCard {
-  width: 100% !important;
 }
 .comment .commentCard:first-child {
   margin-left: 10px;
@@ -2437,9 +2440,9 @@ body {
 
   .commentCard__rounded2 {
     position: absolute;
-    top: -8px;
+    top: -8px !important;
     width: 397px;
-    left: 0px;
+    left: 0px !important;
   }
 
   .commentCard__dot2 {
@@ -2458,8 +2461,8 @@ body {
 
   .commentCard__dot3 {
     position: absolute;
-    top: 76px !important;
-    right: 14px !important;
+    bottom: 111px !important;
+    right: -7px !important;
   }
 
   .commentCard__rounded4 {
@@ -2674,7 +2677,7 @@ body {
 }
 @media screen and (max-width: 400px) {
   #commentCard {
-    margin-right: 10px !important;
+    max-width: 100% !important;
   }
 }
 

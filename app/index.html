@@ -1,265 +1,2085 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Live Track - Профиль</title>
-	<link rel="stylesheet" href="css/libs.min.css">
-	<link rel="stylesheet" href="css/style.min.css">
-	<link rel="shortcut icon" href="images/favicons//favicon.ico" type="image/x-icon" />
-	<link rel="apple-touch-icon" href="images/favicons//apple-touch-icon.png" />
-	<link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png" />
-	<link rel="apple-touch-icon" sizes="72x72" href="images/favicons//apple-touch-icon-72x72.png" />
-	<link rel="apple-touch-icon" sizes="76x76" href="images/favicons//apple-touch-icon-76x76.png" />
-	<link rel="apple-touch-icon" sizes="114x114" href="images/favicons//apple-touch-icon-114x114.png" />
-	<link rel="apple-touch-icon" sizes="120x120" href="images/favicons//apple-touch-icon-120x120.png" />
-	<link rel="apple-touch-icon" sizes="144x144" href="images/favicons//apple-touch-icon-144x144.png" />
-	<link rel="apple-touch-icon" sizes="152x152" href="images/favicons//apple-touch-icon-152x152.png" />
-	<link rel="apple-touch-icon" sizes="180x180" href="images/favicons//apple-touch-icon-180x180.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiveTrack</title>
+
+    <link rel="stylesheet" href="css/normalizeLanding.css">
+    <link rel="stylesheet" href="css/normalizeLanding.css">
+    <link rel="stylesheet" href="css/hamburger-menu.css">
+    <link  rel="stylesheet" href="css/swiperStyle.css">
+    <link rel="stylesheet" href="scss/bootstrap.css">
+    <link rel="stylesheet" href="scss/styleLanding.css">
 </head>
-
 <body>
-	<div class="container">
-		<header class="header">
-			<a href="/">
-				<img src="images/logo.svg" alt="Логотип платформы">
-			</a>
-			<nav class="header-nav">
-				<ul class="header-nav__list">
-					<li class="header-nav__item"><a href="#">О траектории</a></li>
-					<li class="header-nav__item"><a href="/tariffs.html">Тарифы</a></li>
-					<li class="header-nav__item"><a href="#">Контакты</a></li>
-				</ul>
-				<div class="header-nav__btn">
-					<button class="secondary-btn header-profile__btn">Алексей Скороходов</button>
-					<div class="header-profile__menu">
-						<ul>
-							<li class="header-profile__menu-item">
-								<a href="/">
-									<i class="icon-user icon-user-header-menu"></i>
-									<span>Личный кабинет</span>
-								</a>
-							</li>
-							<li class="header-profile__menu-item header-profile__menu-item--danger">
-								<a href="/auth.html">
-									<i class="icon-out"></i>
-									<span>Выйти из личного кабинета</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</header>
+<div class="classBorder">
 
-		<body>
-			<main class="profile g-page">
-				<div class="profile-grid">
-					<div class="profile-grid__half-block">
-						<!---------------------- Профайл пользователя ---------------------->
-						<article class="g-block ">
-							<div class="profile__block-header mb-16">
-								<i class="icon-user"></i>
-								<h3 class="profile__block-title">Профиль</h3>
-							</div>
+    <header class="header container">
+        <div class="blockLogo">
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox"/>
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
 
-							<ul class="dg rg-16 mb-24">
-								<li>
-									<span class="g-text-gray">ФИО:</span>
-									<span>Скороходов Алексей, 32 года</span>
-								</li>
-								<li>
-									<span class="g-text-gray">Дата рождения:</span>
-									<span>15.06.1990</span>
-								</li>
-								<li>
-									<span class="g-text-gray">Страна, город:</span>
-									<span>Россия, Москва</span>
-								</li>
-								<li>
-									<span class="g-text-gray">Должность:</span>
-									<span>UI-дизайнер</span>
-								</li>
-								<li>
-									<span class="g-text-gray">Телефон:</span>
-									<span>+7 (999) 888 88 88</span>
-								</li>
-								<li>
-									<span class="g-text-gray">Электронная почта: </span>
-									<span>alexXx_skorohod@mail.ru</span>
-								</li>
-							</ul>
+                <ul class="menu__box">
+                    <li><a class="menu__itemLink" href="#">О траектории</a></li>
+                    <li><a class="menu__itemLink" href="#">Тарифы</a></li>
+                    <li><a class="menu__itemLink" href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <a class="logo" href="#">
+                <img
+                        src="./images/imgLanding/logo/logo-main.svg"
+                        alt="logo"
+                        class="logo__img"
+                >
+            </a>
+        </div>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#" class="menu__link">О траектории</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Тарифы</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="account">Личный кабинет</button>
+    </header>
+</div>
 
-							<a href="/edit-profile.html" class="secondary-btn">
-								<i class="icon-edit btn-icon-edit"></i>
-								Изменить
-							</a>
-						</article>
+<section class="buildTrajectory container">
 
-						<!---------------------- Сессия с траектологом ---------------------->
-						<article class="g-block">
-							<div class="profile__block-header mb-16">
-								<img src="images/icons/clock.svg">
-								<h3 class="profile__block-title">Сессия с траектологом</h3>
-							</div>
+    <h1 class="mainTitle mainTitle-mobile">EntPath</h1>
+    <p class="mainText">Вспомнив свою жизнь с рождения, вы определите ключевые события.
+        Поймёте, как сделать шаг в будущее, оперевшись на прошлый опыт.
+        Построив траекторию, вы найдёте свою «социальную силу» — действия, которые дают вам энергию.
+    </p>
 
-							<div class="mb-24 dg rg-16">
-								<p class="g-text-semibold">Понедельник, 24 августа, 15:00 (МСК)</p>
-								<div class="profile__traektolog">
-									<div class="profile__traektolog-img">
-										<img src="images/mockImg/traektolog.png" alt="Фото траектолога">
-									</div>
-									<div>
-										<p class="profile__traektolog-title">Ваш траектолог</p>
-										<p class="g-text-semibold">Александра Галицкая</p>
-										<p class="profile__traektolog-descr">Ясность нашей позиции очевидна: граница обучения кадров
-											выявляет срочную потребность системы обучения кадров</p>
-									</div>
-								</div>
-								<div class="dg rg-8">
-									<a href="#" class="main-btn small-btn">Перейти к встрече</a>
-									<p class="g-text-gray g-text-fs-12">По нажатию кнопки будет открыта ссылка на звонок в «Zoom»
-									</p>
-								</div>
-							</div>
+    <div class="trajectoryAbsolute">
+        <div class="mainTrajectory">
+            <button class="mainTrajectory__start">
+                Построить траекторию
+            </button>
+            <button class="mainTrajectory__review">
+                <div class="mainTrajectory__block">
+                    <div class="mainTrajectory__play">
+                        <img src="./images/imgLanding/icons/button-play.svg"
+                             alt="play"
+                             class="mainTrajectory__play-logo"
+                        >
+                    </div>
+                    <div class="mainTrajectory__description">
+                        <p class="mainTrajectory__title">Видео-обзор</p>
+                        <p class="mainTrajectory__text">«Траектория жизни» метод Алексея Комарова</p>
+                    </div>
+                </div>
+                <img
+                        src="./images/imgLanding/image-main/image-author.svg"
+                        alt="author"
+                        class="mainTrajectory__authorLogo"
+                >
+            </button>
+        </div>
 
-							<div class="dg rg-6">
-								<p class="g-text-gray g-text-fs-14">Если хотите изменить дату встречи, свяжитесь с нами</p>
-								<ul class="common__contacts-list">
-									<li class="common__contacts-item">
-										<a href="tel:+79998888888" aria-label="контактный телефон">
-											<i class="icon-phone"></i>
-											+7 (999) 888 88 88</a>
-									</li>
-									<li class="common__contacts-item">
-										<a href="https://wa.me/79200000000" aria-label="Whatsapp" target='_blank' rel="noreferrer">
-											<i class="icon-whatsapp"></i>
-											WhatsApp</a>
-									</li>
-									<li class="common__contacts-item">
-										<a href="https://t.me/p_strana" aria-label="Телеграм" target='_blank' rel="noreferrer">
-											<i class="icon-telegram"></i>
-											Telegram</a>
-									</li>
-								</ul>
-							</div>
-						</article>
 
-						<!---------------------- Сессии еще нет ---------------------->
-						<article class="g-block">
-							<div class="profile__block-header mb-16">
-								<img src="images/icons/clock.svg">
-								<h3 class="profile__block-title">Сессия с траектологом</h3>
-							</div>
+        <div class="trajectoryYear-rebirth">
+            <img src="./images/imgLanding/icons/years-zero.svg" alt="years" class="trajectoryYear-rebirth__years">
+            <img src="./images/imgLanding/icons/dot.svg" alt="dot" class="trajectoryYear-rebirth__dot">
+            <img src="./images/imgLanding/icons/arrow-dot1.png" alt="arrow" class="trajectoryYear-rebirth__arrow">
+            <div class="trajectoryYear-rebirth__textBlock">
+                <p class="trajectoryYear-rebirth__textRebirth">Этап перерождения</p>
+                <p class="trajectoryYear-rebirth__textCycle">Формирует основу следующего цикла</p>
+            </div>
+        </div>
+        <div class="trajectoryYear-peak">
+            <img src="./images/imgLanding/icons/years-eight.svg" alt="years" class="trajectoryYear-peak__years">
+            <img src="./images/imgLanding/icons/dot.svg" alt="dot" class="trajectoryYear-peak__dot">
+            <img src="./images/imgLanding/icons/arrow-dot2.svg" alt="arrow" class="trajectoryYear-peak__arrow">
+            <div class="trajectoryYear-peak__textBlock">
+                <p class="trajectoryYear-peak__textRebirth">Год пика формы</p>
+                <p class="trajectoryYear-peak__textCycle">Получение ресурса от старого цикла и инвестирование в
+                    формирование нового цикла</p>
+            </div>
+        </div>
 
-							<p class="g-text-semibold mb-24">Следующая сессия будет установлена позже, ожидайте администратора</p>
+        <img src="./images/imgLanding/icons/vector-right.png" alt="vector-right" class="classVectorRight">
+        <img src="./images/imgLanding/icons/vector-left.png" alt="vector-right" class="classVectorLeft">
 
-							<div class="dg rg-6">
-								<p class="g-text-gray g-text-fs-14">Если у вас есть вопросы, свяжитесь с нами</p>
-								<ul class="common__contacts-list">
-									<li class="common__contacts-item">
-										<a href="tel:+79998888888" aria-label="контактный телефон">
-											<i class="icon-phone"></i>
-											+7 (999) 888 88 88</a>
-									</li>
-									<li class="common__contacts-item">
-										<a href="https://wa.me/79200000000" aria-label="Whatsapp" target='_blank' rel="noreferrer">
-											<i class="icon-whatsapp"></i>
-											WhatsApp</a>
-									</li>
-									<li class="common__contacts-item">
-										<a href="https://t.me/p_strana" aria-label="Телеграм" target='_blank' rel="noreferrer">
-											<i class="icon-telegram"></i>
-											Telegram</a>
-									</li>
-								</ul>
-							</div>
-						</article>
+        <div class="trajectoryBlock">
+            <img
+                    src="./images/imgLanding/image-main/mac2.png"
+                    alt="trackWay"
+                    class="trajectoryBlock__imgMain"
+            >
+            <img
+                    alt="backImg1"
+                    src="./images/imgLanding/image-background/image-graph.svg"
+                    class="backImg1"
+            >
 
-						<!---------------------- Сессии еще нет, выбрать тариф---------------------->
-						<article class="g-block">
-							<div class="profile__block-header mb-16">
-								<img src="images/icons/clock.svg">
-								<h3 class="profile__block-title">Сессия с траектологом</h3>
-							</div>
+        </div>
+        <img
+                alt="backImg2"
+                src="./images/imgLanding/image-background/image-tree.svg"
+                class="backImg2"
+        >
+    </div>
 
-							<div class="mb-24">
-								<p class="g-text-semibold mb-16">Выберите тариф для записи на сессию</p>
-								<a class="main-btn small-btn" href="/tariffs.html">Смотреть тарифы</a>
-							</div>
+    <h2 class="statisticTitle">Ключевые цифры</h2>
+    <p class="statisticText">
+        За 7 лет проекта наша команда успешно построила более 1000 траекторий для предпринимателей и людей,
+        которые хотят понять, как использовать свою силу в социальном пространстве и деятельности
+    </p>
 
-							<div class="dg rg-6">
-								<p class="g-text-gray g-text-fs-14">Если у вас есть вопросы, свяжитесь с нами</p>
-								<ul class="common__contacts-list">
-									<li class="common__contacts-item">
-										<a href="tel:+79998888888" aria-label="контактный телефон">
-											<i class="icon-phone"></i>
-											+7 (999) 888 88 88</a>
-									</li>
-									<li class="common__contacts-item">
-										<a href="https://wa.me/79200000000" aria-label="Whatsapp" target='_blank' rel="noreferrer">
-											<i class="icon-whatsapp"></i>
-											WhatsApp</a>
-									</li>
-									<li class="common__contacts-item">
-										<a href="https://t.me/p_strana" aria-label="Телеграм" target='_blank' rel="noreferrer">
-											<i class="icon-telegram"></i>
-											Telegram</a>
-									</li>
-								</ul>
-							</div>
-						</article>
+    <ul class="statisticList">
+        <li class="statisticItem">
+            <img src="./images/imgLanding/round-image.png" alt="" class="rounded-image1">
+            <img src="./images/imgLanding/icons/dot.svg" alt="" class="dot-rounded1">
+            <div class="statisticItem__block">
+                <p class="statisticItem__num">1000+</p>
+                <p class="statisticItem__text">
+                    траекторий предпринимателей и управленцев ( в т. ч. выпускников МШУ СКОЛКОВО)
+                </p>
+            </div>
+        </li>
+        <li class="statisticItem">
+            <img src="./images/imgLanding/rounded-image2.png" alt="" class="rounded-image2">
+            <img src="./images/imgLanding/icons/dot.svg" alt="" class="dot-rounded2">
+            <div class="statisticItem__block">
+                <p class="statisticItem__num">3000+</p>
+                <p class="statisticItem__text">
+                    бизнесов у клиентов компании EntPath
+                </p>
+            </div>
+        </li>
+        <li class="statisticItem">
+            <img src="./images/imgLanding/round-image.png" alt="" class="rounded-image3">
+            <img src="./images/imgLanding/icons/dot.svg" alt="" class="dot-rounded3">
+            <div class="statisticItem__block">
+                <p class="statisticItem__num">90%</p>
+                <p class="statisticItem__text">
+                    рекомендуют траекторию своим друзьям и партнерам
+                </p>
+            </div>
+        </li>
+    </ul>
 
-						<!---------------------- Сессия прошла---------------------->
-						<article class="g-block">
-							<div class="profile__block-header mb-16">
-								<img src="images/icons/clock.svg">
-								<h3 class="profile__block-title">Сессия с траектологом</h3>
-							</div>
+    <div>
+        <h2 class="businessTitle">Развивать себя и свой бизнес</h2>
+        <p class="businessText">
+            Траектория — это инструмент для сбора трех времен: прошлого, настоящего и будущего.
+            Дает возможность предпринимателю развивать себя и свой бизнес, опираясь на прошлое, заглядывать в будущее
+        </p>
+    </div>
 
-							<p class="g-text-gray g-text-fs-12 mb-16">Сессия прошла</p>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper ">
+            <div class="swiper-slide slideTrajectory">
+                <img
+                        alt="image-slide"
+                        src="./images/imgLanding/image-slider/trajectory-business/image-1.svg"
+                        class="imageYear"
+                >
+            </div>
+            <div class="swiper-slide slideTrajectory">
+                <img
+                        alt="image-slide"
+                        src="./images/imgLanding/image-slider/trajectory-business/image-2.svg"
+                        class="imageYear"
+                >
+            </div>
+            <div class="swiper-slide slideTrajectory">
+                <img
+                        alt="image-slide"
+                        src="./images/imgLanding/image-slider/trajectory-business/image-3.svg"
+                        class="imageYear"
+                >
+            </div>
+            <div class="swiper-slide slideTrajectory">
+                <img
+                        alt="image-slide"
+                        src="./images/imgLanding/image-slider/trajectory-business/image-4.svg"
+                        class="imageYear"
+                >
+            </div>
 
-							<div class="dg rg-6">
-								<p class="g-text-gray g-text-fs-14">Если у вас есть вопросы, свяжитесь с нами</p>
-								<ul class="common__contacts-list">
-									<li class="common__contacts-item">
-										<a href="tel:+79998888888" aria-label="контактный телефон">
-											<i class="icon-phone"></i>
-											+7 (999) 888 88 88</a>
-									</li>
-									<li class="common__contacts-item">
-										<a href="https://wa.me/79200000000" aria-label="Whatsapp" target='_blank' rel="noreferrer">
-											<i class="icon-whatsapp"></i>
-											WhatsApp</a>
-									</li>
-									<li class="common__contacts-item">
-										<a href="https://t.me/p_strana" aria-label="Телеграм" target='_blank' rel="noreferrer">
-											<i class="icon-telegram"></i>
-											Telegram</a>
-									</li>
-								</ul>
-							</div>
-						</article>
-					</div>
+        </div>
+        <div class="swiper-button-next disabled"></div>
+        <div class="swiper-button-prev disabled"></div>
+        <div class="swiper-pagination desktop-disabled"></div>
+    </div>
 
-					<!---------------------- Блок с ссылкой на траекторию---------------------->
-					<article class="g-block">
-						<div class="profile__block-header mb-16">
-							<img src="images/icons/logo-icon.svg">
-							<h3 class="profile__block-title">Ваша траектория</h3>
-						</div>
 
-						<a href="https://www.skolkovo.ru/professors/aleksey-komarov/"
-							class="g-text-fs-14 color-main g-text-semibold" target='_blank' rel="noreferrer"
-							aria-label="Ссылка на вашу траекторию">https://www.skolkovo.ru/professors/aleksey-komarov/</a>
-					</article>
-				</div>
-			</main>
-		</body>
-	</div>
-	<script src="js/lib.min.js"></script>
-	<script src="js/main.min.js"></script>
+</section>
+
+<img
+        src="./images/imgLanding/image-main/stars-way-min.svg"
+        alt="stars-way"
+        class="imgStarsWay"
+/>
+
+<section class="stepsSection container">
+    <!-- Modal  trajectologs way-->
+    <div class="modal fade" id="trajectologsWay1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="trajectoryWayBock-modal">
+                    <img src="./images/imgLanding/image-main/trajectory-way.svg" class="trajectoryWau__image-modal"
+                         alt="trajectory">
+                    <p class="trajectoryWay__title-module">Фиксация истории жизни</p>
+                    <ul class="trajectoryWay__list-module">
+                        <li class="trajectoryWay__item-module">Увидеть общее кол-во деятельностей и количество соц.
+                            ролей, в которые ты входишь + увидеть и понять ценность событий, которые с тобой
+                            происходили» → понять масштаб, осознать что ты вообще делаешь
+                        </li>
+                        <li class="trajectoryWay__item-module">«Вспомни себя» → составить и понять свою историю</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="trajectologsWay2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="trajectoryWayBock-modal">
+                    <img src="./images/imgLanding/image-main/trajectory-way.svg" class="trajectoryWau__image-modal"
+                         alt="trajectory">
+                    <p class="trajectoryWay__title-module">Построение циклов</p>
+                    <ul class="trajectoryWay__list-module">
+                        <li class="trajectoryWay__item-module">После того, как человек положил события своей жизни на
+                            траектории, следующий шаг - осознать происходящие циклические сценарии.
+                        </li>
+                        <li class="trajectoryWay__item-module">Выявленные сценарии после осмысления становятся
+                            внутренним ресурсом.
+                        </li>
+                        <li class="trajectoryWay__item-module">Осознавая события циклов, человек может двигаться в
+                            ситуации неопределенности, полагаясь на свой способ действия
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="trajectologsWay3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="trajectoryWayBock-modal">
+                    <img src="./images/imgLanding/image-main/trajectory-way.svg" class="trajectoryWau__image-modal"
+                         alt="trajectory">
+                    <p class="trajectoryWay__title-module">Интерпретация</p>
+                    <ul class="trajectoryWay__list-module">
+                        <li class="trajectoryWay__item-module">Траектолог соотносит события с годом цикла, его смысла и
+                            помещает их в контекст всей траектории человека.
+                        </li>
+                        <li class="trajectoryWay__item-module">Раскрывает значение события для человека исходя из его
+                            пути, снимая социальные ярлыки.
+                        </li>
+                        <li class="trajectoryWay__item-module">Помогает увидеть системность событий, взаимосвязи между
+                            ними и понять, к какому сценарию ведет то или иное событие.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="trajectologsWay4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="trajectoryWayBock-modal">
+                    <img src="./images/imgLanding/image-main/trajectory-way.svg" class="trajectoryWau__image-modal"
+                         alt="trajectory">
+                    <p class="trajectoryWay__title-module">Управление собственной траекторией</p>
+                    <ul class="trajectoryWay__list-module">
+                        <li class="trajectoryWay__item-module">Траектория - это инструмент стратегирования: фиксация
+                            прошлого дает возможность работать с будущем, делая шаг в настоящем.
+                        </li>
+                        <li class="trajectoryWay__item-module">Понимание, какие сценарии разворачиваются, позволяет
+                            управлять этими сценариями и создавать новые.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="trajectologsWay1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="trajectoryWayBock-modal">
+                    <img src="./images/imgLanding/image-main/trajectory-way.svg" class="trajectoryWau__image-modal"
+                         alt="trajectory">
+                    <p class="trajectoryWay__title-module">Фиксация истории жизни</p>
+                    <ul class="trajectoryWay__list-module">
+                        <li class="trajectoryWay__item-module">Увидеть общее кол-во деятельностей и количество соц.
+                            ролей, в которые ты входишь + увидеть и понять ценность событий, которые с тобой
+                            происходили» → понять масштаб, осознать что ты вообще делаешь
+                        </li>
+                        <li class="trajectoryWay__item-module">«Вспомни себя» → составить и понять свою историю</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="stepsTitle">Этапы</h2>
+    <p class="stepsText">Каждая траектория строится вместе с опытным траектологом</p>
+
+    <div class="rel">
+        <div style="margin-bottom: 60px">
+            <ul class="stepsList">
+                <li class="stepsItem">
+                    <div class="stepsItem__block">
+                        <h3 class="stepsItem__title">Фиксация истории жизни</h3>
+                        <ul class="stepsItem__list">
+                            <li class="stepsItem__item">
+                                Увидеть общее количество деятельностей и количество социальных ролей, в которые входит
+                                человек
+                                на протяжении жизни.
+                                Понять ценность собственных событий и масштаб деятельности, тем самым осознать, куда
+                                человек
+                                двигается по жизненному пути.
+                            </li>
+                            <li class="stepsItem__item">
+                                Пересмотр жизни: вспомнить и зафиксировать события, которые происходили
+                                с человеком с самого рождения
+                            </li>
+                        </ul>
+                        <p class="readWay-mobile" data-bs-toggle="modal" data-bs-target="#trajectologsWay1">Читать
+                            всё</p>
+                    </div>
+                    <div class="stepsItem__numberBlock">
+                        <img src="./images/imgLanding/image-main/tree-left.png" alt="image-tree"
+                             class="stepsItem__imageTree">
+                        <p class="stepsItem__number">1</p>
+                    </div>
+                </li>
+                <li class="stepsItem">
+                    <div class="stepsItem__numberBlock">
+                        <img src="./images/imgLanding/image-main/tree-left.png" alt="image-tree"
+                             class="stepsItem__imageTree">
+                        <p class="stepsItem__number">2</p>
+                    </div>
+                    <div class="stepsItem__block">
+                        <h3 class="stepsItem__title">Построение циклов</h3>
+
+                        <ul class="stepsItem__list">
+                            <li class="stepsItem__item">После того, как человек положил события своей жизни на
+                                траектории,
+                                следующий шаг - осознать происходящие циклические сценарии.
+
+                            </li>
+                            <li class="stepsItem__item"> Выявленные сценарии после осмысления становятся внутренним
+                                ресурсом.
+                            </li>
+                            <li class="stepsItem__item">Осознавая события циклов, человек может двигаться в ситуации
+                                неопределенности, полагаясь на свой способ действия
+                            </li>
+                        </ul>
+                        <p class="readWay-mobile" data-bs-toggle="modal" data-bs-target="#trajectologsWay2">Читать
+                            всё</p>
+                    </div>
+
+                </li>
+            </ul>
+
+            <ul class="stepsList">
+                <li class="stepsItem">
+                    <div class="stepsItem__block">
+                        <h3 class="stepsItem__title">Интерпретация</h3>
+                        <ul class="stepsItem__list">
+                            <li class="stepsItem__item">
+                                Траектолог соотносит события с годом цикла, его смысла и помещает их в контекст всей
+                                траектории
+                                человека.
+                            </li>
+                            <li class="stepsItem__item">
+                                Раскрывает значение события для человека исходя из его пути, снимая социальные ярлыки.
+                            </li>
+                            <li class="stepsItem__item">
+                                Помогает увидеть системность событий, взаимосвязи между ними и понять, к какому сценарию
+                                ведет
+                                то или иное событие.
+                            </li>
+                        </ul>
+                        <p class="readWay-mobile" data-bs-toggle="modal" data-bs-target="#trajectologsWay3">Читать
+                            всё</p>
+                    </div>
+                    <div class="stepsItem__numberBlock">
+                        <img src="./images/imgLanding/image-main/tree-left.png" alt="image-tree"
+                             class="stepsItem__imageTree">
+                        <p class="stepsItem__number">3</p>
+                    </div>
+                </li>
+                <li class="stepsItem">
+                    <div class="stepsItem__numberBlock">
+                        <img src="./images/imgLanding/image-main/tree-left.png" alt="image-tree"
+                             class="stepsItem__imageTree">
+                        <p class="stepsItem__number">4</p>
+                    </div>
+                    <div class="stepsItem__block">
+                        <h3 class="stepsItem__title">Управление собственной траекторией</h3>
+                        <ul class="stepsItem__list">
+                            <li class="stepsItem__item">
+                                Траектория - это инструмент стратегирования: фиксация прошлого дает возможность работать
+                                с
+                                будущем, делая шаг в настоящем.
+                            </li>
+                            <li class="stepsItem__item">
+                                Понимание, какие сценарии разворачиваются, позволяет управлять этими сценариями и
+                                создавать
+                                новые.
+                            </li>
+                        </ul>
+                        <p class="readWay-mobile" data-bs-toggle="modal" data-bs-target="#trajectologsWay4">Читать
+                            всё</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+        <img
+                src="./images/imgLanding/image-background/tree-steps(big).svg"
+                alt="tree-steps"
+                class="treeSteps1"
+        >
+        <img
+                src="./images/imgLanding/image-background/tree-steps(small).svg"
+                alt="tree-steps"
+                class="treeSteps2"
+        >
+    </div>
+
+    <div class="buildTrajectory">
+        <div class="descriptionTrajectory">
+            <h3 class="descriptionTrajectory__title">
+                Траектория — это живой инструмент
+            </h3>
+            <p class="descriptionTrajectory__text">
+                К которому человек может возвращаться снова и достраивать его.
+                С каждым возвращением происходит освоение метода построения траектории
+            </p>
+            <button class="descriptionTrajectory__button">
+                Построить траекторию
+            </button>
+        </div>
+
+        <img
+                src="./images/imgLanding/image-main/way2.jpg"
+                class="trajectoryImage__mobile"
+                alt="trajectory-image"
+        >
+
+        <div class="trajectoryWay ">
+
+
+            <div class="yearsItem block1">
+                <div class="yearsItem__block">
+                    <img src="./images/imgLanding/image-background/1.svg" alt="" class="back1">
+                    <img src="./images/imgLanding/icons/arrow1.svg" alt="arrow1" class="arrow1">
+                </div>
+                <img src="./images/imgLanding/icons/round.svg" alt="round" class="round1">
+            </div>
+
+            <div class="yearsItem block2">
+                <div class="yearsItem__block">
+                    <img src="./images/imgLanding/image-background/block2.svg" alt="" class="back2">
+                    <img src="./images/imgLanding/icons/arrow2.svg" alt="arrow1" class=" arrow2">
+                </div>
+                <img src="./images/imgLanding/icons/round.svg" alt="round" class="round2">
+            </div>
+
+            <div class="yearsItem block3">
+                <div class="yearsItem__block">
+                    <img src="./images/imgLanding/image-background/block3.svg" alt="back3" class="back3">
+                    <img src="./images/imgLanding/icons/arrow3.svg" alt="arrow3" class=" arrow3">
+                </div>
+                <img src="./images/imgLanding/icons/round.svg" alt="round" class="round3">
+            </div>
+
+
+            <img
+                    src="./images/imgLanding/image-main/way.png"
+                    class="trajectoryImage"
+                    alt="trajectory-image"
+            >
+        </div>
+
+
+    </div>
+
+</section>
+
+<section class="container historyTrajectory">
+    <h2 class="historyTitle">
+        История развития метода<span class="desktopTitle"> построения траекторий</span>
+    </h2>
+    <div class="founderBlock">
+        <img
+                src="./images/imgLanding/image-main/author.jpg"
+                alt=""
+                class="founderImage"
+        >
+        <div class="founderCard">
+            <div class="founderDesc">
+                <p class="founderDesc__title">Основатель</p>
+                <h3 class="founderName">
+                    Алексей Комаров
+                </h3>
+            </div>
+
+            <div class="founderDesc">
+                <p class="founderDesc__title">
+                    построенных траекторий
+                </p>
+                <p class="founderDesc__info">
+                    более 500
+                </p></div>
+
+            <div class="founderDesc">
+                <p class="founderDesc__title">
+                    Дата основания
+                </p>
+                <p class="founderDesc__info">
+                    2016
+                </p>
+            </div>
+
+            <div class="approachMotivation">
+                <p class="founderDesc__title">
+                    Обоснования подхода
+                </p>
+                <p class="approachMotivation__text">
+                    Жизненная траектория, как метод Комарова, была создана при влиянии трудов доктора психологических
+                    наук,
+                    основателя Синтон-подхода в психологии<span
+                ><a class="authorBook" href="http://nkozlov.ru/"> Н. И. Козлова </a></span>, а также таких материалов,
+                    как:
+
+                </p>
+                <ul class="approachMotivation__list">
+                    <li class="approachMotivation__item">
+                        <p class="approachMotivation__item__text">
+                            7 кризисов по Саймону</p>
+
+                    </li>
+                    <li class="approachMotivation__item">
+                        <p class="approachMotivation__item__text">
+                            «Превращая заблуждения в ясность» Йонге Мингьюр Ринпоче
+                        </p>
+                    </li>
+                    <li class="approachMotivation__item">
+                        <p class="approachMotivation__item__text">
+                            «Путь истинного лидера» Далай-Лама
+                        </p>
+                    </li>
+                    <li class="approachMotivation__item">
+                        <p class="approachMotivation__item__text">
+                            11-летний цикл Швабе, 22-летний цикл Хейла
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="founderDesc">
+                <p class="founderDesc__title">
+                    Патент
+                </p>
+                <p class="founderDesc__patent">
+                    В 2021 году был официально оформлен патент на Жизненную Траекторию как Метод Алексея Комарова
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="statBlock">
+        <ul class="statisticSecond">
+            <li class="statisticItem-second">
+                <div class="statisticInfo">
+                    <div class="statisticInfo__title">
+                        <p class="statisticInfo__num">120</p>
+                        <p class="statisticInfo__subtext">часов</p>
+                    </div>
+                    <p class="statisticInfo__text">необходимо на профессиональную подготовку траектолога</p>
+                </div>
+            </li>
+            <li class="statisticItem-second">
+                <div class="statisticInfo">
+                    <div class="statisticInfo__title">
+                        <p class="statisticInfo__num">70 </p>
+                        <p class="statisticInfo__subtext">+</p>
+                    </div>
+                    <p class="statisticInfo__text">траекторий построил каждый траектолог-наставник</p>
+                </div>
+            </li>
+            <li class="statisticItem-second">
+                <div class="statisticInfo">
+                    <div class="statisticInfo__title">
+                        <p class="statisticInfo__num">36</p>
+                        <p class="statisticInfo__subtext">лет</p>
+                    </div>
+                    <p class="statisticInfo__text">суммарный стаж команды в построении траекторий</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="comment container">
+
+    <!-- Modal comment -->
+    <div class="modal fade" id="comment1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="blockComment-modal">
+
+                    <h3 class="titleComment-modal">Отзыв</h3>
+                    <img
+                            src="./images/imgLanding/image-comment/img1.png"
+                            alt="image-comment"
+                            class="commentImage-modal"
+                    >
+                    <p class="headComment-modal">Ирина Орландини-Авруцкая</p>
+                    <p class="competitionComment-modal">Like4Like • основатель, визионер</p>
+                    <div class="commentRaitingBlock-modal">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="commentStar-image">
+                        <p class="commentRaitingText-modal">4,7 <span class="">(177)</span></p>
+                    </div>
+                    <p class="textComment-modal">
+                        5 лет сотрудничает с бизнес школой сколково в качестве модератора образовательных программ.
+                        супервизирует направление траектории на программе практикум. 20 лет в индустрии рекламы и
+                        маркетинга.
+                        занимала позиции директора по маркетингу, управляющего директора, стратегического директора.
+                        выпускница бизнес-школы сколково. партнер стратегической коллаборации ravenstvo.co работала в
+                        bbdo, mccann, lowe с клиентами – лидерами рынка (мтс, сбербанк, visa и др.).
+                        опыт в индустриях food и сельское хозяйство, образование и edtech, fintech, телеком,
+                        архитектура/дизайн/урбанистика, ритейл, производство, спортивный маркетинг и других.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="comment2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="blockComment-modal">
+                    <h3 class="titleComment-modal">Отзыв</h3>
+                    <img
+                            src="./images/imgLanding/image-comment/img2.png"
+                            alt="image-comment"
+                            class="commentImage-modal"
+                    >
+                    <p class="headComment-modal">Виталий Сылка</p>
+                    <p class="competitionComment-modal">Iminera • Основатель, предприниматель</p>
+                    <div class="commentRaitingBlock-modal">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="commentStar-image">
+                        <p class="commentRaitingText-modal">4,7 <span class="">(177)</span></p>
+                    </div>
+                    <p class="textComment-modal">
+                        Траектория для меня оказалась открытием.
+                        Это возможность посмотреть на себя, свою жизнь со стороны в ретроспективе. Очень личное,
+                        со всеми победами, поражениями, сложными и непростыми моментами, радостью и счастьем.
+                        Когда удаётся увидеть всю картину, то понимаешь, что тобой движет. Это помогает посмотреть
+                        в будущее.
+                        Спасибо, Павел Петровский и Школа Сколково за этот прекрасный инструмент «траектория»! Павел
+                        увидел систему в ретроспективе моих событий.
+                        Это позволяет намного точнее и смелее посмотреть в мое будущее и построить путь в него. Видение
+                        собственного будущего позволяет выбрать свои цели.
+                        Спасибо)! ”
+                        Думаю, что эта методология может стать важным элементом любой образовательной программы, любого
+                        коучингового процесса ”
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="comment3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="blockComment-modal">
+                    <h3 class="titleComment-modal">Отзыв</h3>
+                    <img
+                            src="./images/imgLanding/image-comment/img3.png "
+                            alt="image-comment"
+                            class="commentImage-modal"
+                    >
+                    <p class="headComment-modal">Ирина Невзорова</p>
+                    <p class="competitionComment-modal">Директор подразделения Isover в России</p>
+                    <div class="commentRaitingBlock-modal">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="commentStar-image">
+                        <p class="commentRaitingText-modal">4,7 <span class="">(177)</span></p>
+                    </div>
+                    <p class="textComment-modal">
+                        Когда Павел сделал для меня траекторию, у меня было несколько важных инсайтов. Во-первых, это
+                        просто отличный инструмент оценить весь путь с высоты птичьего полёта.
+                        Прекрасно видно, все достижения, провалы и просто скорость, с какой ты проходила каждый этап,
+                        где зависла, а где, наоборот, удалось всех обойти.
+                        Во-вторых, становится очевидно, где ты сейчас и куда надо двигаться по всем направлениям.
+                        И самое главное, он показал мне мою силу: изменять норму. Я НИКОГДА бы сама к этому не пришла.
+                        При этом, после того как, он рассказал мне это, это стало так очевидно, что с тех пор эта моя
+                        неотъемлемая часть, мой меч для любых проблем и замедлений.
+                        Спасибо, дорогие, я стала сильнее благодаря вам! ”
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="comment4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="blockComment-modal">
+                    <h3 class="titleComment-modal">Отзыв</h3>
+                    <img
+                            src="./images/imgLanding/image-comment/img4.png"
+                            alt="image-comment"
+                            class="commentImage-modal"
+                    >
+                    <p class="headComment-modal">Артем Газаров</p>
+                    <p class="competitionComment-modal">«Белая радуга» • Управляющий обственник </p>
+                    <div class="commentRaitingBlock-modal">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="commentStar-image">
+                        <p class="commentRaitingText-modal">4,7 <span class="">(177)</span></p>
+                    </div>
+                    <p class="textComment-modal">
+                        Преимущества в траектории: всегда интересно наблюдать за технологией и принимать участие в
+                        процессе, который до тебя прошли 700 предпринимателей.
+                        Ты словно в роли трекера, а ведёт тебя сквозь этот процесс и показывает закономерности
+                        траектолог. И, конечно, мне понравилось эта схема с 11 годами, где шестой год становится
+                        предпосылкой к следующему одиннадцатилетнему периоду.
+                        Оборачиваясь назад, понимаешь, что действительно так и происходит: вот это стало предпосылкой к
+                        этому, а это стало предпосылка к этому. Высчитываешь, сколько тебе лет, и понимаешь, так, мне бы
+                        вот там бы оказаться.
+                        Тогда будет крутая предпосылка для следующего шага. Как изменила бизнес? Вот так и изменила, и
+                        продолжает менять.
+                        То есть, я смотрю и говорю: чтобы к 39 годам у меня была большая корпорация, мне нужно классный
+                        фундамент к этому возрасту построить и тогда получится все получится.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="commentTitle">Отзывы</h2>
+
+    <div class="swiper swiperComment">
+        <div class="swiper-wrapper bottom-wrapper">
+            <div class="swiper-slide commentCard commentCard-mobile" id="commentCard">
+                <div class="commentBlock">
+                    <img src="./images/imgLanding/round-image.png" alt="" class="commentCard__rounded1">
+                    <img src="./images/imgLanding/icons/dot.svg" alt="" class="commentCard__dot1">
+                    <img src="./images/imgLanding/image-comment/img1.png" alt="author-comment"
+                         class="commentBlock__image">
+                    <p class="commentBlock__nameAuthor">Ирина Орландини-Авруцкая</p>
+                    <p class="commentBlock__jobPosition">Like4Like • основатель, визионер</p>
+                    <div class="starBlock">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="" class="imageStar">
+                    </div>
+                    <div class="commentBlock__rating"></div>
+                    <div class="commentBlock__comment">Работа по разбору личной траектории помогла мне <strong> осознать
+                        все события</strong>, повлиявшие на формирование моей личности и профессиональных качеств
+                    </div>
+                    <button class="commentBlock__readMore" data-bs-toggle="modal" data-bs-target="#comment1">читать
+                        полностью
+                    </button>
+                </div>
+            </div>
+            <div class="swiper-slide commentCard" id="commentCard">
+                <div class="commentBlock">
+                    <img src="./images/imgLanding/round-image.png" alt="" class="commentCard__rounded2">
+                    <img src="./images/imgLanding/icons/dot.svg" alt="" class="commentCard__dot2">
+                    <img src="./images/imgLanding/image-comment/img2.png" alt="author-comment"
+                         class="commentBlock__image">
+                    <p class="commentBlock__nameAuthor">Виталий Сылка</p>
+                    <p class="commentBlock__jobPosition">Iminera • Основатель, предприниматель</p>
+                    <div class="starBlock">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
+                    </div>
+                    <div class="commentBlock__comment">Траектория для меня оказалась открытием.
+                        Это <strong> возможность посмотреть на себя</strong>, свою жизнь со стороны в <strong>ретроспективе</strong>.
+                        Очень личное, со всеми победами, поражениями
+                    </div>
+                    <button class="commentBlock__readMore" data-bs-toggle="modal" data-bs-target="#comment2">читать
+                        полностью
+                    </button>
+                </div>
+            </div>
+            <div class="swiper-slide commentCard" id="commentCard">
+                <div class="commentBlock">
+                    <img src="./images/imgLanding/round-image.png" alt="" class="commentCard__rounded3">
+                    <img src="./images/imgLanding/icons/dot.svg" alt="" class="commentCard__dot3">
+                    <img src="./images/imgLanding/image-comment/img3.png" alt="author-comment"
+                         class="commentBlock__image">
+                    <p class="commentBlock__nameAuthor">Ирина Невзорова</p>
+                    <p class="commentBlock__jobPosition">Директор подразделения Isover в России</p>
+                    <div class="starBlock">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
+                    </div>
+                    <div class="commentBlock__rating"></div>
+                    <div class="commentBlock__comment">Работа по разбору личной траектории помогла мне осознать все
+                        события, повлиявшие на формирование моей личности и профессиональных качеств
+                    </div>
+                    <button class="commentBlock__readMore" data-bs-toggle="modal" data-bs-target="#comment3">читать
+                        полностью
+                    </button>
+                </div>
+            </div>
+            <div class="swiper-slide commentCard"  id="commentCard">
+                <div class="commentBlock">
+                    <img src="./images/imgLanding/round-image.png" alt="" class="commentCard__rounded4">
+                    <img src="./images/imgLanding/icons/dot.svg" alt="" class="commentCard__dot4">
+                    <img src="./images/imgLanding/image-comment/img4.png" alt="author-comment"
+                         class="commentBlock__image">
+                    <p class="commentBlock__nameAuthor">Артем Газаров</p>
+                    <p class="commentBlock__jobPosition">«Белая радуга» • Управляющий обственник </p>
+                    <div class="starBlock">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
+                        <img src="./images/imgLanding/icons/star-one.svg" alt="star" class="imageStar">
+                    </div>
+                    <div class="commentBlock__rating"></div>
+                    <div class="commentBlock__comment">Преимущества в траектории: всегда интересно наблюдать за
+                        технологией и принимать участие в процессе, который до тебя прошли 700 предпринимателей. Ты...
+                    </div>
+                    <button class="commentBlock__readMore" data-bs-toggle="modal" data-bs-target="#comment4">читать
+                        полностью
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-button-next disabled"></div>
+        <div class="swiper-button-prev disabled"></div>
+        <div class="swiper-pagination desktop-disabled"></div>
+    </div>
+
+    <div class="swiper">
+
+
+    </div>
+</section>
+
+<section class="competence  container">
+    <img src="" alt="" class="competenceBackImage">
+
+    <h2 class="competenceTitle">Уровень компетенций траектолога</h2>
+    <p class="competenceSpecialist">Вы можете выбрать глубину проработки и уровень траектолога</p>
+
+    <div class="cardCompetenceBlock">
+        <div class="swiper swiperPrice">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <ul class="competenceCard card-main">
+                        <li class="competenceItem">
+                            <div class="competenceItem__block">
+                                <p class="competenceItem__desc">Траектолог</p>
+                                <p class="competenceItem__price price-main">25 000₽</p>
+                            </div>
+                            <ul class="jobsList">
+                                <li class="jobsItem">
+                                    <img src="./images/imgLanding/icons/blue-check.svg" alt="check"
+                                         class="jobsItem__image">
+                                    <p class="jobsItem__description">
+                                        2 часа работы с траектологом
+                                        (построение траектории: восстановлении истории, сборка понимания собственной
+                                        траектории)
+                                    </p>
+                                </li>
+                                <li class="jobsItem">
+                                    <img src="./images/imgLanding/icons/blue-check.svg" alt="check"
+                                         class="jobsItem__image">
+                                    <p class="jobsItem__description">
+                                        Выбор траектолога
+                                    </p>
+                                </li>
+                                <li class="jobsItem">
+                                    <img src="./images/imgLanding/icons/blue-check.svg" alt="check"
+                                         class="jobsItem__image">
+                                    <p class="jobsItem__description">
+                                        Траектория сохраняется в личном кабинете
+                                    </p>
+                                </li>
+                                <li class="jobsItem">
+                                    <img src="./images/imgLanding/icons/blue-check.svg" alt="check"
+                                         class="jobsItem__image">
+                                    <p class="jobsItem__description">
+                                        Консультации сохраняются в личном кабинете
+                                    </p>
+                                </li>
+                            </ul>
+
+                            <button class="choiceTrajectolog">Выбрать</button>
+                            <p class="textConsultation">
+                                На основании построенной траектории возможна организация консультаций как по отдельным
+                                аспектам, так
+                                и
+                                по понимании траектории в целом.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul class="competenceCard card-mentor">
+                        <li class="competenceItem">
+                            <div class="competenceItem__block">
+                                <p class="competenceItem__desc">Траектолог-наставник</p>
+                                <p class="competenceItem__price price-mentor">50 000₽</p>
+                            </div>
+
+                            <ul class="jobsList">
+                                <li class="jobsItem">
+                                    <img src="./images/imgLanding/icons/blue-check.svg" alt="check"
+                                         class="jobsItem__image">
+                                    <p class="jobsItem__description">
+                                        2 часа работы с траектологом
+                                        (построение траектории: восстановлении истории, сборка понимания собственной
+                                        траектории)
+                                    </p>
+                                </li>
+                                <li class="jobsItem">
+                                    <img src="./images/imgLanding/icons/blue-check.svg" alt="check"
+                                         class="jobsItem__image">
+                                    <p class="jobsItem__description">
+                                        Выбор траектолога
+                                    </p>
+                                </li>
+                                <li class="jobsItem">
+                                    <img src="./images/imgLanding/icons/blue-check.svg" alt="check"
+                                         class="jobsItem__image">
+                                    <p class="jobsItem__description">
+                                        Траектория сохраняется в личном кабинете
+                                    </p>
+                                </li>
+                                <li class="jobsItem">
+                                    <img src="./images/imgLanding/icons/blue-check.svg" alt="check"
+                                         class="jobsItem__image">
+                                    <p class="jobsItem__description">
+                                        Консультации сохраняются в личном кабинете
+                                    </p>
+                                </li>
+                            </ul>
+
+                            <button class="choiceTrajectolog">Выбрать</button>
+                            <p class="textConsultation">
+                                На основании построенной траектории возможна организация консультаций как по отдельным
+                                аспектам, так
+                                и
+                                по понимании траектории в целом.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul class="competenceCard card-author">
+                        <li class="competenceItem">
+                            <div class="competenceItem__blockcompetenceItem__block">
+                                <div class="competenceItem__block">
+                                    <p class="competenceItem__desc-author">Основатель метода</p>
+                                    <p class="competenceItem__price price-author">75 000₽</p>
+                                </div>
+                            </div>
+
+                            <ul class="jobsList">
+                                <li class="jobsItem">
+                                    <img src="./images/imgLanding/icons/white-check.svg" alt="check"
+                                         class="jobsItem__image">
+                                    <p class="jobsItem__description">
+                                        2 часа работы с траектологом
+                                        (построение траектории: восстановлении истории, сборка понимания собственной
+                                        траектории)
+                                    </p>
+                                </li>
+                                <li class="jobsItem">
+                                    <img src="./images/imgLanding/icons/white-check.svg" alt="check"
+                                         class="jobsItem__image">
+                                    <p class="jobsItem__description">
+                                        Выбор траектолога
+                                    </p>
+                                </li>
+                                <li class="jobsItem">
+                                    <img src="./images/imgLanding/icons/white-check.svg" alt="check"
+                                         class="jobsItem__image">
+                                    <p class="jobsItem__description">
+                                        Траектория сохраняется в личном кабинете
+                                    </p>
+                                </li>
+                                <li class="jobsItem">
+                                    <img src="./images/imgLanding/icons/white-check.svg" alt="check"
+                                         class="jobsItem__image">
+                                    <p class="jobsItem__description">
+                                        Консультации сохраняются в личном кабинете
+                                    </p>
+                                </li>
+                            </ul>
+
+                            <button class="choiceTrajectolog">Выбрать</button>
+                            <p class="textConsultation">
+                                На основании построенной траектории возможна организация консультаций как по отдельным
+                                аспектам, так
+                                и
+                                по понимании траектории в целом.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+
+
+
+    <h2 class="trajectolorsTitle">
+        Траектологи
+    </h2>
+
+    <div>
+        <h3 class="authorTitle">Основатель</h3>
+
+        <div class="cardsBlock">
+            <div class="cardTrajectolog cardTrajectolog-author">
+                <div class="cardHead__image image-author">
+
+                </div>
+                <div class="cardTrajectolog__block cardTrajectolog__author">
+                    <p class="cardTrajectolog__block-title">Алексей Комаров</p>
+                    <p class="cardTrajectolog__block-author">Основатель</p>
+                </div>
+                <div class="cardTrajectolog__description">
+                    <div class="cardTrajectolog__description__block">
+                        <p class="cardTrajectolog__achievements-title">Построенных траекторий</p>
+                        <p class="cardTrajectolog__achievements-num">514</p>
+                    </div>
+                    <div class="cardTrajectolog__description__block">
+                        <p class="cardTrajectolog__achievements-title">Опыт в методе:</p>
+                        <p class="cardTrajectolog__achievements-num">6 лет</p>
+                    </div>
+                    <div class="cardTrajectolog__description__block">
+                        <p class="cardTrajectolog__achievements-title">Сферы работы:</p>
+                        <p class="cardTrajectolog__achievements-desc">
+                            Малый и средний бизнес, постановка предпринимательского мышления...
+                        </p>
+                    </div>
+
+                    <button class="cardTrajectolog__description-next" data-bs-toggle="modal" data-bs-target="#exampleModal">Подробнее</button>
+                </div>
+
+            </div>
+            <div class="authorAchievements">
+                <h3 class="titleAuthor">Алексей Комаров</h3>
+                <div class="blockAuthor">
+                    <p class="cardTrajectolog__block-author">Основатель</p>
+                    <img
+                            src="./images/imgLanding/icons/star-one.svg"
+                            alt="star-img"
+                            class="start-img">
+                    <p class="raitingText">5,0 <span class="raitingText-span">(32 477)</span></p>
+                </div>
+
+                <div class="achievementsItem">
+                    <div class="achievementsBlock">
+                        <p class="achievementsBlock__sumTrajectory-num">507</p>
+                        <p class="achievementsBlock__sumTrajectory-title">построенных траекторий</p>
+                    </div>
+                    <div class="achievementsBlock">
+                        <p class="achievementsBlock__sumTrajectory-num">6</p>
+                        <p class="achievementsBlock__sumTrajectory-title">лет успешной работы</p>
+                    </div>
+                </div>
+
+
+                <div class="mainAuthorBlock">
+                    <p class="mainAuthorBlock__title">
+                        Обоснования подхода
+                    </p>
+                    <p class="mainAuthorBlock__text">
+                        Жизненная траектория, как метод Комарова, была создана при влиянии трудов доктора
+                        психологических
+                        наук,
+                        основателя Синтон-подхода в психологии<span
+                    ><a class="authorBook" href="http://nkozlov.ru/"> Н. И. Козлова </a></span>, а также таких
+                        материалов,
+                        как:
+
+                    </p>
+
+                    <ul class="mainAuthorBlock__list">
+                        <li class="mainAuthorBlock__item">
+                            <p class="mainAuthorBlock__item__text">
+                                7 кризисов по Саймону</p>
+
+                        </li>
+                        <li class="mainAuthorBlock__item">
+                            <p class="mainAuthorBlock__item__text">
+                                «Превращая заблуждения в ясность» Йонге Мингьюр Ринпоче
+                            </p>
+                        </li>
+                        <li class="mainAuthorBlock__item">
+                            <p class="mainAuthorBlock__item__text">
+                                «Путь истинного лидера» Далай-Лама
+                            </p>
+                        </li>
+                        <li class="mainAuthorBlock__item">
+                            <p class="mainAuthorBlock__item__text">
+                                11-летний цикл Швабе, 22-летний цикл Хейла
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="patentInfo">
+                    <p class="patentInfo__title">
+                        Патент
+                    </p>
+                    <p class="patentInfo__patent">
+                        В 2021 году был официально оформлен патент на Жизненную Траекторию как Метод Алексея Комарова
+                    </p>
+                </div>
+                <button class="createTrajectory">
+                    Построить траекторию с основателем
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="trajectologsMentors">
+
+        <p class="trajectologShtat__title">Траектологи-наставники (10)</p>
+        <!--  Modal trajectologs          -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="achievements-modal">
+                        <h3 class="trajectologTitle-modal">О траектологе</h3>
+                        <div class="head-modal">
+
+                            <img
+                                    src="./images/imgLanding/image-main/popup-images/img-modal.svg"
+                                    alt=""
+                                    class="imageHead-modal"
+                            >
+                            <div class="blockHead-modal">
+                                <h3 class="titleTrajectolog-modal">Екатерина Гувакова</h3>
+
+                                <div class="blockTrajectolog-modal">
+                                    <p class="mentorTrajectolog">Траектолог-наставник</p>
+
+                                </div>
+                                <div class="achievementsItem-modal">
+                                    <div class="achievementsBlock-modal">
+                                        <p class="achievementsBlock__sumTrajectory-numModal">507</p>
+                                        <p class="achievementsBlock__sumTrajectory-titleModal">построенных
+                                            траекторий</p>
+                                    </div>
+                                    <div class="achievementsBlock-modal">
+                                        <p class="achievementsBlock__sumTrajectory-numModal">6</p>
+                                        <p class="achievementsBlock__sumTrajectory-titleModal">лет успешной работы</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="workExperience">
+                            <p class="workExperience__title">Сферы работы:</p>
+                            <p class="workExperience__text">
+                                Стратег, бизнес-консультант, модератор образовательных программ
+                            </p>
+                            <p class="workExperience__title">
+                                Опыт работы:
+                            </p>
+                            <ul class="workExperience__list">
+                                <li class="workExperience__item">
+                                    <img src="./images/imgLanding/icons/blue-dot.svg" alt="check"
+                                         class="workExperience__image">
+                                    <p class="jobsItem__description">
+                                        5 лет сотрудничает с Школой управления СКОЛКОВО в качестве модератора
+                                        образовательных программ
+                                    </p>
+                                </li>
+                                <li class="workExperience__item">
+                                    <img src="./images/imgLanding/icons/blue-dot.svg"
+                                         alt="check"
+                                         class="workExperience__image">
+                                    <p class="jobsItem__description">
+                                        Супервизор направления Построение траектории на программе Практикум Школы
+                                        управления СКОЛКОВО
+                                    </p>
+                                </li>
+                                <li class="workExperience__item">
+                                    <img src="./images/imgLanding/icons/blue-dot.svg"
+                                         alt="check"
+                                         class="workExperience__image">
+                                    <p class="jobsItem__description">
+                                        20 лет в индустрии рекламы и маркетинга, занимала позиции: директор по
+                                        маркетингу, управляющий директор, стратегический директор
+                                    </p>
+                                </li>
+                                <li class="workExperience__item">
+                                    <img src="./images/imgLanding/icons/blue-dot.svg"
+                                         alt="check"
+                                         class="workExperience__image">
+                                    <p class="jobsItem__description">
+                                        Выпускница Школы управления СКОЛКОВО
+                                    </p>
+                                </li>
+                                <li class="workExperience__item">
+                                    <img src="./images/imgLanding/icons/blue-dot.svg"
+                                         alt="check"
+                                         class="workExperience__image">
+                                    <p class="jobsItem__description">
+                                        Партнер стратегической коллаборации Ravenstvo.co
+                                    </p>
+                                </li>
+                                <li class="workExperience__item">
+                                    <img src="./images/imgLanding/icons/blue-dot.svg"
+                                         alt="check"
+                                         class="workExperience__image">
+                                    <p class="jobsItem__description">
+                                        Опыт работы в BBDO Group, McCann, Lowe с клиентами-лидерами рынка (МТС, Сбер,
+                                        Visa и др.)
+                                    </p>
+                                </li>
+                                <li class="workExperience__item">
+                                    <img src="./images/imgLanding/icons/blue-dot.svg"
+                                         alt="check"
+                                         class="workExperience__image">
+                                    <p class="jobsItem__description">
+                                        Опыт в индустриях: food и сельское хозяйство, образование и edtech, fintech,
+                                        телеком, архитектура, дизайн, урбанистика, ритейл, производство, спортивный
+                                        маркетинг и других
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="price-modal">Стоимость траектории с Екатериной 25 000₽</p>
+                        <button class="createTrajectory-modal">
+                            Построить траекторию
+                        </button>
+                        <p class="comment-modal"> Отзывы(177)</p>
+                        <form class="formComment-modal">
+                            <input type="text" class="inputComment-modal">
+                        </form>
+                        <ul class="commentModule__list">
+                            <li class="commentModule__item">
+                                <div class="commentModule__block">
+                                    <p class="commentModule__name">Александр</p>
+                                    <div>
+                                        <img src="./images/imgLanding/icons/star-enable.svg" alt="star">
+                                        <img src="./images/imgLanding/icons/star-enable.svg" alt="star">
+                                        <img src="./images/imgLanding/icons/star-enable.svg" alt="star">
+                                        <img src="./images/imgLanding/icons/star-enable.svg" alt="star">
+                                        <img src="./images/imgLanding/icons/star-disabled.svg" alt="star">
+                                    </div>
+
+                                </div>
+                                <p class="commentModule__textComment">
+                                    Но многие известные личности освещают чрезвычайно интересные особенности картины в
+                                    целом, Но многие известные личности освещают чрезвычайно интересные особенности
+                                    картины в целом,
+                                </p>
+                            </li>
+                            <li class="commentModule__item">
+                                <div class="commentModule__block">
+                                    <p class="commentModule__name">Евгений</p>
+                                    <div>
+                                        <img src="./images/imgLanding/icons/star-enable.svg" alt="star">
+                                        <img src="./images/imgLanding/icons/star-enable.svg" alt="star">
+                                        <img src="./images/imgLanding/icons/star-enable.svg" alt="star">
+                                        <img src="./images/imgLanding/icons/star-disabled.svg" alt="star">
+                                        <img src="./images/imgLanding/icons/star-disabled.svg" alt="star">
+                                    </div>
+
+                                </div>
+                                <p class="commentModule__textComment">
+                                    Но многие известные личности освещают чрезвычайно интересные особенности картины в
+                                    целом,
+                                </p>
+                            </li>
+                            <li class="commentModule__item">
+                                <div class="commentModule__block">
+                                    <p class="commentModule__name">Константин</p>
+                                    <div>
+                                        <img src="./images/imgLanding/icons/star-enable.svg" alt="star">
+                                        <img src="./images/imgLanding/icons/star-enable.svg" alt="star">
+                                        <img src="./images/imgLanding/icons/star-enable.svg" alt="star">
+                                        <img src="./images/imgLanding/icons/star-enable.svg" alt="star">
+                                        <img src="./images/imgLanding/icons/star-disabled.svg" alt="star">
+                                    </div>
+
+                                </div>
+                                <p class="commentModule__textComment">
+                                    Но многие известные личности освещают чрезвычайно интересные особенности картины в
+                                    целом, Но многие известные личности освещают чрезвычайно интересные особенности
+                                    картины в целом, Но многие известные личности освещают чрезвычайно интересные
+                                    особенности картины в целом,
+                                </p>
+                            </li>
+                            <li class="commentModule__item">
+                                <div class="commentModule__block">
+                                    <p class="commentModule__name">Мария</p>
+                                    <div>
+                                        <img src="./images/imgLanding/icons/star-enable.svg" alt="star">
+                                        <img src="./images/imgLanding/icons/star-enable.svg" alt="star">
+                                        <img src="./images/imgLanding/icons/star-enable.svg" alt="star">
+                                        <img src="./images/imgLanding/icons/star-enable.svg" alt="star">
+                                        <img src="./images/imgLanding/icons/star-enable.svg" alt="star">
+                                    </div>
+
+                                </div>
+                                <p class="commentModule__textComment">
+                                    Но многие известные личности освещают чрезвычайно интересные особенности картины в
+                                    целом,
+                                </p>
+                            </li>
+
+                            <li class="commentModule__item">
+                                <div class="commentModule__block">
+                                    <p class="commentModule__name">Анна</p>
+                                    <div>
+                                        <img src="./images/imgLanding/icons/star-enable.svg" alt="star">
+                                        <img src="./images/imgLanding/icons/star-enable.svg" alt="star">
+                                        <img src="./images/imgLanding/icons/star-enable.svg" alt="star">
+                                        <img src="./images/imgLanding/icons/star-enable.svg" alt="star">
+                                        <img src="./images/imgLanding/icons/star-enable.svg" alt="star">
+                                    </div>
+                                </div>
+                                <p class="commentModule__textComment">
+                                    Но многие известные личности освещают чрезвычайно интересные особенности картины в
+                                    целом,
+                                </p>
+                            </li>
+                        </ul>
+
+                        <button class="loadMore">
+                            загрузить ещё 10
+                        </button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- End modal -->
+        <div class="swiper swiperNew">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="cardTrajectolog">
+                        <div class="cardHead__image image-pavel">
+
+                        </div>
+                        <div class="cardTrajectolog__block">
+                            <img
+                                    src="./images/imgLanding/image-trajectologs/pavel.png"
+                                    class="cardTrajectolog__block-imageMobile"
+                            >
+                            <div>
+                                <p class="cardTrajectolog__block-title">Павел Петровский</p>
+                                <p class="cardTrajectolog__block-mentor">Траектолог-наставник</p>
+                            </div>
+                        </div>
+                        <div class="cardTrajectolog__description">
+                            <p class="cardTrajectolog__achievements-title">Построенных траекторий</p>
+                            <p class="cardTrajectolog__achievements-num">187</p>
+                            <p class="cardTrajectolog__achievements-title">Опыт в методе:</p>
+                            <p class="cardTrajectolog__achievements-num">3 года</p>
+                            <p class="cardTrajectolog__achievements-desc">
+                                малый и средний бизнес, постановка предпринимательского мышления...
+                            </p>
+                            <button
+                                    type="button"
+                                    class="cardTrajectolog__description-next"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal"
+                            >
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cardTrajectolog">
+                        <div class="cardHead__image image-katerina">
+
+                        </div>
+                        <div class="cardTrajectolog__block">
+                            <img
+                                    src="./images/imgLanding/image-trajectologs/katerina.png"
+                                    class="cardTrajectolog__block-imageMobile"
+                            >
+                            <div>
+                                <p class="cardTrajectolog__block-title">Катерина Гувакова</p>
+                                <p class="cardTrajectolog__block-mentor">Траектолог-наставник</p>
+                            </div>
+                        </div>
+                        <div class="cardTrajectolog__description">
+                            <p class="cardTrajectolog__achievements-title">Построенных траекторий</p>
+                            <p class="cardTrajectolog__achievements-num">107</p>
+                            <p class="cardTrajectolog__achievements-title">Опыт в методе:</p>
+                            <p class="cardTrajectolog__achievements-num">4 года</p>
+                            <p class="cardTrajectolog__achievements-desc">
+                                Стратег, бизнес-консультант, модератор образовательных программ
+                            </p>
+                            <button
+                                    type="button"
+                                    class="cardTrajectolog__description-next"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal"
+                            >
+                                Подробнее
+                            </button>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cardTrajectolog">
+                        <div class="cardHead__image image-julia">
+
+                        </div>
+                        <div class="cardTrajectolog__block">
+                            <img
+                                    src="./images/imgLanding/image-trajectologs/julia.png"
+                                    class="cardTrajectolog__block-imageMobile"
+                            >
+                            <div>
+                                <p class="cardTrajectolog__block-title">Юлия Мельникова</p>
+                                <p class="cardTrajectolog__block-mentor">Траектолог-наставник</p>
+                            </div>
+                        </div>
+                        <div class="cardTrajectolog__description">
+                            <p class="cardTrajectolog__achievements-title">Построенных траекторий</p>
+                            <p class="cardTrajectolog__achievements-num">109</p>
+                            <p class="cardTrajectolog__achievements-title">Опыт в методе:</p>
+                            <p class="cardTrajectolog__achievements-num">4 года</p>
+                            <p class="cardTrajectolog__achievements-desc">
+                                --
+                            </p>
+                            <button class="cardTrajectolog__description-next" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cardTrajectolog">
+                        <div class="cardHead__image image-pavel">
+
+                        </div>
+                        <div class="cardTrajectolog__block">
+                            <img
+                                    src="./images/imgLanding/image-trajectologs/pavel.png"
+                                    class="cardTrajectolog__block-imageMobile"
+                            >
+                            <div>
+                                <p class="cardTrajectolog__block-title">Павел Петровский</p>
+                                <p class="cardTrajectolog__block-mentor">Траектолог-наставник</p>
+                            </div>
+                        </div>
+                        <div class="cardTrajectolog__description">
+                            <p class="cardTrajectolog__achievements-title">Построенных траекторий</p>
+                            <p class="cardTrajectolog__achievements-num">187</p>
+                            <p class="cardTrajectolog__achievements-title">Опыт в методе:</p>
+                            <p class="cardTrajectolog__achievements-num">3 года</p>
+                            <p class="cardTrajectolog__achievements-desc">
+                                малый и средний бизнес, постановка предпринимательского мышления...
+                            </p>
+                            <button
+                                    type="button"
+                                    class="cardTrajectolog__description-next"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal"
+                            >
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cardTrajectolog">
+                        <div class="cardHead__image image-katerinaYoung">
+
+                        </div>
+                        <div class="cardTrajectolog__block">
+                            <img
+                                    src="./images/imgLanding/image-trajectologs/katerina(yong).png"
+                                    class="cardTrajectolog__block-imageMobile"
+                            >
+                            <div><p class="cardTrajectolog__block-title">Катерина Гувакова</p>
+                                <p class="cardTrajectolog__block-mentor">Траектолог-наставник</p></div>
+                        </div>
+                        <div class="cardTrajectolog__description">
+                            <p class="cardTrajectolog__achievements-title">Построенных траекторий</p>
+                            <p class="cardTrajectolog__achievements-num">187</p>
+                            <p class="cardTrajectolog__achievements-title">Опыт в методе:</p>
+                            <p class="cardTrajectolog__achievements-num">3 года</p>
+                            <p class="cardTrajectolog__achievements-desc">
+                                Малый и средний бизнес, постановка предпринимательского мышления...
+                            </p>
+                            <button
+                                    type="button"
+                                    class="cardTrajectolog__description-next"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal"
+                            >
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next disabled"></div>
+            <div class="swiper-button-prev disabled"></div>
+            <div class="swiper-pagination desktop-disabled"></div>
+        </div>
+
+
+    </div>
+
+    <div>
+
+        <p class="trajectologShtat__title">Траектологи (24)</p>
+
+        <div class="swiper swiperNew">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="cardTrajectolog">
+                        <div class="cardHead__image image-katerina">
+
+                        </div>
+                        <div class="cardTrajectolog__block">
+                            <img
+                                    src="./images/imgLanding/image-trajectologs/katerina.png"
+                                    class="cardTrajectolog__block-imageMobile"
+                            >
+                            <div class="trajectologDesc">
+                                <p class="cardTrajectolog__block-title">Катерина Гувакова</p>
+                                <p class="cardTrajectolog__block-normal">Траектолог</p>
+                            </div>
+                        </div>
+                        <div class="cardTrajectolog__description">
+                            <p class="cardTrajectolog__achievements-title">Построенных траекторий</p>
+                            <p class="cardTrajectolog__achievements-num">107</p>
+                            <p class="cardTrajectolog__achievements-title">Опыт в методе:</p>
+                            <p class="cardTrajectolog__achievements-num">4 года</p>
+                            <p class="cardTrajectolog__achievements-desc">
+                                Стратег, бизнес-консультант, модератор образовательных программ
+                            </p>
+                            <button
+                                    type="button"
+                                    class="cardTrajectolog__description-next"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal"
+                            >
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cardTrajectolog">
+                        <div class="cardHead__image image-julia">
+
+                        </div>
+                        <div class="cardTrajectolog__block">
+                            <img
+                                    src="./images/imgLanding/image-trajectologs/julia.png"
+                                    class="cardTrajectolog__block-imageMobile"
+                            >
+                            <div class="trajectologDesc">
+                                <p class="cardTrajectolog__block-title">Юлия Мельникова</p>
+                                <p class="cardTrajectolog__block-normal">Траектолог</p>
+                            </div>
+                        </div>
+                        <div class="cardTrajectolog__description">
+                            <p class="cardTrajectolog__achievements-title">Построенных траекторий</p>
+                            <p class="cardTrajectolog__achievements-num">109</p>
+                            <p class="cardTrajectolog__achievements-title">Опыт в методе:</p>
+                            <p class="cardTrajectolog__achievements-num">4 года</p>
+                            <p class="cardTrajectolog__achievements-desc">
+                                ---
+                            </p>
+                            <button
+                                    type="button"
+                                    class="cardTrajectolog__description-next"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal"
+                            >
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cardTrajectolog">
+                        <div class="cardHead__image image-katerina">
+
+                        </div>
+                        <div class="cardTrajectolog__block">
+                            <img
+                                    src="./images/imgLanding/image-trajectologs/pavel.png"
+                                    class="cardTrajectolog__block-imageMobile"
+                            >
+                            <div class="trajectologDesc">
+                                <p class="cardTrajectolog__block-title">Катерина Гувакова</p>
+                                <p class="cardTrajectolog__block-normal">Траектолог</p>
+                            </div>
+                        </div>
+                        <div class="cardTrajectolog__description">
+                            <p class="cardTrajectolog__achievements-title">Построенных траекторий</p>
+                            <p class="cardTrajectolog__achievements-num">187</p>
+                            <p class="cardTrajectolog__achievements-title">Опыт в методе:</p>
+                            <p class="cardTrajectolog__achievements-num">3 года</p>
+                            <p class="cardTrajectolog__achievements-desc">
+                                малый и средний бизнес, постановка предпринимательского мышления...
+                            </p>
+                            <button
+                                    type="button"
+                                    class="cardTrajectolog__description-next"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal"
+                            >
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cardTrajectolog">
+                        <div class="cardHead__image image-katerinaYoung">
+
+                        </div>
+                        <div class="cardTrajectolog__block">
+                            <img
+                                    src="./images/imgLanding/image-trajectologs/katerina(yong).png"
+                                    class="cardTrajectolog__block-imageMobile"
+                            >
+                            <div class="trajectologDesc">
+                                <p class="cardTrajectolog__block-title">Катерина Гувакова</p>
+                                <p class="cardTrajectolog__block-normal">Траектолог</p></div>
+                        </div>
+                        <div class="cardTrajectolog__description">
+                            <p class="cardTrajectolog__achievements-title">Построенных траекторий</p>
+                            <p class="cardTrajectolog__achievements-num">187</p>
+                            <p class="cardTrajectolog__achievements-title">Опыт в методе:</p>
+                            <p class="cardTrajectolog__achievements-num">3 года</p>
+                            <p class="cardTrajectolog__achievements-desc">
+                                Малый и средний бизнес, постановка предпринимательского мышления...
+                            </p>
+                            <button
+                                    type="button"
+                                    class="cardTrajectolog__description-next"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal"
+                            >
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cardTrajectolog">
+                        <div class="cardHead__image image-julia">
+
+                        </div>
+                        <div class="cardTrajectolog__block">
+                            <img
+                                    src="./images/imgLanding/image-trajectologs/julia.png"
+                                    class="cardTrajectolog__block-imageMobile"
+                            >
+                            <div class="trajectologDesc">
+                                <p class="cardTrajectolog__block-title">Юлия Мельникова</p>
+                                <p class="cardTrajectolog__block-normal">Траектолог</p>
+                            </div>
+                        </div>
+                        <div class="cardTrajectolog__description">
+                            <p class="cardTrajectolog__achievements-title">Построенных траекторий</p>
+                            <p class="cardTrajectolog__achievements-num">109</p>
+                            <p class="cardTrajectolog__achievements-title">Опыт в методе:</p>
+                            <p class="cardTrajectolog__achievements-num">4 года</p>
+                            <p class="cardTrajectolog__achievements-desc">
+                                ---
+                            </p>
+                            <button
+                                    type="button"
+                                    class="cardTrajectolog__description-next"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal"
+                            >
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next disabled"></div>
+            <div class="swiper-button-prev disabled"></div>
+            <div class="swiper-pagination desktop-disabled"></div>
+        </div>
+        </div>
+    </div>
+</section>
+
+<section class="roadMap container">
+    <h2 class="roadTitle">Road Map EntPath</h2>
+
+    <div class="imgContent">
+        <img
+            src="./images/imgLanding/image-main/imageWay.png"
+            alt="imageWay"
+            class="imgContent-way"
+        >
+    </div>
+
+    <div class="swiper swiperMap">
+        <img
+                src="./images/imgLanding/image-main/road-main.svg"
+                alt=""
+                class="roadMap__Block-image"
+        >
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="trajectoryDown__item ">
+                    <p class="trajectoryDown__num trajectoryNumRed">2016</p>
+                    <div class="trajectoryDown__blockImage">
+                        <img src="./images/imgLanding/image-main/round.png" alt="round">
+                        <img src="./images/imgLanding/image-main/route.png" alt="route">
+                    </div>
+                    <div class="trajectoryDown__textBlock trajectoryRed">
+                        <p class="trajectoryDown__text">Построены первые траектории в рамках образовательных программ
+                            для
+                            предпринимателей</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="trajectoryDown__item">
+                    <p class="trajectoryDown__num trajectoryNumRed">2018</p>
+                    <div class="trajectoryDown__blockImage">
+                        <img src="./images/imgLanding/image-main/round.png" alt="round">
+                        <img src="./images/imgLanding/image-main/route.png" alt="route">
+                    </div>
+                    <div class="trajectoryDown__textBlock trajectoryRed">
+                        <p class="trajectoryDown__text">Сформирована команда траектологов</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="trajectoryDown__item">
+                    <p class="trajectoryDown__num trajectoryNumRed">2021</p>
+                    <div class="trajectoryDown__blockImage">
+                        <img src="./images/imgLanding/image-main/round.png" alt="round">
+                        <img src="./images/imgLanding/image-main/route.png" alt="route">
+                    </div>
+                    <div class="trajectoryDown__textBlock trajectoryRed">
+                        <p class="trajectoryDown__text">Построена тысячная траектория</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="blockSince">
+                    <p class="trajectoryDown__num trajectoryNumBlue">2022</p>
+                    <div class="trajectoryUp__blockImage">
+                        <img src="./images/imgLanding/image-main/route-blue.png" alt="route">
+                        <img src="./images/imgLanding/image-main/big-round.png" alt="round" class="bigRound">
+                    </div>
+                    <div class="trajectoryMiddle__textBlock">
+
+                        <p class="trajectoryMiddle__title">
+                            компания EntPath
+                        </p>
+                        <div class="trajectoryMiddle__block">
+                            <p class="trajectoryMiddle__company">
+                                EntPath
+                            </p>
+                            <img
+                                    src="./images/imgLanding/icons/enthPath.svg"
+                                    alt=""
+                                    class="trajectoryMiddle__img"
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="trajectoryDown__item">
+                    <p class="trajectoryDown__num">2024</p>
+                    <div class="trajectoryDown__blockImage">
+                        <img src="./images/imgLanding/image-main/round-blue.png" alt="round">
+                        <img src="./images/imgLanding/image-main/route-blue.png" alt="route">
+                    </div>
+                    <div class="trajectoryDown__textBlock">
+                        <p class="trajectoryDown__text">Появился помощник для траектолога на базе искусственного
+                            интеллекта</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="trajectoryDown__item">
+                    <p class="trajectoryDown__num">2028</p>
+                    <div class="trajectoryDown__blockImage">
+                        <img src="./images/imgLanding/image-main/round-blue.png" alt="round">
+                        <img src="./images/imgLanding/image-main/route-blue.png" alt="route">
+                    </div>
+                    <div class="trajectoryDown__textBlock">
+                        <p class="trajectoryDown__text">Впервые построена траектория с помощью консультанта на базе
+                            искусственного интеллекта</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="roadMap__Block">
+        <ul class="trajectoryUp__list">
+            <li class="trajectoryUp__item">
+                <div class="trajectoryUp__textBlock">
+                    <p class="trajectoryUp__text">Сформирована команда траектологов</p>
+                </div>
+                <div class="trajectoryUp__blockImage">
+                    <img src="./images/imgLanding/image-main/round.png" alt="round">
+                    <img src="./images/imgLanding/image-main/route.png" alt="route">
+                </div>
+                <p class="trajectoryUp__num">2018</p>
+
+            </li>
+            <li class="trajectoryMiddle__item">
+                <div class="trajectoryMiddle__textBlock">
+                    <p class="trajectoryMiddle__title">
+                        Основана компания EntPath
+                    </p>
+                    <div class="trajectoryMiddle__block">
+                        <p class="trajectoryMiddle__company">
+                            EntPath
+                        </p>
+                        <img
+                                src="./images/imgLanding/icons/enthPath.svg"
+                                alt=""
+                                class="trajectoryMiddle__img"
+                        >
+                    </div>
+                </div>
+                <div class="trajectoryUp__blockImage">
+                    <img src="./images/imgLanding/image-main/big-round.png" alt="round" class="bigRound">
+                    <img src="./images/imgLanding/image-main/route-blue.png" alt="route">
+                </div>
+                <p class="trajectoryMiddle__num">2022</p>
+            </li>
+            <li class="trajectoryUp__item">
+                <div class="trajectoryUp__textBlock">
+                    <p class="trajectoryUp__text">
+                        Впервые построена траектория с помощью консультанта на базе искусственного интеллекта
+                    </p>
+                </div>
+                <div class="trajectoryUp__blockImage">
+                    <img src="./images/imgLanding/image-main/round-blue.png" alt="round">
+                    <img src="./images/imgLanding/image-main/route-blue.png" alt="route">
+                </div>
+                <p class="trajectoryUp__num">2028</p>
+
+            </li>
+        </ul>
+
+        <div class="blockArrow">
+            <img
+                    src="./images/imgLanding/image-main/road-main.svg"
+                    alt=""
+                    class="roadMap__Block-image"
+            >
+
+            <img
+                    src="./images/imgLanding/image-main/arrow-end.svg"
+                    alt="arrow-end"
+                    class="arrowEnd">
+        </div>
+        <ul class="trajectoryDown__list">
+            <li class="trajectoryDown__item">
+                <p class="trajectoryDown__num">2016</p>
+                <div class="trajectoryDown__blockImage">
+                    <img src="./images/imgLanding/image-main/round.png" alt="round">
+                    <img src="./images/imgLanding/image-main/route.png" alt="route">
+                </div>
+                <div class="trajectoryDown__textBlock">
+                    <p class="trajectoryDown__text">Построены первые траектории в рамках образовательных программ для
+                        предпринимателей</p>
+                </div>
+            </li>
+            <li class="trajectoryDown__item">
+                <p class="trajectoryDown__num">2021</p>
+                <div class="trajectoryDown__blockImage">
+                    <img src="./images/imgLanding/image-main/round.png" alt="round">
+                    <img src="./images/imgLanding/image-main/route.png" alt="route">
+                </div>
+                <div class="trajectoryDown__textBlock">
+                    <p class="trajectoryDown__text">Построена тысячная траектория</p>
+                </div>
+            </li>
+            <li class="trajectoryDown__item">
+                <p class="trajectoryDown__num">2024</p>
+                <div class="trajectoryDown__blockImage">
+                    <img src="./images/imgLanding/image-main/round-blue.png" alt="round">
+                    <img src="./images/imgLanding/image-main/route-blue.png" alt="route">
+                </div>
+                <div class="trajectoryDown__textBlock">
+                    <p class="trajectoryDown__text">Появился помощник для траектолога на базе искусственного
+                        интеллекта</p>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+</section>
+<section class="questionSection container">
+    <div class="questionBlock">
+        <div class="questionText-block">
+            <h3 class="questionTitle">Остались вопросы?</h3>
+            <p class="questionText">Оставьте свои контакты, и мы обязательно свяжемся с вами!</p>
+        </div>
+        <form action="" class="questionForm">
+            <input
+                    type="text"
+                    placeholder="Имя фамилия"
+                    class="questionForm__input"
+            >
+            <input
+                    type="text"
+                    placeholder="Электронная почта или телефон"
+                    class="questionForm__input"
+            >
+            <button class="questionForm__button">Отправить</button>
+        </form>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <ul class="footer__list">
+            <li class="footer__item order1">
+                <img class="footer__item-logo" src="./images/imgLanding/logo/logo-footer.svg" alt="logo-footer">
+                <div class="footer__item__socialBlock">
+                    <p class="chareLink">Поделиться:</p>
+                    <div>
+                        <a href="#" class="linkSocial">
+                            <img
+                                    src="./images/imgLanding/icons/icons-footer/vk.svg"
+                                                            alt="vk">
+                        </a>
+                        <a href="#" class="linkSocial">
+                            <img
+                                    src="./images/imgLanding/icons/icons-footer/insta.svg"
+                                                            alt="instagram">
+                        </a>
+                        <a href="#" class="linkSocial">
+                            <img
+                                    src="./images/imgLanding/icons/icons-footer/telegramm.svg"
+                                                            alt="telegramm">
+                        </a>
+                        <a href="#" class="linkSocial">
+                            <img
+                                    src="./images/imgLanding/icons/icons-footer/what's-up.svg"
+                                                            alt="what's up">
+                        </a>
+                    </div>
+                </div>
+                <p class="privacy">Политика конфиденциальности</p>
+                <p class="nalog__mobile">© ИП Комаров А. А. 2022</p>
+            </li>
+            <li class="footer__item order2">
+                <nav>
+                    <ul class="footer__item__navList">
+                        <li class="footer__item__navItem">
+                            <a href="#" class="footer__item__link">О траектории</a>
+                        </li>
+                        <li class="footer__item__navItem">
+                            <a href="#" class="footer__item__link">Тарифы</a>
+                        </li>
+                        <li class="footer__item__navItem">
+                            <a href="#" class="footer__item__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </li>
+            <li class="footer__item order3">
+                <div class="desktopItem">
+                    <div class="footer__item-share">
+                        <a href="#">
+                            <img class="footer__item-image" src="./images/imgLanding/icons/icons-footer/telegramm.svg"
+                                 alt="telegramm"></a>
+                        <a href="#">
+                            <img src="./images/imgLanding/icons/icons-footer/what's-up.svg" alt="what's up"></a>
+                    </div>
+
+                    <p class="footer__item-number">+7 926 602 85 11</p>
+                    <p class="footer__item-mail">
+                        <a href="" class="footer__item-link">pp@entspace.com</a>
+                    </p>
+                    <p class="footer__item-nalog">© ИП Комаров А. А. 2022</p>
+                </div>
+                <div class="mobileItem">
+                    <div class="mobileItem__block">
+                        <img class="logoMobile" src="./images/imgLanding/logo/logo-footer.svg" alt="logo-footer">
+                        <div class="footer__item-share">
+                            <a href="#">
+                                <img class="footer__item-image"
+                                     src="./images/imgLanding/icons/icons-footer/telegramm.svg"
+                                     alt="telegramm"></a>
+                            <a href="#">
+                                <img src="./images/imgLanding/icons/icons-footer/what's-up.svg" alt="what's up"></a>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="footer__item-number">+7 926 602 85 11</p>
+                        <p class="footer__item-mail">
+                            <a href="" class="footer__item-link">pp@entspace.com</a>
+                        </p>
+                    </div>
+
+                </div>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="js/jsLanding.js"></script>
+<script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
 </body>
-
 </html>
