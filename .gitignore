@@ -2,4 +2,6 @@ node_modules
 
 # Generated files:
 *.min.js
+*.js.map
 *.min.css
+*.css.map
