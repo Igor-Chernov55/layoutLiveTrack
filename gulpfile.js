@@ -72,7 +72,7 @@ function images() {
             quality: 80
         }))
         .pipe(dest('dist/images'))
-        .pipe(src('app/images/**/*.png'))
+        .pipe(src('app/images/**/*.{png,jpg,gif}'))
         .pipe(imagemin())
         .pipe(src('app/images/**/*.svg'))
         .pipe(dest('dist/images'))
