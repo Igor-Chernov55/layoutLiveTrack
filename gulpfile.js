@@ -8,7 +8,6 @@ const { src, dest, watch, parallel, series } = require("gulp"),
     group_media = require('gulp-group-css-media-queries'),
     imagemin = require('gulp-imagemin'),
     webp = require('gulp-webp'),
-    webphtml = require('gulp-webp-html'),
     del = require("del");
 
 
@@ -55,11 +54,10 @@ function js() {
 
 
 function jslib() {
-    // TODO: fix libs
     return src([
-        'node_modules/jquery/dist/jquery.js',
-        "node_modules/slick-carousel/slick/slick.js",
-        "node_modules/imask/dist/imask.js"
+        'node_modules/bootstrap/dist/js/bootstrap.min.js',
+        'node_modules/swiper/swiper-bundle.min.js',
+        'node_modules/@popperjs/core/dist/umd/popper.min.js',
     ])
         .pipe(concat('lib.min.js'))
         .pipe(uglify())
@@ -79,12 +77,6 @@ function images() {
         .pipe(dest('dist/images'))
 }
 
-
-function buildhtml() {
-    return src('app/*.html')
-        .pipe(webphtml())
-        .pipe(dest('dist'))
-}
 
 function build() {
     return src([
@@ -109,7 +101,6 @@ function watching() {
 }
 
 
-exports.buildhtml = buildhtml;
 exports.style = style;
 exports.stylelib = stylelib;
 exports.js = js;
@@ -120,5 +111,7 @@ exports.browsersync = browsersync;
 exports.cleanDist = cleanDist;
 
 
-exports.default = parallel(stylelib, style, jslib, js, browsersync, watching); //задаем дефолтную задачу для gulp
-exports.build = series(cleanDist, images, build, buildhtml);
+exports.default = series(
+  parallel(stylelib, style, jslib, js),
+  parallel(browsersync, watching)); //задаем дефолтную задачу для gulp
+exports.build = series(cleanDist, images, build);
