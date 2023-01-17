@@ -113,7 +113,8 @@ exports.browsersync = browsersync;
 exports.cleanDist = cleanDist;
 
 
+exports.devBuild = parallel(stylelib, style, jslib, js);
 exports.default = series(
-  parallel(stylelib, style, jslib, js),
+  exports.devBuild,
   parallel(browsersync, watching)); //задаем дефолтную задачу для gulp
-exports.build = series(cleanDist, images, build);
+exports.build = series(exports.devBuild, cleanDist, images, build);
