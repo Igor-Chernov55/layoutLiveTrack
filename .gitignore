@@ -1,7 +1,10 @@
-node_modules
+node_modules/
 
 # Generated files:
 *.min.js
 *.js.map
 *.min.css
 *.css.map
+
+# Build:
+dist/
