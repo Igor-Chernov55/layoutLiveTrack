@@ -713,10 +713,19 @@
   }
 }
 
+@media (max-width: 480px) {
+  .commentCard:first-child {
+    margin-left: 10px !important;
+  }
+
+}
+
 @media screen and (max-width: 400px) {
     #commentCard {
       max-width: 100% !important;
     }
+
+
 
   #commentCard:nth-child(3) {
     //margin-right: 72px !important;
